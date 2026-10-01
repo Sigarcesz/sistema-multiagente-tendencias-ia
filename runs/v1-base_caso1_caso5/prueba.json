@@ -1,0 +1,10 @@
+{
+  "caso": 5,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "descripcion": "Se agregó la recomendación R8 sin evidencia, riesgo, oportunidad ni indicador.",
+  "recomendacion_inyectada": "R8",
+  "esperado": "verificar_informe.py la marca como recomendación injustificada; RECHAZADO.",
+  "inyectar_en": "writer_v1",
+  "artefacto": "informe_v1.md"
+}

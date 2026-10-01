@@ -1,0 +1,90 @@
+{
+  "version": 4,
+  "estado": "RECHAZADO",
+  "score_global": 76.0,
+  "puntajes": {
+    "exactitud": 80,
+    "calidad_evidencia": 60,
+    "referencias": 90,
+    "profundidad": 50,
+    "claridad": 90,
+    "utilidad": 85
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 80 < 90",
+    "profundidad 50 < 70",
+    "global 76.0 < 85"
+  ],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [
+    {
+      "criterio": "profundidad",
+      "de": 70,
+      "a": 50,
+      "motivo": "solo 1 tendencia(s) respaldadas; el mínimo es 3"
+    }
+  ],
+  "hallazgos_auditor": [
+    "La mayoría de las afirmaciones del informe coinciden con la evidencia validada (E2), pero la calificación de 'confianza: alta' está sobredimensionada dado que el paquete validado contiene una sola fuente primaria (E2).",
+    "El informe usa consistentemente la referencia E2 y las recomendaciones están vinculadas, pero la base de evidencia es limitada a una sola fuente secundaria; esto reduce la solidez de inferencias amplias sobre impacto y madurez.",
+    "El documento presenta recomendaciones accionables y una hoja de ruta clara, aunque el análisis se concentra en una sola tendencia (T1) y podría beneficiarse de mayor profundidad sectorial o evidencia complementaria."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 1 (Resumen Ejecutivo), párrafo 1 y Sección 4 (T1) confianza",
+      "problema": "El informe declara 'nivel de confianza: alta' y basa la confianza principalmente en E2, pero el paquete validado contiene solo E2 según la sección de metodología; la calificación no está suficientemente justificada.",
+      "accion_requerida": "Revisar la etiqueta de confianza (considerar 'moderada') o añadir referencias primarias adicionales que respalden la declaración de confianza; documentar explícitamente la limitación de evidencia en la metodología.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 11 (Referencias) y citas in-text",
+      "problema": "La referencia a E2 está presente pero no especifica la ubicación (p. ej. página o sección) de las cifras citadas; esto dificulta la trazabilidad exacta de las cifras citadas.",
+      "accion_requerida": "Añadir localizadores (página, tabla o sección) para las cifras citadas del AI Index 2025 o proveer extractos/URLs de anclaje si están disponibles.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "calidad_evidencia",
+      "ubicacion": "Sección 3 (Metodología) y Sección 4 (Evidencia citada)",
+      "problema": "El paquete de evidencia validada se reduce a una única fuente (E2), lo que limita la robustez de las conclusiones.",
+      "accion_requerida": "Agregar fuentes primarias (proveedores, estudios de caso, datos de clientes) para fortalecer las afirmaciones sobre adopción y cifras de inversión, o marcar explícitamente las limitaciones y evitar generalizaciones extensas.",
+      "id": "C3",
+      "prioridad": 3
+    },
+    {
+      "criterio": "profundidad",
+      "ubicacion": "Documento",
+      "problema": "El informe cubre menos de 3 tendencias respaldadas por evidencia.",
+      "accion_requerida": "No corregible por el escritor: requiere nueva investigación del Trend Scout.",
+      "corregible_por_escritor": false,
+      "id": "C4",
+      "prioridad": 4
+    },
+    {
+      "criterio": "profundidad",
+      "ubicacion": "Secciones 4–7 (Tendencias, Impacto, Riesgos, Oportunidades)",
+      "problema": "El informe se concentra en una sola tendencia (T1) con análisis útil pero limitado en alcance sectorial y de implicaciones operativas.",
+      "accion_requerida": "Ampliar el análisis con al menos dos tendencias adicionales o añadir sub-análisis sectoriales (p. ej. finanzas, salud, retail) que ilustren variaciones en impacto y priorización, o aclarar el alcance si el informe pretende cubrir solo T1.",
+      "id": "C5",
+      "prioridad": 5
+    }
+  ],
+  "observaciones_menores": []
+}

@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "estado": "RECHAZADO",
+  "score_global": 76.5,
+  "puntajes": {
+    "exactitud": 80,
+    "calidad_evidencia": 75,
+    "referencias": 90,
+    "profundidad": 75,
+    "claridad": 85,
+    "utilidad": 60
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 80 < 90",
+    "global 76.5 < 85"
+  ],
+  "rechazos_automaticos": [
+    "R-RECOMENDACION: recomendaciones injustificadas",
+    "R-AUDITOR: Recomendación R8 sin respaldo y contradictoria con R2/R1"
+  ],
+  "topes_aplicados": [
+    {
+      "criterio": "utilidad",
+      "de": 70,
+      "a": 60,
+      "motivo": "recomendaciones sin evidencia, riesgo, oportunidad o indicador"
+    }
+  ],
+  "hallazgos_auditor": [
+    "Recomendación R8 (Sección 8) propone invertir de inmediato en una plataforma propia de modelos de lenguaje sin evidencia que la respalde ni análisis de coste/beneficio.",
+    "El resto del informe alinea las recomendaciones con evidencias (R1–R7) y las clasifica coherentemente, pero R8 contradice la orientación general de 'evaluar pilotos antes de escalado'.",
+    "No se detectan cifras no trazables ni citas inexistentes según la verificación automática, pero existe una recomendación inválida detectada por el script."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Resumen Ejecutivo y Sección 8",
+      "problema": "Contradicción entre la recomendación de 'priorizar gobernanza y pilotos' y la instrucción de 'invertir de inmediato' en R8.",
+      "accion_requerida": "Alinear recomendaciones: si se propone inversión, añadir un análisis que justifique por qué no aplicar el enfoque escalonado (gobernanza + pilotos) descrito en R1–R2; si no, retirar R8.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "utilidad",
+      "ubicacion": "Sección 8, R8",
+      "problema": "sin evidencia vinculada; sin riesgo vinculado (RG#); sin oportunidad vinculada (OP#); sin indicador de seguimiento (mín. 4 palabras)",
+      "accion_requerida": "Vincular la recomendación a evidencia [E#], riesgo RG#, oportunidad OP# e indicador, o eliminarla.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "utilidad",
+      "ubicacion": "Sección 8, R8",
+      "problema": "La recomendación 'Invertir de inmediato en una plataforma propia de modelos de lenguaje' no está respaldada por ninguna evidencia en los hallazgos ni presenta indicador, riesgo u oportunidad asociados.",
+      "accion_requerida": "Eliminar R8 o reformularla como 'Evaluar la viabilidad de una plataforma propia' y aportar evidencia específica (ej.: análisis de costes, benchmarking de vendors, datos de adopción que justifiquen inversión), además completar los cuatro vínculos: evidencia, riesgo, oportunidad e indicador.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ],
+  "observaciones_menores": []
+}

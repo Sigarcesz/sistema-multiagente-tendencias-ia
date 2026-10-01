@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "estado": "APROBADO",
+  "score_global": 90.4,
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 85,
+    "referencias": 95,
+    "profundidad": 88,
+    "claridad": 92,
+    "utilidad": 90
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [],
+  "hallazgos_auditor": [
+    "El informe presenta 7 tendencias claramente vinculadas a evidencias validadas; las recomendaciones están mayoritariamente soportadas por las evidencias citadas.",
+    "No se detectan cifras no trazables ni citas ausentes en la verificación mecánica.",
+    "Algunas afirmaciones muestran un nivel de confianza más alto del que justifican las fuentes (ver correcciones)."
+  ],
+  "correcciones": [],
+  "observaciones_menores": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4, T4 — Nivel de confianza",
+      "problema": "T4 declara 'Nivel de confianza: alta' pero la evidencia incluye un estudio de 2022 (E7) y una encuesta de 2026 (E8); la mezcla de antigüedad y metodología debería justificar una confianza 'media' o explicar por qué nueva evidencia eleva la confianza.",
+      "accion_requerida": "Revisar y justificar la calificación de confianza en T4 o ajustarla a 'media'; añadir frase que explique la heterogeneidad temporal/metodológica de las fuentes.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "utilidad",
+      "ubicacion": "Sección 9 (Hoja de Ruta)",
+      "problema": "La hoja de ruta indica plazos y acciones pero no asigna responsables ni métricas de éxito (KPI) para priorizar recursos.",
+      "accion_requerida": "Añadir para cada acción al menos un responsable sugerido (rol) y 1-2 KPIs/criterios de éxito que permitan a dirección priorizar e invertir.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "calidad_evidencia",
+      "ubicacion": "Sección 4, T5 — Evidencia E9",
+      "problema": "E9 (SAS) atribuye previsiones a Gartner en texto citado; el informe no incluye la referencia primaria de Gartner ni evidencia directa de esa proyección.",
+      "accion_requerida": "Verificar la afirmación atribuida a Gartner en E9 y, si existe, incluir la referencia primaria; si no, re-matricular la frase como una previsión de SAS (y ajustar nivel de confianza).",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ]
+}

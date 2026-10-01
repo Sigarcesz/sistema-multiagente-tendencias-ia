@@ -1,0 +1,339 @@
+{
+  "tema": "Tendencias emergentes de inteligencia artificial con potencial impacto empresarial durante los próximos tres años",
+  "fecha_investigacion": "2026-10-01",
+  "tendencias": [
+    {
+      "id": "T1",
+      "nombre": "Adopción y personalización de modelos de base (foundation models) en la empresa",
+      "descripcion": "Las organizaciones están migrando de prototipos a despliegues productivos usando foundation models accesibles vía servicios gestionados; además aumentan las implementaciones de modelos especializados y modelos personalizados/importados para casos de uso verticales y cumplimiento. Los proveedores cloud ofrecen mercados y herramientas (evaluación, guardrails, importación de modelos) para acelerar la puesta en producción.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Cambios en plataformas, productos y procesos: los FMs y sus servicios gestionados permiten nuevas aplicaciones, velocidad de comercialización y reconfiguración de funciones como atención al cliente, R&D y finanzas, según evidencia de grandes proveedores e índices sectoriales."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Hay servicios gestionados y migraciones a producción (Amazon Bedrock, crecimiento de clientes), pero la customización y gobernanza empresarial siguen en consolidación."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Respaldo por múltiples fuentes primarias (proveedor cloud, informe independiente AI Index) que documentan adopción y cifras de inversión."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "AWS reporta que 'tens of thousands' de clientes usan Amazon Bedrock y describe capacidades para importar modelos propios, evaluar modelos y aplicar guardrails para uso empresarial.",
+          "cifras": [
+            "tens of thousands",
+            "4.7x",
+            "85%"
+          ],
+          "fuente": {
+            "titulo": "Amazon Bedrock Launches New Capabilities as Tens of Thousands of Customers Choose It as the Foundation to Build and Scale Secure Generative AI Applications",
+            "organizacion": "Amazon Web Services (AWS) / US Press Center",
+            "autor": "Amazon Web Services, Inc.",
+            "fecha": "2024-04-23",
+            "url": "https://press.aboutamazon.com/2024/4/amazon-bedrock-launches-new-capabilities-as-tens-of-thousands-of-customers-choose-it-as-the-foundation-to-build-and-scale-secure-generative-ai-applications"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "El AI Index 2025 documenta que el uso empresarial de IA escaló: '78% of organizations reported using AI in 2024, up from 55% the year before' y registra $33.9B en inversión privada en generative AI en 2024.",
+          "cifras": [
+            "78%",
+            "$33.9 billion"
+          ],
+          "fuente": {
+            "titulo": "Artificial Intelligence Index Report 2025",
+            "organizacion": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+            "autor": "AI Index Steering Committee / Stanford HAI",
+            "fecha": "2025-04",
+            "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "nombre": "Regulación y gestión de riesgos (AI governance / TRiSM) como requisito para la adopción empresarial",
+      "descripcion": "Los marcos regulatorios y de gestión de riesgo están convergiendo: la UE aprobó un reglamento armonizado y agencias y estándares nacionales (p. ej. NIST en EE. UU.) publican marcos y perfiles para gestionar riesgos específicos como generative AI. Esto empuja a las empresas a integrar controles, auditoría y trazabilidad en sus programas de IA.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Obliga cambios en cumplimiento, contratación de tecnología de gobernanza y procesos operativos; afecta proveedoras y productos expuestos al mercado regulado."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Hay marcos y regulaciones publicadas (AI Act, NIST AI RMF) y adopción inicial en empresas, pero la práctica operativa y estándares técnicos siguen evolucionando."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Fuentes primarias legales y de estándares (EUR-Lex, NIST) confirman obligaciones y recursos oficiales."
+      },
+      "evidencias": [
+        {
+          "id": "E3",
+          "afirmacion": "La Unión Europea publicó la regulación (AI Act) como Regulation (EU) 2024/1689 con fechas de firma y aplicación escalonada, estableciendo reglas armonizadas para la comercialización y uso de sistemas de IA en la Unión.",
+          "cifras": [
+            "2024-06-13",
+            "Entry into force: 01/08/2024"
+          ],
+          "fuente": {
+            "titulo": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+            "organizacion": "European Parliament and Council",
+            "autor": "European Parliament; Council of the European Union",
+            "fecha": "2024-06-13",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689"
+          }
+        },
+        {
+          "id": "E4",
+          "afirmacion": "NIST mantiene el AI Risk Management Framework (AI RMF 1.0), publicado originalmente el 26 de enero de 2023, y ofrece perfiles y recursos complementarios para gestionar riesgos de IA, incluido un perfil para generative AI.",
+          "cifras": [],
+          "fuente": {
+            "titulo": "AI Risk Management Framework | NIST",
+            "organizacion": "National Institute of Standards and Technology (NIST)",
+            "autor": "NIST",
+            "fecha": "2023-01-26",
+            "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "nombre": "Uso de IA por atacantes y necesidad de defensas AI-centradas en ciberseguridad",
+      "descripcion": "Firmas de inteligencia de amenazas y proveedores de seguridad reportan un incremento del uso de generative AI por actores maliciosos para escalar phishing, ingeniería social, descubrimiento de vulnerabilidades y automatización de malware; simultáneamente, los defensores adoptan AI para detección y respuesta a gran escala.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Amplía la superficie de riesgo y puede acelerar tiempos de compromiso, afectando continuidad, reputación y exposición de datos; requiere inversión en seguridad AI-centrada."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Tanto técnicas adversarias como defensivas están en despliegue operativo documentado por proveedores de seguridad y grandes empresas tecnológicas, aunque las contramedidas maduras aún se consolidan."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Informes técnicos de actores de referencia en ciberseguridad (CrowdStrike, Microsoft) describen hallazgos empíricos y métricas concretas."
+      },
+      "evidencias": [
+        {
+          "id": "E5",
+          "afirmacion": "CrowdStrike reporta que adversarios están usando Generative AI para escalar operaciones (p. ej. FAMOUS CHOLLIMA infiltró más de 320 empresas, +220% interanual) y documenta tendencias en phishing y malware construido con GenAI.",
+          "cifras": [
+            "over 320 companies",
+            "220%",
+            "81%"
+          ],
+          "fuente": {
+            "titulo": "CrowdStrike 2025 Threat Hunting Report: AI Becomes a Weapon and a Target",
+            "organizacion": "CrowdStrike",
+            "autor": "CrowdStrike Intelligence / Threat Hunting team",
+            "fecha": "2025-08-04",
+            "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2025-threat-hunting-report-ai-weapon-target/"
+          }
+        },
+        {
+          "id": "E6",
+          "afirmacion": "Microsoft en su Digital Defense Report 2025 documenta que actores maliciosos usan AI para escalar ataques (deepfakes, identidad sintética) y advierte sobre la doble cara de la IA como herramienta de defensa y objetivo de ataques.",
+          "cifras": [
+            "Microsoft fiscal year 2025 (July 1, 2024-June 30, 2025)"
+          ],
+          "fuente": {
+            "titulo": "Microsoft Digital Defense Report 2025",
+            "organizacion": "Microsoft Corporation",
+            "autor": "Microsoft Threat Intelligence / Digital Defense Report editors",
+            "fecha": "2025-11-21",
+            "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Microsoft-Digital-Defense-Report-2025-v5-21Nov25.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "nombre": "Automatización del desarrollo de software con asistentes de código y agentes de desarrollo",
+      "descripcion": "Herramientas de asistencia de programación (p. ej. GitHub Copilot) y plataformas de agentes de desarrollo están integrándose en flujos de trabajo, con empresas reportando mejoras de velocidad y amplia adopción entre desarrolladores profesionales.",
+      "impacto": {
+        "nivel": "medio",
+        "justificacion": "Aumenta productividad y cambia prácticas del SDLC; impacto directo en costes y tiempo de entrega, pero la adopción produce también retos de seguridad, calidad y medición de ROI."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Existen estudios controlados y encuestas que muestran ganancias de productividad y una adopción rápida, aunque resultados varían por contexto y metodología."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencia empírica de investigación de GitHub y encuestas/estudios de mercado independientes confirman efectos y niveles de adopción."
+      },
+      "evidencias": [
+        {
+          "id": "E7",
+          "afirmacion": "Estudio de GitHub (Copilot) encontró en un experimento controlado que los desarrolladores completaron una tarea en promedio 55% más rápido con Copilot (1h11m vs 2h41m).",
+          "cifras": [
+            "55% faster",
+            "1 hour and 11 minutes",
+            "2 hours and 41 minutes"
+          ],
+          "fuente": {
+            "titulo": "Research: quantifying GitHub Copilot’s impact on developer productivity and happiness",
+            "organizacion": "GitHub (GitHub Blog)",
+            "autor": "Eirini Kalliamvakou (GitHub)",
+            "fecha": "2022-09-07",
+            "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+          }
+        },
+        {
+          "id": "E8",
+          "afirmacion": "Encuesta y análisis de SlashData reporta que el 75% de desarrolladores profesionales usan herramientas asistidas por IA (Q1 2026), subiendo desde 61% en Q1 2024.",
+          "cifras": [
+            "75%",
+            "61%"
+          ],
+          "fuente": {
+            "titulo": "75% of professional developers are using AI-assisted tools: Insights on Developer Tools Usage and Measuring AI ROI",
+            "organizacion": "SlashData",
+            "autor": "SlashData research team",
+            "fecha": "2026-03",
+            "url": "https://www.slashdata.co/post/75-of-professional-developers-are-using-ai-assisted-tools-insights-on-developer-tools-usage-and-me"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T5",
+      "nombre": "Generación de datos sintéticos y aumento de datos para entrenamiento y cumplimiento",
+      "descripcion": "Las empresas recurren a datos sintéticos para mitigar problemas de privacidad, escasez de datos y sesgo; expertos discuten oportunidades y riesgos técnicos y regulatorios de ampliar el 'ecosistema de datos' con datos artificiales.",
+      "impacto": {
+        "nivel": "medio",
+        "justificacion": "Afecta pipelines de datos, cumplimiento y calidad de modelos; puede habilitar proyectos en sectores regulados (salud, finanzas) reduciendo fricción de datos reales."
+      },
+      "madurez": {
+        "nivel": "emergente",
+        "justificacion": "Hay interés creciente, pruebas piloto y proveedores, pero todavía existen retos de validación, privacidad y estandarización técnica."
+      },
+      "confianza": {
+        "nivel": "media",
+        "justificacion": "Hay trabajos académicos y publicaciones de proveedores que documentan técnicas y beneficios, pero la literatura técnica también señala limitaciones y riesgos."
+      },
+      "evidencias": [
+        {
+          "id": "E9",
+          "afirmacion": "Documento de SAS afirma que 'By 2026, 75% of businesses will use generative AI to create synthetic customer data, up from less than 5% in 2023', citando previsiones de Gartner.",
+          "cifras": [
+            "By 2026, 75% of businesses",
+            "less than 5% in 2023"
+          ],
+          "fuente": {
+            "titulo": "Why Synthetic Data Is Essential for Your Organization's AI-Driven Future",
+            "organizacion": "SAS Institute Inc.",
+            "autor": "Brett Wujek, Head of Product Strategy for Generative AI, SAS",
+            "fecha": "2025-01-24",
+            "url": "https://www.sas.com/content/dam/sasdam/documents/20250124/why-synthetic-data-is-essential-for-your-organizations-ai-driven-future.pdf"
+          }
+        },
+        {
+          "id": "E10",
+          "afirmacion": "Artículo en arXiv (Aug 10, 2024) discute una taxonomía, oportunidades y riesgos de ampliar el ecosistema de datos con datos sintéticos y debate criterios de evaluación para su uso en investigación y empresas.",
+          "cifras": [],
+          "fuente": {
+            "titulo": "Artificial Data, Real Insights: Evaluating Opportunities and Risks of Expanding the Data Ecosystem with Synthetic Data",
+            "organizacion": "arXiv / autores académicos",
+            "autor": "Richard Timpone; Yongwei Yang",
+            "fecha": "2024-08-10",
+            "url": "https://arxiv.org/abs/2408.15260"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T6",
+      "nombre": "Observabilidad, evaluación y monitoreo de modelos ('ML/AI observability') para operar IA a escala",
+      "descripcion": "Herramientas y prácticas de observabilidad (trazas, evaluación automática, detección de deriva y métricas de comportamiento) emergen como disciplina necesaria para operar modelos, agentes y pipelines de IA en producción y mantener confianza y trazabilidad.",
+      "impacto": {
+        "nivel": "medio",
+        "justificacion": "Mejora la resiliencia operativa, reduce riesgo de regresiones y soporta cumplimiento; impacta equipos de ingeniería y costeo de infraestructuras."
+      },
+      "madurez": {
+        "nivel": "emergente",
+        "justificacion": "Hay plataformas y casos de uso reales (Arize, integraciones con proveedores cloud), pero la práctica se está estandarizando y adaptando a agentes y modelos multimodales."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencia técnica y anuncios de integración (Arize y AWS) muestran adopción práctica en clientes y apoyo de proveedores cloud."
+      },
+      "evidencias": [
+        {
+          "id": "E11",
+          "afirmacion": "Arize define ML observability como un conjunto de prácticas que van más allá del monitoreo, incorporando evaluación, diagnóstico y análisis de deriva para modelos en producción.",
+          "cifras": [],
+          "fuente": {
+            "titulo": "ML Monitoring | Monitor Machine Learning Model Performance",
+            "organizacion": "Arize AI",
+            "autor": "Arize AI",
+            "fecha": "2025-02",
+            "url": "https://arize.com/products/ml-monitoring/"
+          }
+        },
+        {
+          "id": "E12",
+          "afirmacion": "AWS anuncia una integración entre Amazon Bedrock Agents y Arize Phoenix para trazar, evaluar y monitorizar flujos de agentes, resaltando la necesidad de trazas y evaluaciones en producción.",
+          "cifras": [],
+          "fuente": {
+            "titulo": "Amazon Bedrock Agents observability using Arize AI",
+            "organizacion": "Amazon Web Services (AWS) blog",
+            "autor": "AWS blog authors (colaboración con Arize AI)",
+            "fecha": "2025-08-01",
+            "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agents-observability-using-arize-ai/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "T7",
+      "nombre": "Despliegue en el edge y aceleradores especializados para inferencia local",
+      "descripcion": "La demanda por ejecutar inferencia de modelos (incluyendo versiones optimizadas de LLMs) en dispositivos de borde y robots impulsa adopción de plataformas edge, optimizaciones de memoria y uso de aceleradores especializados, reduciendo latencia y mejorando privacidad.",
+      "impacto": {
+        "nivel": "medio",
+        "justificacion": "Permite productos y servicios en tiempo real (robots, sensores, dispositivos conectados) y cambia requisitos de infraestructura y compras de hardware para líneas de producto."
+      },
+      "madurez": {
+        "nivel": "emergente",
+        "justificacion": "Existen soluciones y despliegues reales (Jetson, plataformas cloud-edge) y pronósticos de mercado, pero la transición masiva aún continúa en los próximos años."
+      },
+      "confianza": {
+        "nivel": "media",
+        "justificacion": "Analistas de mercado (IDC) y proveedores (NVIDIA) documentan la tendencia y muestran métricas de crecimiento, aunque parte de las cifras provienen de pronósticos de mercado con incertidumbre."
+      },
+      "evidencias": [
+        {
+          "id": "E13",
+          "afirmacion": "IDC sitúa Physical AI como mercado relevante y estima que el despliegue de Physical AI estará ampliamente potenciado por cloud; muestra cifras como un mercado global de robots/Physical AI proyectado y porcentajes de despliegue edge-cloud.",
+          "cifras": [
+            "$40B+",
+            "80%",
+            "508%"
+          ],
+          "fuente": {
+            "titulo": "IDC - Physical AI & Robotics Research",
+            "organizacion": "IDC (International Data Corporation)",
+            "autor": "IDC Research",
+            "fecha": "2026-05",
+            "url": "https://www.idc.com/ap/resource-center/physical-ai/"
+          }
+        },
+        {
+          "id": "E14",
+          "afirmacion": "NVIDIA documenta técnicas de optimización (cuantización, apagado de servicios, ajustes de pipeline) que permiten ejecutar modelos más grandes en plataformas Jetson, reclamando ahorros de memoria del orden de '10–12 GB' en algunos casos.",
+          "cifras": [
+            "10–12 GB"
+          ],
+          "fuente": {
+            "titulo": "Maximizing Memory Efficiency with Agent Skills to Run Bigger Models on NVIDIA Jetson",
+            "organizacion": "NVIDIA",
+            "autor": "Anshuman Bhat; Aditya Sahu",
+            "fecha": "2026-04-20",
+            "url": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/"
+          }
+        }
+      ]
+    }
+  ]
+}

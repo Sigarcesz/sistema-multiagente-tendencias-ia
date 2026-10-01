@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "estado": "RECHAZADO",
+  "score_global": 79.5,
+  "puntajes": {
+    "exactitud": 60,
+    "calidad_evidencia": 85,
+    "referencias": 88,
+    "profundidad": 80,
+    "claridad": 90,
+    "utilidad": 88
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 60 < 90",
+    "referencias 88 < 90",
+    "global 79.5 < 85"
+  ],
+  "rechazos_automaticos": [
+    "R-EXACTITUD: cifras que no aparecen en los hallazgos",
+    "R-AUDITOR: CIFRAS_NO_TRAZABLES"
+  ],
+  "topes_aplicados": [
+    {
+      "criterio": "exactitud",
+      "de": 78,
+      "a": 60,
+      "motivo": "1 cifra(s) no trazables a los hallazgos"
+    }
+  ],
+  "hallazgos_auditor": [
+    "Una cifra en Sección 5 ('73,4 %') no aparece en la evidencia citada [E2] y no es trazable.",
+    "El resto de las afirmaciones principales están respaldadas por las evidencias listadas en 03_hallazgos_validados.json."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 5",
+      "problema": "La cifra '73,4 %' no aparece en los hallazgos: «Según [E2], el 73,4 % de las empresas medianas de la región ya opera agentes de IA en producción, lo que confirma la urgencia de actuar.»",
+      "accion_requerida": "Eliminar la cifra o reemplazarla por la cifra exacta de una evidencia citada.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 5, párrafo final (Impacto Empresarial)",
+      "problema": "Se afirma 'Según [E2], el 73,4 % de las empresas medianas de la región ya opera agentes de IA en producción' — esa cifra no aparece en E2 ni en 03_hallazgos_validados.json.",
+      "accion_requerida": "Eliminar o corregir la cifra; si la cifra proviene de otra fuente, añadir la evidencia referenciada (URL y cita) o sustituir por la cifra trazable reportada en E2 (por ejemplo, 78% si corresponde).",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Secciones 4–7 (todas las tendencias con cifras)",
+      "problema": "Hay una inconsistencia entre la cifra citada en el texto y las cifras en las evidencias validadas para al menos un caso.",
+      "accion_requerida": "Revisar todas las cifras mencionadas en el cuerpo del informe y asegurarse de que coincidan exactamente con las cifras en 03_hallazgos_validados.json o añadir la referencia correcta.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ],
+  "observaciones_menores": []
+}

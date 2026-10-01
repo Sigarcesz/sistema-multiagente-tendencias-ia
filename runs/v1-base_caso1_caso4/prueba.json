@@ -1,0 +1,10 @@
+{
+  "caso": 4,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "descripcion": "Se insertó en la sección 5 la cifra inventada '73,4 %' atribuida a E2.",
+  "cifra_inyectada": "73,4",
+  "esperado": "verificar_informe.py la marca como cifra no trazable; RECHAZADO por exactitud factual.",
+  "inyectar_en": "writer_v1",
+  "artefacto": "informe_v1.md"
+}

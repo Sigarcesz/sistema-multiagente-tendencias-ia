@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "estado": "APROBADO",
+  "score_global": 89.4,
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 88,
+    "referencias": 94,
+    "profundidad": 78,
+    "claridad": 90,
+    "utilidad": 92
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [],
+  "hallazgos_auditor": [
+    "Todas las cifras citadas en 03_hallazgos_validados.json están trazables y tienen unidad consistente con las fuentes.",
+    "Las 7 recomendaciones están vinculadas a evidencias validadas; no se detectaron recomendaciones sin respaldo directo."
+  ],
+  "correcciones": [],
+  "observaciones_menores": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4, T1 — Impacto",
+      "problema": "La frase 'reconfigura plataformas, productos y procesos' presenta un matiz categórico sin evidencia que cuantifique alcance operacional.",
+      "accion_requerida": "Matizar la redacción (p. ej. 'puede reconfigurar' o 'tiene potencial para reconfigurar') o añadir evidencia que respalde el alcance de la reconfiguración.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 11, Referencias — entrada [E8]",
+      "problema": "La referencia a SlashData incluye URL de página comercial que puede cambiar; falta fecha de acceso.",
+      "accion_requerida": "Verificar la accesibilidad del enlace y añadir fecha de consulta; si el recurso no es persistente, incluir resumen de los datos clave extraídos.",
+      "id": "C2",
+      "prioridad": 2
+    }
+  ]
+}

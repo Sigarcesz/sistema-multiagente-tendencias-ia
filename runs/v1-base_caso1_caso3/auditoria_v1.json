@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "estado": "RECHAZADO",
+  "score_global": 85.7,
+  "puntajes": {
+    "exactitud": 82,
+    "calidad_evidencia": 80,
+    "referencias": 92,
+    "profundidad": 85,
+    "claridad": 90,
+    "utilidad": 88
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 82 < 90"
+  ],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [],
+  "hallazgos_auditor": [
+    "Sección T1 afirma 'respaldo por múltiples fuentes primarias' pero la tendencia solo cita E2: ajustar lenguaje o añadir fuentes.",
+    "Recomendación R2 cita E12 (observabilidad) como evidencia para pilots de foundation models; E12 no respalda directamente decisiones de proveedor o estrategia de pilots: aclarar o cambiar la evidencia.",
+    "E9 (SAS) reporta una previsión basada en Gartner; tratarla como proyección y no como evidencia empírica al justificar madurez/uso generalizado."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4, T1 (Madurez / Confianza)",
+      "problema": "Se afirma 'Respaldo por múltiples fuentes primarias' pero solo se referencia E2.",
+      "accion_requerida": "Modificar el texto para reflejar que la confianza se basa en E2 o añadir referencias primarias adicionales que respalden 'múltiples fuentes'.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 8, R2 (Evidencia)",
+      "problema": "R2 lista E12 como evidencia para un piloto de foundation models; E12 trata observabilidad, no estrategia de proveedores.",
+      "accion_requerida": "Sustituir E12 por una evidencia que sustente pilotos de foundation models (p. ej. casos de proveedores o estudios de adopción) o explicar explícitamente el vínculo entre observabilidad y pilotos de FMs.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "calidad_evidencia",
+      "ubicacion": "Sección 4, T5 (E9)",
+      "problema": "E9 presenta una previsión basada en Gartner citada por SAS; se usa como dato de adopción futura más que como evidencia empírica actual.",
+      "accion_requerida": "Reformular las afirmaciones que derivan de E9 para indicar que son proyecciones o buscar evidencia empírica adicional que respalde niveles de adopción actuales.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ],
+  "observaciones_menores": []
+}

@@ -1,0 +1,9 @@
+{
+  "caso": 3,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "inyectar_en": "scout",
+  "artefacto": "01_hallazgos_scout.json",
+  "descripcion": "Se agregó un campo 'recomendaciones' en T1 y una frase prescriptiva en la descripción de T2.",
+  "esperado": "validar_contrato.py devuelve SANEADO, elimina ambas partes y el orquestador registra la violación."
+}

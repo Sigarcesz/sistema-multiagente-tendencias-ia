@@ -1,0 +1,9 @@
+{
+  "caso": 7,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "descripcion": "Se insertó una afirmación citando [E99], evidencia que no existe.",
+  "esperado": "verificar_informe.py la marca como cita inexistente; RECHAZADO por referencias.",
+  "inyectar_en": "writer_v1",
+  "artefacto": "informe_v1.md"
+}

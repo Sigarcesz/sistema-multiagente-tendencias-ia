@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "estado": "RECHAZADO",
+  "score_global": 80.2,
+  "puntajes": {
+    "exactitud": 88,
+    "calidad_evidencia": 85,
+    "referencias": 50,
+    "profundidad": 80,
+    "claridad": 90,
+    "utilidad": 85
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 88 < 90",
+    "referencias 50 < 90",
+    "global 80.2 < 85"
+  ],
+  "rechazos_automaticos": [
+    "R-REFERENCIAS: citas a evidencias que no existen en los hallazgos validados",
+    "R-AUDITOR: CITAS_INEXISTENTES"
+  ],
+  "topes_aplicados": [
+    {
+      "criterio": "referencias",
+      "de": 80,
+      "a": 50,
+      "motivo": "citas a evidencias inexistentes o rechazadas"
+    }
+  ],
+  "hallazgos_auditor": [
+    "Cita inexistente E99 en Sección 5: la afirmación sobre reducción de costos operativos no tiene evidencia trazable.",
+    "Resumen ejecutivo afirma priorizar gobernanza y seguridad; consistente con recomendaciones pero contiene referencia a evidencia inexistente (E99)."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4 (T1) y 11 (Referencias)",
+      "problema": "Afirmaciones con cifras precisas (por ejemplo en E2 y E5) deben corresponder exactamente con la fuente citada; el auditor mecánico no detectó discrepancias, pero requieren confirmación manual.",
+      "accion_requerida": "Verificar que las cifras citadas (p. ej. '78%', '$33.9B', 'over 320 companies', '220%') aparecen en las páginas originales con las mismas unidades; corregir unidades o notas si difieren.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 5",
+      "problema": "Se cita E99, que no existe en los hallazgos validados.",
+      "accion_requerida": "Eliminar la afirmación o citar una evidencia existente que la respalde.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 5, párrafo 'Además, la adopción de estas tecnologías reduce ... [E99].'",
+      "problema": "Cita a evidencia inexistente (E99) que no aparece en la lista de referencias ni en los hallazgos validados.",
+      "accion_requerida": "Eliminar la afirmación o sustituirla por una fuente válida y trazable; si la cifra proviene de un hallazgo, incluir la evidencia en 03_hallazgos_contrato.json y rerun la verificación.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ],
+  "observaciones_menores": []
+}

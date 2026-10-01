@@ -1,0 +1,17 @@
+{"evidencias": [
+  {"id": "E1", "veredicto": "RECHAZADA", "motivo": "La página contiene 'tens of thousands' y '85%' pero no aparece la cifra '4.7x' mencionada en la afirmación."},
+  {"id": "E2", "veredicto": "VERIFICADA", "motivo": "El PDF AI Index 2025 contiene '78% of organizations reported using AI in 2024' y '$33.9 billion' en la sección de principales conclusiones."},
+  {"id": "E3", "veredicto": "RECHAZADA", "motivo": "La página EUR-Lex no devuelve texto legible (bloqueo/dinámica); no es posible confirmar el contenido."},
+  {"id": "E4", "veredicto": "VERIFICADA", "motivo": "La página NIST confirma que AI RMF fue publicada el 26/01/2023 y dispone de perfiles, incluida la variante para generative AI."},
+  {"id": "E5", "veredicto": "VERIFICADA", "motivo": "El informe CrowdStrike menciona 'infiltrated over 320 companies', '220% year-over-year' y '81%' tal como se cita."},
+  {"id": "E6", "veredicto": "VERIFICADA", "motivo": "El Microsoft Digital Defense Report 2025 documenta el uso de IA por actores maliciosos y contiene la nota de 'Microsoft fiscal year 2025 (July 1, 2024-June 30, 2025)'."},
+  {"id": "E7", "veredicto": "VERIFICADA", "motivo": "El artículo de GitHub muestra el experimento con '55% faster' y los tiempos '1 hour and 11 minutes' vs '2 hours and 41 minutes'."},
+  {"id": "E8", "veredicto": "VERIFICADA", "motivo": "La página SlashData muestra '75%' en Q1 2026 y '61%' en Q1 2024, según el texto del informe."},
+  {"id": "E9", "veredicto": "VERIFICADA", "motivo": "El documento SAS contiene la cita: 'By 2026, 75% of businesses... up from less than 5% in 2023' (fuente: Gartner)."},
+  {"id": "E10", "veredicto": "VERIFICADA", "motivo": "La página arXiv presenta el título y resumen del paper sobre datos sintéticos y coincide con la referencia citada."},
+  {"id": "E11", "veredicto": "VERIFICADA", "motivo": "La página de Arize define ML observability y describe prácticas que van más allá del monitoreo, coincidiendo con la afirmación."},
+  {"id": "E12", "veredicto": "VERIFICADA", "motivo": "El blog de AWS describe la integración entre Amazon Bedrock Agents y Arize Phoenix para trazabilidad y observabilidad."},
+  {"id": "E13", "veredicto": "VERIFICADA", "motivo": "La página IDC incluye '$40B+', '80%' y '508%' tal como aparecen en el texto y en sus resúmenes estadísticos."},
+  {"id": "E14", "veredicto": "VERIFICADA", "motivo": "El blog de NVIDIA indica optimizaciones que permiten recuperar '10–12 GB' de memoria, consistente con la cifra citada."},
+  {"id": "E15", "veredicto": "RECHAZADA", "motivo": "El recurso es inaccesible según la verificación mecánica (error de conexión); la evidencia no puede rastrearse."}
+]}

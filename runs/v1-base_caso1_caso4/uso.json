@@ -1,0 +1,36 @@
+{
+  "run": "runs/v1-base_caso1_caso4",
+  "modo": "prueba",
+  "duracion_segundos": 259.7,
+  "por_agente": {
+    "quality-auditor": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 3,
+      "requests": 15,
+      "input_tokens": 118202,
+      "output_tokens": 6173,
+      "segundos": 84.2
+    },
+    "report-writer": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 1,
+      "requests": 6,
+      "input_tokens": 60898,
+      "output_tokens": 6724,
+      "segundos": 62.9
+    },
+    "orquestador": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 1,
+      "requests": 19,
+      "input_tokens": 231049,
+      "output_tokens": 8108,
+      "segundos": 259.7
+    }
+  },
+  "total": {
+    "requests": 40,
+    "input_tokens": 410149,
+    "output_tokens": 21005
+  }
+}

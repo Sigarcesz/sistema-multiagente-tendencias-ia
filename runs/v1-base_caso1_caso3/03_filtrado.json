@@ -1,0 +1,21 @@
+{
+  "evidencias_entrada": 14,
+  "evidencias_validas": 12,
+  "evidencias_rechazadas": [
+    {
+      "id": "E1",
+      "tendencia": "T1",
+      "motivo": "La página respalda 'tens of thousands' y '85%' pero NO contiene '4.7x' (menciona 'up to 4x'), por tanto la cifra no coincide.",
+      "url": "https://press.aboutamazon.com/2024/4/amazon-bedrock-launches-new-capabilities-as-tens-of-thousands-of-customers-choose-it-as-the-foundation-to-build-and-scale-secure-generative-ai-applications"
+    },
+    {
+      "id": "E3",
+      "tendencia": "T2",
+      "motivo": "Contenido no legible/bloqueado (webfetch devolvió error); no fue posible confirmar la regulación ni las fechas.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689"
+    }
+  ],
+  "tendencias_entrada": 7,
+  "tendencias_validas": 7,
+  "tendencias_eliminadas": []
+}

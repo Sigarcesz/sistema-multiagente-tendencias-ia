@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "estado": "APROBADO",
+  "score_global": 89.4,
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 85,
+    "referencias": 95,
+    "profundidad": 80,
+    "claridad": 90,
+    "utilidad": 92
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [],
+  "hallazgos_auditor": [
+    "Clasificaciones por tendencia y recomendaciones están presentes y vinculadas a evidencias validas.",
+    "No se detectan cifras no trazables ni citas inexistentes según verificacion mecanica.",
+    "Algunas afirmaciones de 'nivel de confianza: alta' (p. ej. T4) dependen de evidencia antigua o de encuestas; considerar justificarlas adicionalmente."
+  ],
+  "correcciones": [],
+  "observaciones_menores": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4, T4 (Automatización del desarrollo)",
+      "problema": "Se declara 'Nivel de confianza: alta' pero la evidencia citada es E7 (2022) y E8 (encuesta 2026); la base para 'alta' no está explícita en el texto.",
+      "accion_requerida": "Añadir una referencia primaria reciente que respalde confianza alta o rebajar la confianza a 'media' y aclarar la razón.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 11, Referencias (E13 y E14)",
+      "problema": "Las cifras numéricas citadas desde E13 (p. ej. '$40B+', '80%', '508%') y E14 ('10–12 GB') no incluyen localización precisa dentro de la fuente.",
+      "accion_requerida": "Indicar la página o figura exacta de la fuente que contiene esas cifras o reemplazar la referencia por una URL/PDF que las muestre claramente.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "profundidad",
+      "ubicacion": "Sección 9, Hoja de Ruta",
+      "problema": "La hoja de ruta lista plazos y acciones pero no define criterios cuantitativos ni umbrales para decidir escalado desde 'Evaluar' a 'Incorporar'.",
+      "accion_requerida": "Agregar criterios de decisión (p. ej. indicadores e umbrales de piloto) y métricas de éxito para cada recomendación en la hoja de ruta.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ]
+}

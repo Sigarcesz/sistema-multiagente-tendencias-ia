@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "estado": "APROBADO",
+  "score_global": 88.6,
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 85,
+    "referencias": 95,
+    "profundidad": 80,
+    "claridad": 90,
+    "utilidad": 88
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [],
+  "hallazgos_auditor": [
+    "Las siete tendencias están claramente identificadas y vinculadas a las evidencias validadas; las recomendaciones siguen lógicamente de los hallazgos.",
+    "Las referencias citadas en el informe coinciden con las entradas de 03_hallazgos_validados.json y están presentes en la sección de referencias.",
+    "Los indicadores propuestos en recomendaciones carecen de metas cuantitativas o plazos, lo que reduce la capacidad de medir el éxito.",
+    "La metodología declara verificación independiente de evidencia pero no describe el alcance ni el criterio de exclusión; conviene aclararlo para trazabilidad."
+  ],
+  "correcciones": [],
+  "observaciones_menores": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 11 / Hallazgo T1 (E2)",
+      "problema": "El hallazgo E2 en 03_hallazgos_validados.json cita cifras concretas (p. ej. 78% y $33.9B) que deberían confirmarse explícitamente en la referencia PDF citada.",
+      "accion_requerida": "Verificar en la fuente E2 que las cifras citadas aparecen textualmente; si no, ajustar el texto o agregar la cita de página o sección correspondiente.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "utilidad",
+      "ubicacion": "Sección 8, indicadores (todas las recomendaciones)",
+      "problema": "Los indicadores carecen de metas, umbrales o plazos medibles (p. ej. 'número de pilotos' sin objetivo ni fecha).",
+      "accion_requerida": "Definir metas iniciales o plazos para cada indicador (por ejemplo, metas 0–6 meses, 6–18 meses) o indicar que se establecerán en la fase de gobernanza.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "claridad",
+      "ubicacion": "Sección 3, párrafo 1 (Metodología)",
+      "problema": "Se menciona 'verificación independiente de evidencia' sin describir alcance, criterios ni responsables.",
+      "accion_requerida": "Añadir 1–2 frases que indiquen quién realizó la verificación, qué pasos se siguieron y el periodo de búsqueda de fuentes.",
+      "id": "C3",
+      "prioridad": 3
+    }
+  ]
+}

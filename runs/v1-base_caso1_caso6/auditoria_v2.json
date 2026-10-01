@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "estado": "RECHAZADO",
+  "score_global": 77.0,
+  "puntajes": {
+    "exactitud": 75,
+    "calidad_evidencia": 70,
+    "referencias": 95,
+    "profundidad": 50,
+    "claridad": 90,
+    "utilidad": 85
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "exactitud 75 < 90",
+    "profundidad 50 < 70",
+    "global 77.0 < 85"
+  ],
+  "rechazos_automaticos": [
+    "R-AUDITOR: Inconsistencia significativa en el nivel de confianza: el archivo de hallazgos validado (03_hallazgos_validados.json) indica 'confianza' = 'alta' para T1, mientras que el informe dice 'nivel de confianza: medio' y afirma que la evidencia está limitada a una sola fuente. Esta contradicción afecta la exactitud general del documento."
+  ],
+  "topes_aplicados": [
+    {
+      "criterio": "profundidad",
+      "de": 75,
+      "a": 50,
+      "motivo": "solo 1 tendencia(s) respaldadas; el mínimo es 3"
+    }
+  ],
+  "hallazgos_auditor": [
+    "El informe está bien estructurado y las recomendaciones son accionables, pero hay discrepancias entre el contenido del informe y los hallazgos validados."
+  ],
+  "correcciones": [
+    {
+      "criterio": "exactitud",
+      "ubicacion": "Sección 4 (T1) y Sección 1 (Resumen Ejecutivo)",
+      "problema": "El informe declara 'nivel de confianza: medio' mientras que los hallazgos validados establecen 'confianza: alta' para T1.",
+      "accion_requerida": "Alinear el texto del informe con los hallazgos validados: o bien justificar por qué la confianza debe corregirse a 'media' (citando evidencia adicional que limite la confianza) o corregir el informe para reflejar 'alta' tal como aparece en 03_hallazgos_validados.json.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 11 (Referencias)",
+      "problema": "La referencia E2 está presente y correctamente citada, pero el informe no incorpora las cifras clave (p. ej. 78%, $33.9B) en el cuerpo donde apoyarían afirmaciones cuantitativas.",
+      "accion_requerida": "Incluir las cifras exactas tomadas de E2 en los pasajes relevantes o aclarar por qué esas cifras no se usan; asegurarse de que toda cifra citada tenga la referencia inmediata.",
+      "id": "C2",
+      "prioridad": 2
+    },
+    {
+      "criterio": "calidad_evidencia",
+      "ubicacion": "Sección 3 (Metodología) y Sección 4 (Evidencia citada)",
+      "problema": "El informe afirma que la evidencia central está 'limitada a esa fuente' pero los hallazgos validan respaldo por múltiples fuentes primarias.",
+      "accion_requerida": "Precisar en la metodología cuáles fuentes primarias apoyan la conclusión o corregir la afirmación; si solo se usa E2, explicitar que las conclusiones se basan en un único informe primario y ajustar el nivel de confianza y lenguaje en consecuencia.",
+      "id": "C3",
+      "prioridad": 3
+    },
+    {
+      "criterio": "profundidad",
+      "ubicacion": "Documento",
+      "problema": "El informe cubre menos de 3 tendencias respaldadas por evidencia.",
+      "accion_requerida": "No corregible por el escritor: requiere nueva investigación del Trend Scout.",
+      "corregible_por_escritor": false,
+      "id": "C4",
+      "prioridad": 4
+    },
+    {
+      "criterio": "profundidad",
+      "ubicacion": "Secciones 5–9 (Impacto, Riesgos, Oportunidades, Recomendaciones, Hoja de Ruta)",
+      "problema": "Solo se analiza una tendencia (T1); el informe ofrece buen análisis, pero la cobertura de alternativas y escenarios podría ser más granular respecto a variaciones por industria y tamaño de empresa.",
+      "accion_requerida": "Ampliar el análisis con al menos dos sub-escenarios por industria o tamaño (p. ej. PYME vs. gran empresa) o aclarar que el informe se limita a un análisis generalizable; si el alcance es intencional, indicarlo explícitamente.",
+      "id": "C5",
+      "prioridad": 5
+    }
+  ],
+  "observaciones_menores": []
+}

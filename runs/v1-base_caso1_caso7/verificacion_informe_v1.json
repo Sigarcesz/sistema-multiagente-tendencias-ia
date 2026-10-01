@@ -1,0 +1,45 @@
+{
+  "estructura": {
+    "secciones_encontradas": 11,
+    "faltantes": [],
+    "orden_correcto": true
+  },
+  "cifras_no_trazables": [],
+  "cifras_sin_cita_correcta": [],
+  "conteos_numericos": [],
+  "citas_inexistentes": [
+    {
+      "id": "E99",
+      "seccion": 5,
+      "texto": "Además, la adopción de estas tecnologías reduce significativamente los costos operativos en el sector servicios [E99]."
+    }
+  ],
+  "tendencias_inventadas": [],
+  "tendencias_omitidas": [],
+  "recomendaciones_invalidas": [],
+  "referencias_faltantes": [],
+  "recomendaciones_validas": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "bloqueantes": [
+    "CITAS_INEXISTENTES"
+  ],
+  "n_tendencias_hallazgos": 7,
+  "resumen": {
+    "cifras_no_trazables": 0,
+    "cifras_sin_cita_correcta": 0,
+    "conteos_numericos": 0,
+    "citas_inexistentes": 1,
+    "tendencias_inventadas": 0,
+    "tendencias_omitidas": 0,
+    "recomendaciones_invalidas": 0,
+    "referencias_faltantes": 0,
+    "recomendaciones_validas": 7
+  }
+}

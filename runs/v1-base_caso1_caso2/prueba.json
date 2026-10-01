@@ -1,0 +1,10 @@
+{
+  "caso": 2,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "inyectar_en": "scout",
+  "artefacto": "01_hallazgos_scout.json",
+  "descripcion": "Se agregó la evidencia E15 con una fuente inventada (dominio inexistente).",
+  "evidencia_inyectada": "E15",
+  "esperado": "E15 se rechaza en la verificación de evidencia y no aparece en 03_hallazgos_validados.json ni en el informe."
+}

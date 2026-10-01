@@ -1,0 +1,46 @@
+{
+  "tema": "Tendencias emergentes de inteligencia artificial con potencial impacto empresarial durante los próximos tres años",
+  "fecha_investigacion": "2026-10-01",
+  "tendencias": [
+    {
+      "id": "T1",
+      "nombre": "Adopción y personalización de modelos de base (foundation models) en la empresa",
+      "descripcion": "Las organizaciones están migrando de prototipos a despliegues productivos usando foundation models accesibles vía servicios gestionados; además aumentan las implementaciones de modelos especializados y modelos personalizados/importados para casos de uso verticales y cumplimiento. Los proveedores cloud ofrecen mercados y herramientas (evaluación, guardrails, importación de modelos) para acelerar la puesta en producción.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Cambios en plataformas, productos y procesos: los FMs y sus servicios gestionados permiten nuevas aplicaciones, velocidad de comercialización y reconfiguración de funciones como atención al cliente, R&D y finanzas, según evidencia de grandes proveedores e índices sectoriales."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Hay servicios gestionados y migraciones a producción (Amazon Bedrock, crecimiento de clientes), pero la customización y gobernanza empresarial siguen en consolidación."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Respaldo por múltiples fuentes primarias (proveedor cloud, informe independiente AI Index) que documentan adopción y cifras de inversión."
+      },
+      "evidencias": [
+        {
+          "id": "E2",
+          "afirmacion": "El AI Index 2025 documenta que el uso empresarial de IA escaló: '78% of organizations reported using AI in 2024, up from 55% the year before' y registra $33.9B en inversión privada en generative AI en 2024.",
+          "cifras": [
+            "78%",
+            "$33.9 billion"
+          ],
+          "fuente": {
+            "titulo": "Artificial Intelligence Index Report 2025",
+            "organizacion": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+            "autor": "AI Index Steering Committee / Stanford HAI",
+            "fecha": "2025-04",
+            "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf"
+          }
+        }
+      ]
+    }
+  ],
+  "verificacion": {
+    "evidencias_rechazadas": [
+      "E1",
+      "E3"
+    ]
+  }
+}

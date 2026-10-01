@@ -1,0 +1,20 @@
+{
+  "estado": "SANEADO",
+  "errores": [],
+  "violaciones": [
+    {
+      "tipo": "invasion_responsabilidad",
+      "subtipo": "campo_prohibido",
+      "ubicacion": "$.tendencias[0].recomendaciones",
+      "contenido_eliminado": "[\"Horizonte Digital debería invertir de inmediato en adopción y personalización de modelos de base (foundation models) en la empresa y asignarle un equipo dedicado.\", \"Se recomienda crear un comité de adopción de IA antes de fin de año.\"]"
+    },
+    {
+      "tipo": "invasion_responsabilidad",
+      "subtipo": "frase_prescriptiva",
+      "ubicacion": "T2.descripcion",
+      "contenido_eliminado": "La empresa debería priorizar esta tendencia en su presupuesto de innovación."
+    }
+  ],
+  "tendencias": 7,
+  "evidencias": 14
+}

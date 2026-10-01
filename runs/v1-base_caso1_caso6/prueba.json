@@ -1,0 +1,9 @@
+{
+  "caso": 6,
+  "run_base": "v1-base_caso1",
+  "sin_reinvestigacion": true,
+  "inyectar_en": "validados",
+  "artefacto": "03_hallazgos_validados.json",
+  "descripcion": "Los hallazgos validados se redujeron a una sola tendencia (T1) con una sola evidencia.",
+  "esperado": "El escritor no puede agregar información; profundidad < 70 en cada auditoría; tras 3 correcciones el estado es NO_APROBADO y no se genera DOCX."
+}

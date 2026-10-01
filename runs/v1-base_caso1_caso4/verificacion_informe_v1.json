@@ -1,0 +1,45 @@
+{
+  "estructura": {
+    "secciones_encontradas": 11,
+    "faltantes": [],
+    "orden_correcto": true
+  },
+  "cifras_no_trazables": [
+    {
+      "cifra": "73,4 %",
+      "seccion": 5,
+      "texto": "Según [E2], el 73,4 % de las empresas medianas de la región ya opera agentes de IA en producción, lo que confirma la urgencia de actuar."
+    }
+  ],
+  "cifras_sin_cita_correcta": [],
+  "conteos_numericos": [],
+  "citas_inexistentes": [],
+  "tendencias_inventadas": [],
+  "tendencias_omitidas": [],
+  "recomendaciones_invalidas": [],
+  "referencias_faltantes": [],
+  "recomendaciones_validas": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "bloqueantes": [
+    "CIFRAS_NO_TRAZABLES"
+  ],
+  "n_tendencias_hallazgos": 7,
+  "resumen": {
+    "cifras_no_trazables": 1,
+    "cifras_sin_cita_correcta": 0,
+    "conteos_numericos": 0,
+    "citas_inexistentes": 0,
+    "tendencias_inventadas": 0,
+    "tendencias_omitidas": 0,
+    "recomendaciones_invalidas": 0,
+    "referencias_faltantes": 0,
+    "recomendaciones_validas": 7
+  }
+}

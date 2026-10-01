@@ -1,0 +1,105 @@
+{
+  "evidencias": [
+    {
+      "id": "E1",
+      "url": "https://press.aboutamazon.com/2024/4/amazon-bedrock-launches-new-capabilities-as-tens-of-thousands-of-customers-choose-it-as-the-foundation-to-build-and-scale-secure-generative-ai-applications",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://press.aboutamazon.com/2024/4/amazon-bedrock-launches-new-capabilities-as-tens-of-thousands-of-customers-choose-it-as-the-foundation-to-build-and-scale-secure-generative-ai-applications"
+    },
+    {
+      "id": "E2",
+      "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf"
+    },
+    {
+      "id": "E3",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689",
+      "estado": "accesible",
+      "http": 202,
+      "url_final": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689"
+    },
+    {
+      "id": "E4",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "id": "E5",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2025-threat-hunting-report-ai-weapon-target/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2025-threat-hunting-report-ai-weapon-target/"
+    },
+    {
+      "id": "E6",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Microsoft-Digital-Defense-Report-2025-v5-21Nov25.pdf",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Microsoft-Digital-Defense-Report-2025-v5-21Nov25.pdf"
+    },
+    {
+      "id": "E7",
+      "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+    },
+    {
+      "id": "E8",
+      "url": "https://www.slashdata.co/post/75-of-professional-developers-are-using-ai-assisted-tools-insights-on-developer-tools-usage-and-me",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://www.slashdata.co/post/75-of-professional-developers-are-using-ai-assisted-tools-insights-on-developer-tools-usage-and-me"
+    },
+    {
+      "id": "E9",
+      "url": "https://www.sas.com/content/dam/sasdam/documents/20250124/why-synthetic-data-is-essential-for-your-organizations-ai-driven-future.pdf",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://www.sas.com/content/dam/sasdam/documents/20250124/why-synthetic-data-is-essential-for-your-organizations-ai-driven-future.pdf"
+    },
+    {
+      "id": "E10",
+      "url": "https://arxiv.org/abs/2408.15260",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://arxiv.org/abs/2408.15260"
+    },
+    {
+      "id": "E11",
+      "url": "https://arize.com/products/ml-monitoring/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://arize.com/products/ml-monitoring/"
+    },
+    {
+      "id": "E12",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agents-observability-using-arize-ai/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agents-observability-using-arize-ai/"
+    },
+    {
+      "id": "E13",
+      "url": "https://www.idc.com/ap/resource-center/physical-ai/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://www.idc.com/ap/resource-center/physical-ai/"
+    },
+    {
+      "id": "E14",
+      "url": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/",
+      "estado": "accesible",
+      "http": 200,
+      "url_final": "https://developer.nvidia.com/blog/maximizing-memory-efficiency-to-run-bigger-models-on-nvidia-jetson/"
+    }
+  ],
+  "resumen": {
+    "accesible": 14
+  }
+}
