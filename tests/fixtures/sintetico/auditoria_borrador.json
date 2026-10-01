@@ -1,0 +1,3 @@
+{"_nota": "DATOS FICTICIOS para smoke_test.py",
+ "puntajes": {"exactitud": 95, "calidad_evidencia": 88, "referencias": 95, "profundidad": 80, "claridad": 90, "utilidad": 88},
+ "hallazgos": [], "bloqueantes_auditor": [], "correcciones": []}
