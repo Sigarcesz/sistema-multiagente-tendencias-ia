@@ -1,0 +1,6 @@
+{"tendencia": "T4", "evidencias": [
+  {"id": "E11", "veredicto": "VERIFICADA", "motivo": "El informe de Deloitte (2026 Retail Industry Global Outlook) incluye la encuesta a 330 ejecutivos y en la sección ‘Marketing and customer experience’ indica que 67% de los ejecutivos esperan tener capacidades de personalización impulsadas por IA dentro del próximo año; título y organización coinciden."},
+  {"id": "E12", "veredicto": "VERIFICADA", "motivo": "El reporte 'The state of enterprise AI' de OpenAI (17 Dec 2025) contiene la frase 'customer service and content generation now represent approximately 20% of API activity' y el título/organización coinciden con la fuente citada."},
+  {"id": "E13", "veredicto": "VERIFICADA", "motivo": "El preprint arXiv 'CustomerSim' contiene el extracto 'UserGRPO raises the decision alignment... from 0.417 to 0.652, a gain of 23.5 points' y las cifras 0.417/0.652/23.5 aparecen en el texto; título y autoría coinciden."},
+  {"id": "E14", "veredicto": "VERIFICADA", "motivo": "El Stanford Emerging Technology Review (SETR 2026) describe la arquitectura multimodal (cita a Emu: genera imagen y luego video) y documenta las cifras de inversión ($244.22 billion in 2025; $33.94 billion in 2024); título y organización coinciden."}
+]}

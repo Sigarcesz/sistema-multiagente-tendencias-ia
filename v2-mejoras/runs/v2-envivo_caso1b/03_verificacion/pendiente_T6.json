@@ -1,0 +1,124 @@
+{
+  "tendencia": {
+    "id": "T6",
+    "nombre": "Gobernanza, cumplimiento y gestión del riesgo de modelos AI",
+    "descripcion": "Normativas, marcos de gestión de riesgo y prácticas de auditoría (p. ej. watermarking, validación de modelos, control de proveedores) se están consolidando como requisitos operativos para empresas que usan IA. Los marcos regulatorios y de estándares exigen documentación, transparencia y procesos de gobernanza internos; paralelamente la investigación y la comunidad técnica proponen técnicas (watermarking, tests de robustez) que facilitan la auditoría y la atribución. En conjunto, esto está moviendo el cumplimiento y la gestión de riesgo desde etapas piloto hacia adopción institucional en organizaciones que dependen de modelos de IA.",
+    "impacto": {
+      "nivel": "alto",
+      "justificacion": "Obligaciones legales y marcos como el AI Act de la UE y el NIST AI RMF requieren cambios en procesos, documentación y control de terceros, afectando gobernanza, compras y operaciones centrales."
+    },
+    "madurez": {
+      "nivel": "en_adopcion",
+      "justificacion": "Existen marcos y regulaciones publicados (p. ej. NIST AI RMF, AI Act) y técnicas de auditoría en la literatura académica; la implementación práctica está creciendo pero aún se está estandarizando."
+    },
+    "confianza": {
+      "nivel": "alta",
+      "justificacion": "Evidencia consistente y reciente de fuentes regulatorias (Comisión Europea), de estándares/organismos (NIST) y de la literatura académica sobre técnicas de auditoría (watermarking)."
+    },
+    "id_candidata": "T6"
+  },
+  "evidencias": [
+    {
+      "evidencia": {
+        "id": "E19",
+        "afirmacion": "El NIST AI RMF señala que la gobernanza es un requisito continuo para la gestión del riesgo de IA e incluye actividades relacionadas con recursos de terceros.",
+        "cifras": [],
+        "extracto": "to governance is a continual and intrinsic requirement for effective AI risk management",
+        "fuente": {
+          "titulo": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "organizacion": "National Institute of Standards and Technology",
+          "autor": "National Institute of Standards and Technology",
+          "fecha": "2023-01",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+          "tipo": "organismo"
+        },
+        "id_local": "E1"
+      },
+      "chequeo_mecanico": {
+        "id": "E19",
+        "tendencia": "T6",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/88fe07c03eb03177.txt",
+        "cifras": [],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    },
+    {
+      "evidencia": {
+        "id": "E20",
+        "afirmacion": "La AI Act de la Unión Europea establece obligaciones basadas en riesgo para desarrolladores y desplegadores, incluyendo requisitos de documentación y transparencia para evaluar el cumplimiento.",
+        "cifras": [
+          "1 August 2024",
+          "2 August 2026"
+        ],
+        "extracto": "The AI Act sets out a risk-based rules for AI developers and deployers regarding specific uses of AI.",
+        "fuente": {
+          "titulo": "AI Act | Shaping Europe’s digital future",
+          "organizacion": "European Commission",
+          "autor": "European Commission",
+          "fecha": "2026-08-03",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "tipo": "organismo"
+        },
+        "id_local": "E2"
+      },
+      "chequeo_mecanico": {
+        "id": "E20",
+        "tendencia": "T6",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/40bdc44a193108b6.txt",
+        "cifras": [
+          {
+            "cifra": "1 August 2024",
+            "encontrada": true
+          },
+          {
+            "cifra": "2 August 2026",
+            "encontrada": true
+          }
+        ],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    },
+    {
+      "evidencia": {
+        "id": "E21",
+        "afirmacion": "Investigadores proponen el watermarking de salida de modelos como técnica para mitigar daños y facilitar la detección y atribución del contenido generado por IA.",
+        "cifras": [],
+        "extracto": "Potential harms of large language models can be mitigated by watermarking model output,",
+        "fuente": {
+          "titulo": "A Watermark for Large Language Models",
+          "organizacion": "arXiv / ICML",
+          "autor": "John Kirchenbauer et al.",
+          "fecha": "2024-05-01",
+          "url": "https://arxiv.org/abs/2301.10226",
+          "tipo": "academica"
+        },
+        "id_local": "E3"
+      },
+      "chequeo_mecanico": {
+        "id": "E21",
+        "tendencia": "T6",
+        "url": "https://arxiv.org/abs/2301.10226",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/9e76b24336d001e7.txt",
+        "cifras": [],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    }
+  ]
+}

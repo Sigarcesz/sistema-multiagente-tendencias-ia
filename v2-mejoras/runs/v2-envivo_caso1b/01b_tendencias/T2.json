@@ -1,0 +1,61 @@
+{
+  "id": "T2",
+  "nombre": "Agentes autónomos y automatización avanzada del trabajo",
+  "descripcion": "Uso creciente de agentes AI que delegan tareas, orquestan herramientas y ejecutan flujos de trabajo de largo horizonte en funciones como soporte, legal y finanzas. Estas soluciones combinan LLMs con conectores a sistemas internos y prácticas de ‘agent engineering’ para manejar tareas multi‑paso y automatizaciones complejas.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "Las fuentes muestran reubicación de tareas a IA (delegación del 20% de trabajadores), despliegues en producción en empresas y uso transversal en funciones, lo que sugiere cambio en procesos clave de soporte, finanzas y cumplimiento."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Encuestas y estudios de 2026 documentan adopciones en producción y pilotos (p. ej. 57% en producción entre encuestados técnicos) pero la adopción empresarial completa y la gobernanza siguen siendo parciales."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Evidencia reciente y consistente de tres tipos de fuentes independientes (proveedor de herramientas/encuesta de ingeniería, consultora global y estudio académico) que reportan despliegues, uso por función y datos de uso a escala."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Una encuesta de profesionales de ingeniería y producto muestra que una mayoría relevante ya tiene agentes en producción y que los equipos usan agentes para atención al cliente y automatización interna.",
+      "cifras": ["over 1,300 professionals", "57.3%", "30.4%"],
+      "extracto": "57.3% now have agents running in production environments",
+      "fuente": {
+        "titulo": "State of Agent Engineering",
+        "organizacion": "LangChain",
+        "autor": "LangChain",
+        "fecha": "2026-06-12",
+        "url": "https://www.langchain.com/state-of-agent-engineering",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Un estudio académico que analiza cuentas de ChatGPT Enterprise documenta uso rápido y difundido del producto entre organizaciones y muestra que el uso abarca múltiples tareas de conocimiento y funciones profesionales.",
+      "cifras": ["over 1,500 organizations", "over 17 million messages"],
+      "extracto": "the worker-level sample we analyze at the six-month adoption horizon includes over 1,500 organizations and over 17 million messages",
+      "fuente": {
+        "titulo": "How Organizations Use AI: Evidence from ChatGPT",
+        "organizacion": "arXiv / authors (Chatterji et al.)",
+        "autor": "Aaron Chatterji et al.",
+        "fecha": "2026-08-12",
+        "url": "https://arxiv.org/abs/2608.12236",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Un informe de consultoría señala que la adopción de IA está expandiéndose por funciones (más alta en tecnología/IT) aunque el progreso sigue siendo desigual y la transformación del trabajo está en curso.",
+      "cifras": ["59%", "43%", "42%", "37%", "June-2026"],
+      "extracto": "deployment remains highest in technology and IT (59%)",
+      "fuente": {
+        "titulo": "Transforming the Enterprise 2026",
+        "organizacion": "KPMG",
+        "autor": "KPMG",
+        "fecha": "2026-06",
+        "url": "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/06/transforming-the-enterprise-2026.pdf.coredownload.inline.pdf",
+        "tipo": "consultora"
+      }
+    }
+  ]
+}

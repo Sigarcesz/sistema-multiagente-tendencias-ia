@@ -1,0 +1,66 @@
+{
+  "tema": "Tendencias emergentes de inteligencia artificial con potencial impacto empresarial durante los próximos tres años",
+  "fecha_investigacion": "2026-10-02",
+  "candidatas": [
+    {
+      "id": "T1",
+      "nombre": "Modelos de lenguaje especializados para empresas (LLMs verticales)",
+      "descripcion_breve": "Transformación hacia LLMs afinados o adaptados a dominios específicos (salud, finanzas, legal, seguros) para reducir alucinaciones y aumentar valor empresarial.",
+      "consultas_sugeridas": [
+        "enterprise fine-tuned LLM adoption 2026",
+        "vertical LLMs healthcare finance legal enterprise use cases 2026",
+        "industry-specific foundation models 2026 adoption"
+      ]
+    },
+    {
+      "id": "T2",
+      "nombre": "Agentes autónomos y automatización avanzada del trabajo",
+      "descripcion_breve": "Uso creciente de agentes AI que delegan tareas, orquestan herramientas y ejecutan flujos de trabajo de largo horizonte en funciones como soporte, legal y finanzas.",
+      "consultas_sugeridas": [
+        "AI agents transforming work 2026 enterprise adoption",
+        "agentic AI RPA LLMs business use cases 2026",
+        "task automation agents knowledge workers 2026"
+      ]
+    },
+    {
+      "id": "T3",
+      "nombre": "IA generativa aplicada al desarrollo de software (code assistants)",
+      "descripcion_breve": "Herramientas generativas y agentes que aceleran codificación, pruebas y revisión, cambiando la productividad y los riesgos de desarrollo de software en las empresas.",
+      "consultas_sugeridas": [
+        "AI code generation enterprise 2026 Copilot adoption",
+        "AI-assisted software development productivity 2026",
+        "enterprise code assistants risks governance 2026"
+      ]
+    },
+    {
+      "id": "T4",
+      "nombre": "IA multimodal y generación audiovisual a escala",
+      "descripcion_breve": "Modelos multimodales que integran texto, imagen, audio y video generan contenido personalizado para marketing, formación y atención al cliente, y plantean desafíos de veracidad.",
+      "consultas_sugeridas": [
+        "multimodal AI enterprises 2026 text image video audio",
+        "generative video AI marketing use cases 2026",
+        "multimodal models customer experience personalization 2026"
+      ]
+    },
+    {
+      "id": "T5",
+      "nombre": "IA en el borde y procesamiento en tiempo real",
+      "descripcion_breve": "Despliegue de modelos ligeros y aceleradores hardware en dispositivos y gateways para inferencia en tiempo real en manufactura, retail y dispositivos IoT.",
+      "consultas_sugeridas": [
+        "edge AI on-device inference 2026 enterprise use cases",
+        "real-time AI inference low latency industrial 2026",
+        "AI accelerators edge devices 2026"
+      ]
+    },
+    {
+      "id": "T6",
+      "nombre": "Gobernanza, cumplimiento y gestión del riesgo de modelos AI",
+      "descripcion_breve": "Normativas, marcos de gestión de riesgo y prácticas de auditoría (watermarking, validación, control de proveedores) se consolidan como requisitos operativos para empresas que usan AI.",
+      "consultas_sugeridas": [
+        "AI governance model risk management 2026 regulation",
+        "watermarking model provenance auditing 2026",
+        "NIST AI RMF 2026 enterprise guidance"
+      ]
+    }
+  ]
+}

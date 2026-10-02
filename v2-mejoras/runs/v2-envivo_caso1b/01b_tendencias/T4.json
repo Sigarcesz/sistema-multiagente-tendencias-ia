@@ -1,0 +1,75 @@
+{
+  "id": "T4",
+  "nombre": "IA multimodal y generación audiovisual a escala",
+  "descripcion": "Modelos multimodales que integran texto, imagen, audio y video permiten generar contenido personalizado a gran escala para marketing, formación y atención al cliente. Empresas y plataformas están desplegando herramientas de generación de imágenes, audio y video que automatizan producción creativa y localización, pero también plantean riesgos de veracidad y control de la experiencia de cliente.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "La evidencia muestra adopción comercial en marketing y servicio al cliente, y la tecnología puede cambiar procesos centrales como producción de contenido, personalización de experiencia y atención automatizada, afectando ingresos y modelos operativos."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Existen productos comerciales y despliegues empresariales (herramientas de generación de video/imagen, APIs empresariales y pilotos a escala) y literatura técnica que describe benchmarks y métodos para alineación; la adopción está creciendo fuera de laboratorios."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Se citan múltiples fuentes recientes y independientes (consultora, proveedor, y trabajos académicos) que coinciden en la expansión de casos de uso multimodal en marketing y atención al cliente y en los desafíos de veracidad y alineación."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Una encuesta de Deloitte entre 330 ejecutivos minoristas encontró que la mayoría planea capacidades de personalización basadas en IA: 67% esperan tener capacidades de personalización impulsadas por IA dentro del próximo año.",
+      "cifras": ["67%"],
+      "extracto": "67% of retail executives surveyed expect to have AI-driven personalization capabilities within the next year",
+      "fuente": {
+        "titulo": "2026 Retail Industry Global Outlook",
+        "organizacion": "Deloitte",
+        "autor": "Evan Sheehan, Brian McCarthy, Natalie Martini, Lupine Skelly, Dr. Bryn Walton, Oliver Vernon-Harcourt",
+        "fecha": "2026-01-08",
+        "url": "https://www.deloitte.com/global/en/insights/industry/retail-distribution/retail-distribution-industry-outlook.html",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "OpenAI reporta que el uso del API se está diversificando y que 'customer service' y 'content generation' representan una porción significativa del tráfico: aproximadamente 20% de la actividad del API está en esas áreas.",
+      "cifras": ["approximately 20%"],
+      "extracto": "customer service and content generation now represent approximately 20% of API activity",
+      "fuente": {
+        "titulo": "The state of enterprise AI",
+        "organizacion": "OpenAI",
+        "autor": "OpenAI",
+        "fecha": "2025-12-17",
+        "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Un trabajo académico (CustomerSim) muestra que los MLLMs pueden simular comportamientos de clientes en entornos de retail, pero requieren alineación: una técnica (UserGRPO) elevó la alineación de decisión del modelo de 0.417 a 0.652 (ganancia de 23.5 puntos).",
+      "cifras": ["0.417", "0.652", "23.5 points"],
+      "extracto": "UserGRPO raises the decision alignment of the baseline model from 0.417 to 0.652, a gain of 23.5 points",
+      "fuente": {
+        "titulo": "CustomerSim: Benchmarking and Aligning Multimodal Language Models as Retail User Simulators",
+        "organizacion": "arXiv / academic authors",
+        "autor": "Yada Pruksachatkun et al.",
+        "fecha": "2026-07-29",
+        "url": "https://arxiv.org/abs/2605.08334",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "El informe Stanford Emerging Technology Review describe arquitecturas multimodales y da ejemplos de modelos que generan una imagen a partir de texto y luego crean video a partir de esa imagen (ej.: Emu), y documenta el volumen de inversión en IA (USD).",
+      "cifras": ["$244.22 billion in 2025", "$33.94 billion in 2024"],
+      "extracto": "Emu first generates an image from a text input and then creates a video based on both the text and the generated image.",
+      "fuente": {
+        "titulo": "THE STANFORD EMERGING TECHNOLOGY REVIEW 2026 - Artificial Intelligence",
+        "organizacion": "Stanford University",
+        "autor": "Stanford Emerging Technology Review (editorial)",
+        "fecha": "2025-12",
+        "url": "https://setr.stanford.edu/sites/default/files/2026-01/SETR2026_01-AI_web-260109.pdf",
+        "tipo": "academica"
+      }
+    }
+  ]
+}

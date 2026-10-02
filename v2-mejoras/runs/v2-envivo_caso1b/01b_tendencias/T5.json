@@ -1,0 +1,82 @@
+{
+  "id": "T5",
+  "nombre": "IA en el borde y procesamiento en tiempo real",
+  "descripcion": "Despliegue de modelos ligeros y aceleradores hardware en dispositivos y gateways para inferencia en tiempo real en manufactura, retail y dispositivos IoT. Las organizaciones están moviendo la inferencia desde pilotos en la nube hacia dispositivos y plataformas de borde para reducir latencia, mantener privacidad de datos y garantizar operaciones offline.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "La capacidad de tomar decisiones en milisegundos en la línea de producción, la reducción de costos de egress y la necesidad de privacidad y continuidad operativa pueden cambiar procesos operativos y modelos de negocio en manufactura, retail y entornos IoT."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Informes del primer semestre de 2026 y casos de proveedor muestran que despliegues han pasado de pilotos a producción en múltiples verticales; además hay productos comerciales y hardware específico (NPUs, módulos M.2, dispositivos integrados)."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Se presentan 4 evidencias independientes y recientes: un informe de mercado (IDC), un artículo académico (arXiv), un informe de consultora/empresa (Deloitte) y evidencia de proveedor técnico (Roboflow). Las fuentes son consistentes sobre la tendencia."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Entre enero y junio de 2026, factores como 'Physical AI', la presión en costos de memoria y la madurez del silicio on-device impulsaron que despliegues de edge pasaran de pilotos a producción.",
+      "cifras": [],
+      "extracto": "Physical AI, memory cost pressures, and mature on-device silicon pushed edge deployments from pilots to production.",
+      "fuente": {
+        "titulo": "Edge AI in 1H26: From Pilot to Production Across the Edge",
+        "organizacion": "IDC",
+        "autor": "IDC",
+        "fecha": "2026-08-17",
+        "url": "https://www.marketresearch.com/IDC-v2477/Edge-AI-1H26-Pilot-Production-46125840/",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Los NPUs y aceleradores de inferencia en el borde ofrecen eficiencia energética y rendimiento que los hacen una alternativa viable a arquitecturas basadas solo en GPU para cargas de inferencia en producción.",
+      "cifras": [
+        "$87B in 2024",
+        "$349B by 2032",
+        "18.9% CAGR",
+        "35-70% lower power consumption"
+      ],
+      "extracto": "The AI inference market is projected to grow from $87B in 2024 to $349B by 2032 (18.9% CAGR).",
+      "fuente": {
+        "titulo": "NPU Hardware Evaluation v1.0",
+        "organizacion": "arXiv",
+        "autor": "Davide Baltieri, Tobia Peruzzi",
+        "fecha": "2026-07-22",
+        "url": "https://arxiv.org/abs/2609.13166",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Consultoras y firmas de servicios indican que las PCs y dispositivos empresariales con NPUs están acelerando la transición hacia inferencia on-device a escala empresarial.",
+      "cifras": [],
+      "extracto": "we expect NPUs to become standard in new enterprise fleets, accelerating on-device intelligence.",
+      "fuente": {
+        "titulo": "Enterprise AI PC Strategy: The Shift to Edge AI",
+        "organizacion": "Deloitte",
+        "autor": "Deloitte",
+        "fecha": "2026-04-20",
+        "url": "https://www.deloitte.com/us/en/alliances/articles/intel-enterprise-ai-pc-strategy-shift-to-edge-ai.html",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "En manufactura, las soluciones de visión por computador en el borde están diseñadas para entregar decisiones locales en milisegundos, permitiendo rechazos y control en la línea sin depender del WAN.",
+      "cifras": [
+        "sub-100 ms"
+      ],
+      "extracto": "is designed around a sub-100 ms local vision-to-result path for production applications.",
+      "fuente": {
+        "titulo": "Edge AI in Manufacturing: Deploy Vision Models on the Line",
+        "organizacion": "Roboflow",
+        "autor": "Timothy M",
+        "fecha": "2026-09-03",
+        "url": "https://blog.roboflow.com/edge-ai-inference-for-manufacturing/",
+        "tipo": "proveedor"
+      }
+    }
+  ]
+}

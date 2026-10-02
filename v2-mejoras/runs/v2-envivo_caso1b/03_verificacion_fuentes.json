@@ -1,0 +1,148 @@
+{
+  "evidencias": [
+    {
+      "id": "E1",
+      "url": "https://arxiv.org/abs/2303.17564",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E2",
+      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000961",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E3",
+      "url": "https://www.bvp.com/atlas/the-state-of-ai-2025",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E4",
+      "url": "https://www.langchain.com/state-of-agent-engineering",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E5",
+      "url": "https://arxiv.org/abs/2608.12236",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E6",
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/06/transforming-the-enterprise-2026.pdf.coredownload.inline.pdf",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E7",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E8",
+      "url": "https://scale.stanford.edu/ai/repository/meta-analysis-effect-generative-ai-productivity-and-learning-programming",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E9",
+      "url": "https://www.softwareimprovementgroup.com/press-center/sig-news-state-of-software-2026-report/",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E10",
+      "url": "https://arxiv.org/abs/2607.01904",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E11",
+      "url": "https://www.deloitte.com/global/en/insights/industry/retail-distribution/retail-distribution-industry-outlook.html",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E12",
+      "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E13",
+      "url": "https://arxiv.org/abs/2605.08334",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E14",
+      "url": "https://setr.stanford.edu/sites/default/files/2026-01/SETR2026_01-AI_web-260109.pdf",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E15",
+      "url": "https://www.marketresearch.com/IDC-v2477/Edge-AI-1H26-Pilot-Production-46125840/",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E16",
+      "url": "https://arxiv.org/abs/2609.13166",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E17",
+      "url": "https://www.deloitte.com/us/en/alliances/articles/intel-enterprise-ai-pc-strategy-shift-to-edge-ai.html",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E18",
+      "url": "https://blog.roboflow.com/edge-ai-inference-for-manufacturing/",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E19",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E20",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "estado": "accesible",
+      "http": 200
+    },
+    {
+      "id": "E21",
+      "url": "https://arxiv.org/abs/2301.10226",
+      "estado": "accesible",
+      "http": 200
+    }
+  ],
+  "resumen": {
+    "fuentes": 21,
+    "descargadas_ahora": 0,
+    "reutilizadas_de_cache": 21,
+    "legibles": 21,
+    "inaccesibles": 0,
+    "ilegibles_o_bloqueadas": 0,
+    "evidencias_con_cifras_no_encontradas": [],
+    "evidencias_con_extracto_no_encontrado": [],
+    "tendencias": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6"
+    ]
+  }
+}

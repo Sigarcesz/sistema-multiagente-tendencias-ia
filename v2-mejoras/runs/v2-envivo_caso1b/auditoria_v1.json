@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "estado": "RECHAZADO",
+  "score_global": 89.9,
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 88,
+    "referencias": 85,
+    "profundidad": 85,
+    "claridad": 92,
+    "utilidad": 95
+  },
+  "pesos": {
+    "exactitud": 0.25,
+    "calidad_evidencia": 0.15,
+    "referencias": 0.15,
+    "profundidad": 0.15,
+    "claridad": 0.1,
+    "utilidad": 0.2
+  },
+  "umbrales": {
+    "exactitud": 90,
+    "referencias": 90,
+    "profundidad": 70,
+    "global": 85
+  },
+  "umbrales_incumplidos": [
+    "referencias 85 < 90"
+  ],
+  "rechazos_automaticos": [],
+  "topes_aplicados": [
+    {
+      "criterio": "referencias",
+      "de": 90,
+      "a": 85,
+      "motivo": "cifras atribuidas a una evidencia que no las contiene"
+    }
+  ],
+  "hallazgos_auditor": [
+    "La verificación automática detectó 1 cifra sin cita correcta: la mención 'sub-100 ms' en la Hoja de Ruta (Sección 9, línea '6–18 meses · Lanzar pilotos de edge AI ... para casos sub-100 ms · R6') carece de referencia explícita en esa ubicación.",
+    "El informe está bien estructurado y las recomendaciones (R1–R6) están vinculadas a evidencias; no se encontraron tendencias inventadas ni referencias faltantes por el script.",
+    "Las evidencias citadas son mayoritariamente primarias, académicas y de consultoras recientes, lo que respalda la calidad general de la base empírica.",
+    "No se identificaron contradicciones internas ni recomendaciones claramente desconectadas de las evidencias validadas."
+  ],
+  "correcciones": [
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 9",
+      "problema": "La cifra '100' no corresponde a las evidencias citadas [].",
+      "accion_requerida": "Citar la evidencia que contiene esa cifra.",
+      "id": "C1",
+      "prioridad": 1
+    },
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 9 (Hoja de Ruta), línea: '6–18 meses · Lanzar pilotos de edge AI en manufactura y retail para casos sub-100 ms · R6'",
+      "problema": "La expresión 'sub-100 ms' aparece sin una cita que la respalde en esa línea; el verificador automático marcó esta cifra como sin cita correcta.",
+      "accion_requerida": "Agregar una cita explícita (por ejemplo [E18] o la evidencia de T5 que documenta 'sub-100 ms') en la Hoja de Ruta junto a la mención, o reformular la frase para eliminar la cifra numérica si no hay una fuente directa que la respalde. Actualizar también cualquier otra mención aislada de 'sub-100 ms' que carezca de referencia.",
+      "id": "C2",
+      "prioridad": 2
+    }
+  ],
+  "observaciones_menores": []
+}

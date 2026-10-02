@@ -1,0 +1,25 @@
+{
+  "puntajes": {
+    "exactitud": 92,
+    "calidad_evidencia": 88,
+    "referencias": 90,
+    "profundidad": 85,
+    "claridad": 92,
+    "utilidad": 95
+  },
+  "hallazgos": [
+    "La verificación automática detectó 1 cifra sin cita correcta: la mención 'sub-100 ms' en la Hoja de Ruta (Sección 9, línea '6–18 meses · Lanzar pilotos de edge AI ... para casos sub-100 ms · R6') carece de referencia explícita en esa ubicación.",
+    "El informe está bien estructurado y las recomendaciones (R1–R6) están vinculadas a evidencias; no se encontraron tendencias inventadas ni referencias faltantes por el script.",
+    "Las evidencias citadas son mayoritariamente primarias, académicas y de consultoras recientes, lo que respalda la calidad general de la base empírica.",
+    "No se identificaron contradicciones internas ni recomendaciones claramente desconectadas de las evidencias validadas."  
+  ],
+  "bloqueantes_auditor": [],
+  "correcciones": [
+    {
+      "criterio": "referencias",
+      "ubicacion": "Sección 9 (Hoja de Ruta), línea: '6–18 meses · Lanzar pilotos de edge AI en manufactura y retail para casos sub-100 ms · R6'",
+      "problema": "La expresión 'sub-100 ms' aparece sin una cita que la respalde en esa línea; el verificador automático marcó esta cifra como sin cita correcta.",
+      "accion_requerida": "Agregar una cita explícita (por ejemplo [E18] o la evidencia de T5 que documenta 'sub-100 ms') en la Hoja de Ruta junto a la mención, o reformular la frase para eliminar la cifra numérica si no hay una fuente directa que la respalde. Actualizar también cualquier otra mención aislada de 'sub-100 ms' que carezca de referencia."
+    }
+  ]
+}

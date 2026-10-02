@@ -1,0 +1,58 @@
+{
+  "run": "runs/v2-envivo_caso1b",
+  "version": "v2",
+  "modo": "real",
+  "duracion_segundos": 612.2,
+  "modelos": {
+    "orquestador": "gpt-5-mini",
+    "trend-scout": "gpt-5-mini",
+    "report-writer": "gpt-5-mini",
+    "quality-auditor": "gpt-5-mini"
+  },
+  "esfuerzo": {
+    "orquestador": "low",
+    "trend-scout": "",
+    "report-writer": "",
+    "quality-auditor": ""
+  },
+  "max_paralelo": 4,
+  "por_agente": {
+    "trend-scout": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 7,
+      "requests": 50,
+      "input_tokens": 1121043,
+      "output_tokens": 49230,
+      "segundos": 594.1
+    },
+    "quality-auditor": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 9,
+      "requests": 54,
+      "input_tokens": 667061,
+      "output_tokens": 15705,
+      "segundos": 190.0
+    },
+    "report-writer": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 2,
+      "requests": 9,
+      "input_tokens": 99459,
+      "output_tokens": 15427,
+      "segundos": 130.0
+    },
+    "orquestador": {
+      "modelo": "gpt-5-mini",
+      "delegaciones": 1,
+      "requests": 34,
+      "input_tokens": 280994,
+      "output_tokens": 6180,
+      "segundos": 612.2
+    }
+  },
+  "total": {
+    "requests": 147,
+    "input_tokens": 2168557,
+    "output_tokens": 86542
+  }
+}

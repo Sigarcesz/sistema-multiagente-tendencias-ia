@@ -59,12 +59,28 @@ with tempfile.TemporaryDirectory() as tmp:
         t2 = json.loads(json.dumps(t))
         for i, e in enumerate(t2["evidencias"], 1):
             e["id"] = f"E{i}"            # IDs locales, como los deja cada Scout
+        if t is h["tendencias"][0]:
+            t2["evidencias"][0]["fuente"]["fecha"] = "Last update January 2026"  # texto de la página (run real)
         guardar(base / "01b_tendencias" / f"{t['id']}.json", t2)
     guardar(base / "01b_tendencias" / "T9.json", {"descartada": True, "motivo": "sin evidencia verificable"})
     c, out, err = run(S / "unir_hallazgos.py", "--run", rel, cwd=tmp)
     u = cargar(base / "01_hallazgos_scout.json")
     ids = [e["id"] for t in u["tendencias"] for e in t["evidencias"]]
     check("unión: renumera E# globalmente y descarta T9", ids == ["E1", "E2", "E3", "E4"] and len(u["tendencias"]) == 3, out + err)
+    fn = cargar(base / "01_union.json")["fechas_normalizadas"]
+    check("unión: fecha en texto -> AAAA-MM y queda registrada",
+          u["tendencias"][0]["evidencias"][0]["fuente"]["fecha"] == "2026-01" and len(fn) == 1, fn)
+
+    # Corrección del Scout que vuelve a numerar E1, E2… por tendencia -> --desde la repara
+    dup = json.loads(json.dumps(u))
+    for t in dup["tendencias"]:
+        for i, e in enumerate(t["evidencias"], 1):
+            e["id"] = f"E{i}"
+    guardar(base / "01_hallazgos_scout_corregido.json", dup)
+    c, out, err = run(S / "unir_hallazgos.py", "--desde", rel / "01_hallazgos_scout_corregido.json",
+                      "--salida", rel / "01_hallazgos_scout_v2.json", cwd=tmp)
+    ids2 = [e["id"] for t in cargar(base / "01_hallazgos_scout_v2.json")["tendencias"] for e in t["evidencias"]]
+    check("corrección con E# duplicados -> --desde renumera globalmente", c == 0 and ids2 == ids, out + err)
 
     # --- Compuerta de contrato -----------------------------------------------------------
     c, out, _ = run(S / "validar_contrato.py", "--entrada", rel / "01_hallazgos_scout.json",
