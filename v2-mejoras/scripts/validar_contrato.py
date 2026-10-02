@@ -27,7 +27,9 @@ CLAVES_PROHIBIDAS = {
 
 # Patrones sobre texto normalizado (minúsculas, sin tildes)
 PATRONES_PRESCRIPTIVOS = [
-    r"\brecomend\w*",
+    # Solo formas dirigidas al lector: el sustantivo suelto ("CISA publica recomendaciones")
+    # describe a un tercero y no invade el rol del escritor. "recomienda" no contiene "recomend".
+    r"\bse recomienda(n)?\b", r"\brecomendamos\b", r"\brecomendaria(mos|n)?\b", r"\brecomiendo\b",
     r"\bse sugiere\b", r"\bsugerimos\b", r"\bsugiere[n]? (que|adoptar|invertir|implementar)\b",
     r"\b(la empresa|las empresas|horizonte digital|la organizacion|las organizaciones|"
     r"la alta direccion|la direccion|los directivos)\s+(deber\w*|tendr\w*|necesit\w*|conviene)",
@@ -67,7 +69,7 @@ def es_prescriptiva(oracion: str) -> bool:
     return any(re.search(p, n) for p in PATRONES_PRESCRIPTIVOS)
 
 
-def sanear_texto(texto: str, ubicacion: str, violaciones: list) -> str:
+def sanear_texto(texto: str, ubicacion: str, violaciones: list, errores: list) -> str:
     if not isinstance(texto, str):
         return texto
     conservadas = []
@@ -79,7 +81,12 @@ def sanear_texto(texto: str, ubicacion: str, violaciones: list) -> str:
             })
         else:
             conservadas.append(o)
-    return " ".join(conservadas).strip()
+    limpio = " ".join(conservadas).strip()
+    # Un campo obligatorio que el saneamiento deja vacío no puede seguir como si nada:
+    # el auditor recibiría un nivel sin justificación. Se bloquea y el Scout lo reescribe.
+    if texto.strip() and not limpio:
+        errores.append(f"{ubicacion}: quedó vacío tras eliminar frases prescriptivas; debe reescribirse")
+    return limpio
 
 
 def quitar_claves(obj, ruta: str, violaciones: list):
@@ -131,10 +138,10 @@ def validar(data: dict, errores: list, violaciones: list, advertencias: list | N
             elif not str(d.get("justificacion", "")).strip():
                 errores.append(f"{ub} ({tid}): falta '{dim}.justificacion'")
             else:
-                d["justificacion"] = sanear_texto(d["justificacion"], f"{tid}.{dim}.justificacion", violaciones)
+                d["justificacion"] = sanear_texto(d["justificacion"], f"{tid}.{dim}.justificacion", violaciones, errores)
         for campo in CAMPOS_TEXTO:
             if campo in t:
-                t[campo] = sanear_texto(t[campo], f"{tid}.{campo}", violaciones)
+                t[campo] = sanear_texto(t[campo], f"{tid}.{campo}", violaciones, errores)
 
         evs = t.get("evidencias", [])
         if not isinstance(evs, list) or not evs:
@@ -151,7 +158,7 @@ def validar(data: dict, errores: list, violaciones: list, advertencias: list | N
             if not str(e.get("afirmacion", "")).strip():
                 errores.append(f"{ue} ({eid}): falta 'afirmacion'")
             else:
-                e["afirmacion"] = sanear_texto(e["afirmacion"], f"{eid}.afirmacion", violaciones)
+                e["afirmacion"] = sanear_texto(e["afirmacion"], f"{eid}.afirmacion", violaciones, errores)
             if "cifras" in e and not isinstance(e["cifras"], list):
                 errores.append(f"{ue} ({eid}): 'cifras' debe ser una lista")
             f = e.get("fuente")

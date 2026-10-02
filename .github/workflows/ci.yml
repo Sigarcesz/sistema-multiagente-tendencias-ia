@@ -1,0 +1,19 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    # El proyecto vive en v2-mejoras/; GitHub solo lee workflows en .github/ de la raíz.
+    defaults:
+      run:
+        working-directory: v2-mejoras
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt ruff
+      - name: Lint
+        run: ruff check runner scripts .claude/skills/quality-auditor/scripts
+      - name: Smoke test (compuertas deterministas, sin red ni modelo)
+        run: python scripts/smoke_test.py

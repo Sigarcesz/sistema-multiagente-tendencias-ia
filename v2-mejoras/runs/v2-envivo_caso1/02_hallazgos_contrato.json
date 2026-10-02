@@ -1,0 +1,555 @@
+{
+  "tema": "Tendencias emergentes de inteligencia artificial con potencial impacto empresarial durante los próximos tres años",
+  "fecha_investigacion": "2026-10-01",
+  "tendencias": [
+    {
+      "id": "T1",
+      "nombre": "Agentes autónomos (agentic AI) en operaciones empresariales",
+      "descripcion": "Sistemas de IA que ejecutan flujos de trabajo multi-paso y toman decisiones semi‑autónomas para tareas operativas y de soporte. En 2026 múltiples encuestas y análisis muestran que las organizaciones han pasado de pilotos a despliegues en producción en áreas como atención al cliente, procesamiento de documentos y operaciones internas. Al mismo tiempo, los líderes reportan lagunas en gobernanza, infraestructura de datos y controles de seguridad.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Fuentes de 2026 indican despliegues en producción a escala (por ejemplo, Contentstack: 58% con programas en producción; IDC y CIO documentan adopción amplia y casos que automatizan tareas críticas), lo que sugiere potencial para cambiar procesos centrales y costos operativos."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Las evidencias muestran que muchas organizaciones han movido agentes de pilotos a producción (varias fuentes 2026 reportan despliegues en producción), pero persisten desafíos de gobernanza y fiabilidad que impiden una estandarización completa."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Tres fuentes independientes y recientes (analista, proveedor y medio técnico, todas 2026) reportan hallazgos consistentes sobre despliegues en producción y problemas de gobernanza."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "El analista IDC afirma que la mitad de las organizaciones ya despliegan agentes de IA en producción en múltiples áreas de negocio.",
+          "cifras": [
+            "Fifty percent of organizations are already deploying AI agents in production across multiple business areas."
+          ],
+          "extracto": "Fifty percent of organizations are already deploying AI agents in production across multiple business areas.",
+          "fuente": {
+            "titulo": "IDC - Agentic AI Ecosystem: Market Landscape & Layers | IDC",
+            "organizacion": "IDC",
+            "autor": "IDC",
+            "fecha": "2026-06-01",
+            "url": "https://www.idc.com/resource-center/blog/agentic-ai-ecosystems-navigating-the-megatrend-thats-reshaping-enterprise-technology-markets/",
+            "tipo": "consultora"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "El reporte de Contentstack presenta resultados de una encuesta (n=621) y muestra que el 58% de los encuestados tiene programas agentic en producción.",
+          "cifras": [
+            "621 enterprise digital leaders",
+            "58%"
+          ],
+          "extracto": "asked 621 enterprise digital leaders who are directly involved in AI strategy or implementation at their organizations",
+          "fuente": {
+            "titulo": "The 2026 Agentic Enterprise Report | Contentstack Research",
+            "organizacion": "Contentstack",
+            "autor": "Contentstack Research",
+            "fecha": "2026-05",
+            "url": "https://www.contentstack.com/resources/report/agentic-enterprise-report-2026",
+            "tipo": "proveedor"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "El artículo de CIO documenta casos de uso en producción, por ejemplo empresas que automatizan la mayor parte de llamadas entrantes (un caso reporta 93% de automatización).",
+          "cifras": [
+            "93%"
+          ],
+          "extracto": "automate 93% of inbound calls",
+          "fuente": {
+            "titulo": "Agentic AI: 11 promising use cases for business",
+            "organizacion": "CIO",
+            "autor": "Grant Gross and Maria Korolov",
+            "fecha": "2026-06-23",
+            "url": "https://www.cio.com/article/3603856",
+            "tipo": "medio"
+          }
+        }
+      ],
+      "fecha_investigacion": "2026-10-01",
+      "id_candidata": "T1"
+    },
+    {
+      "id": "T2",
+      "nombre": "Evolución del RAG hacia arquitecturas de recuperación híbrida y 'context compilers',",
+      "descripcion": "Transición desde pipelines basados únicamente en bases de vectores hacia arquitecturas híbridas (vectores + búsqueda léxica/filtrado/graph) y capas de conocimiento 'compiladas' o ‘context compilers’ que preparan, filtran y sintetizan contexto antes de la generación. En 2025-2026 se observa un movimiento conjunto: literatura académica y arXiv describen mejoras de calidad con enfoques agentic y híbridos; analistas de mercado y proveedores de bases de datos integran búsquedas híbridas y rerankers en productos comerciales.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "La tendencia afecta componentes centrales del stack RAG (recuperación, trazabilidad y gobernanza): proveedores integran hybrid search y reranking en bases de datos operativas, mientras que investigación y papers muestran mejoras sustanciales de factualidad y recall, lo que puede cambiar la arquitectura de despliegue y la confiabilidad de aplicaciones empresariales."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "En 2026 hay productos comerciales (hybrid search, native reranking) y despliegues pre-producción, papers recientes y marcos agentic que reportan mejoras; sin embargo no es todavía un estándar universalizado, y quedan retos de latencia, evaluación y gobernanza."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencia reciente y consistente proviene de múltiples tipos de fuentes independientes: investigación académica/arXiv, informe de analistas (451 Research vía OpenSearch) y anuncios de proveedores comerciales (MongoDB, Google Research)."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "Google Research presenta 'Agentic RAG' que integra planificación, enrutamiento y recuperación iterativa para mejorar la fiabilidad y el grounding en entornos multi-corpus y reporta mejoras de precisión en benchmarks y pruebas internas.",
+          "cifras": [
+            "up to 34%",
+            "90.1%"
+          ],
+          "extracto": "our framework increases accuracy on factuality datasets by up to 34%.",
+          "fuente": {
+            "titulo": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+            "organizacion": "Google Research (blog)",
+            "autor": "Cyrus Rashtchian; Da-Cheng Juan (Google Research)",
+            "fecha": "2026-06-05",
+            "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+            "tipo": "proveedor"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "Un informe especial de 451 Research (encargado por OpenSearch) sostiene que el enfoque híbrido (lexical + vector) es el que funciona para cargas de trabajo AI empresariales y registra resultados de encuesta de adopción entre empresas.",
+          "cifras": [
+            "nearly 600 enterprise respondents"
+          ],
+          "extracto": "Survey data drawn from nearly 600 enterprise respondents.",
+          "fuente": {
+            "titulo": "451 Research Special Report on Vector Databases - OpenSearch",
+            "organizacion": "OpenSearch (republica informe de 451 Research)",
+            "autor": "James Curtis (451 Research)",
+            "fecha": "2026-03",
+            "url": "https://opensearch.org/451-research-vector-report-2026/",
+            "tipo": "consultora"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "Un trabajo académico en arXiv ('AgenticRAG') muestra que un enfoque agentic de recuperación iterativa incrementa recall y correctness frente a baselines de embedding-only en benchmarks y entornos empresariales.",
+          "cifras": [
+            "$49.6\\%$ recall@1",
+            "92% answer correctness"
+          ],
+          "extracto": "$49.6\\%$ recall@1 on BRIGHT",
+          "fuente": {
+            "titulo": "AgenticRAG: Agentic Retrieval for Enterprise Knowledge Bases",
+            "organizacion": "arXiv / autores del paper",
+            "autor": "Susheel Suresh et al.",
+            "fecha": "2026-05-07",
+            "url": "https://arxiv.org/abs/2605.05538",
+            "tipo": "academica"
+          }
+        },
+        {
+          "id": "E4",
+          "afirmacion": "MongoDB anuncia capacidades comerciales (Hybrid Search y Native Reranking) para ejecutar búsquedas híbridas y reranking nativo dentro de la base de datos, afirmando mejoras de calidad de recuperación.",
+          "cifras": [
+            "up to 30%"
+          ],
+          "extracto": "Native Reranking alone improving retrieval quality by up to 30%*.",
+          "fuente": {
+            "titulo": "MongoDB Delivers Accurate AI Retrieval Wherever Enterprise Data Lives",
+            "organizacion": "MongoDB, Inc. (replicado en Nasdaq)",
+            "autor": "MongoDB, Inc. (press release)",
+            "fecha": "2026-06-30",
+            "url": "https://www.nasdaq.com/press-release/mongodb-delivers-accurate-ai-retrieval-wherever-enterprise-data-lives-2026-06-30",
+            "tipo": "proveedor"
+          }
+        }
+      ],
+      "id_candidata": "T2"
+    },
+    {
+      "id": "T3",
+      "nombre": "Modelos empresariales propietarios y MLOps para governanza de modelos multimodales",
+      "descripcion": "Organizaciones están construyendo, afinando y/o desplegando modelos privados o fine-tuned sobre modelos base (incluyendo multimodales) y estableciendo prácticas de MLOps/ModelOps y gobernanza para control, privacidad y cumplimiento. La tendencia combina despliegues in-house o self-hosted de modelos especializados con políticas y procesos para inventario, monitoreo, actualización y gestión de riesgos de modelos. Se observa actividad tanto en adopción comercial (productos y casos de uso) como en marcos regulatorios y de estándares que exigen inventarios y controles sobre modelos y sus versiones.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Afecta procesos centrales (desarrollo, operaciones, cumplimiento), exige cambios en costes e infraestructura y refuerza controles legales y de privacidad, tal como documentan NIST y Deloitte (E1, E2)."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Hay productos comerciales y adopción creciente (OpenAI muestra fuertes desplegables y uso empresarial, E3) y publicaciones de consultoras y sector público que describen prácticas y actividades de fine-tuning y MLOps (E2, E4)."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencia reciente y consistente de fuentes regulatorias (NIST), consultoras (Deloitte, Forrester) y proveedores (OpenAI) que documentan tanto la adopción de modelos privados/fine-tuning como la necesidad de gobernanza (E1–E4)."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "NIST recomienda inventariar GAI/ foundation models y registrar la versión del modelo y modos de acceso como parte de la gobernanza organizacional.",
+          "cifras": [],
+          "extracto": "underlying foundation models, versions of underlying models, and access modes.",
+          "fuente": {
+            "titulo": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+            "organizacion": "National Institute of Standards and Technology (NIST)",
+            "autor": "NIST",
+            "fecha": "2024-07-25",
+            "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+            "tipo": "organismo"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "Deloitte reporta que las empresas están incorporando privacidad, soberanía y seguridad-by-design en plataformas modulares y que dos tercios de las organizaciones reportan ganancias en productividad por AI.",
+          "cifras": [
+            "66%"
+          ],
+          "extracto": "two-thirds (66%) of organizations reporting gains.",
+          "fuente": {
+            "titulo": "The State of AI in the Enterprise - 2026 AI report",
+            "organizacion": "Deloitte US",
+            "autor": "Deloitte",
+            "fecha": "2026",
+            "url": "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html?trk=article-ssr-frontend-pulse_publishing-image-block",
+            "tipo": "consultora"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "OpenAI reporta un fuerte crecimiento del uso empresarial, indicando más de 7 millones de ChatGPT workplace seats y un crecimiento aproximado de 9x en ChatGPT Enterprise seats, evidenciando despliegue y personalización a escala empresarial.",
+          "cifras": [
+            "more than 7 million",
+            "9x"
+          ],
+          "extracto": "ChatGPT Enterprise seats have increased approximately 9x year-over-year.",
+          "fuente": {
+            "titulo": "The state of enterprise AI",
+            "organizacion": "OpenAI",
+            "autor": "OpenAI",
+            "fecha": "2025-12-17",
+            "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+            "tipo": "proveedor"
+          }
+        },
+        {
+          "id": "E4",
+          "afirmacion": "Forrester documenta que la mejora en modelos fine-tuned y herramientas de post-training está haciendo práctico que las empresas adapten modelos open-weight con sus propios datos para tareas empresariales específicas.",
+          "cifras": [],
+          "extracto": "fine-tuned models (mostly composed of post-trained open-weight models) are smaller, more efficient to run",
+          "fuente": {
+            "titulo": "The Market Is Finally Making Fine-Tuned Models Happen",
+            "organizacion": "Forrester",
+            "autor": "Forrester",
+            "fecha": "2026-09-08",
+            "url": "https://www.forrester.com/blogs/the-market-is-finally-making-fine-tuned-models-happen/",
+            "tipo": "consultora"
+          }
+        }
+      ],
+      "id_candidata": "T3"
+    },
+    {
+      "id": "T4",
+      "nombre": "Regulación, cumplimiento y auditoría de IA (impacto operativo y contractual)",
+      "descripcion": "Marco regulatorio (p. ej. AI Act, normativas locales) y requerimientos de auditoría/explicabilidad que obligan cambios en procesos, contratos y tecnología.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "La AI Act y sus directrices imponen obligaciones legales y de transparencia a proveedores y desplegadores, afectando procesos centrales, gestión de riesgos y relaciones contractuales."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "La legislación principal (AI Act) y guías de implementación han entrado en vigor o se han publicado en 2025-2026, y agentes regulatorios nacionales están comenzando la implementación."
+      },
+      "confianza": {
+        "nivel": "media",
+        "justificacion": "Evidencia reciente y autoritativa de la Comisión Europea disponible, pero en esta búsqueda no se localizaron (o no se pudieron abrir) fuentes independientes adicionales (p. ej. reguladores nacionales, consultoras) para corroborar adopción y efectos contractuales."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "La AI Act es el primer marco legal sobre IA en la UE y establece obligaciones para proveedores y desplegadores.",
+          "cifras": [],
+          "extracto": "The AI Act is the first-ever legal framework on AI.",
+          "fuente": {
+            "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+            "organizacion": "European Commission",
+            "autor": "European Commission",
+            "fecha": "Last update 31 July 2026",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+            "tipo": "organismo"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "El AI Omnibus fue adoptado y la Comisión indica fechas de entrada en vigor de enmiendas y de la AI Act (julio 2026); la aplicación y supervisión comienzan en agosto 2026.",
+          "cifras": [
+            "entered into force in 27 July 2026",
+            "From 2 August 2026"
+          ],
+          "extracto": "entered into force in 27 July 2026",
+          "fuente": {
+            "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+            "organizacion": "European Commission",
+            "autor": "European Commission",
+            "fecha": "Last update 31 July 2026",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+            "tipo": "organismo"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "La Comisión publicó directrices sobre obligaciones de transparencia para proveedores y desplegadores, que detallan requisitos de información y trazabilidad.",
+          "cifras": [
+            "Publication of the guidelines on transparency obligations for providers and deployers of certain AI systems 20 July 2026"
+          ],
+          "extracto": "Publication of the guidelines on transparency obligations for providers and deployers of certain AI systems 20 July 2026",
+          "fuente": {
+            "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+            "organizacion": "European Commission",
+            "autor": "European Commission",
+            "fecha": "Last update 31 July 2026",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+            "tipo": "organismo"
+          }
+        }
+      ],
+      "id_candidata": "T4"
+    },
+    {
+      "id": "T5",
+      "nombre": "Datos sintéticos y data-centric AI para preservar privacidad y ampliar datasets",
+      "descripcion": "Generación y uso de datos sintéticos y técnicas de conservación de privacidad para etiquetado, pruebas y entrenamiento sin exponer datos sensibles.",
+      "fecha_investigacion": "2026-10-01",
+      "impacto": {
+        "nivel": "medio",
+        "justificacion": "La adopción comercial crece y puede cambiar procesos de datos sensibles, pero limitaciones de calidad, confianza y uso real en entrenamiento productivo mantienen el impacto por ahora en nivel medio."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Existen productos comerciales y encuestas muestran uso generalizado en pruebas y analítica, pero el uso consolidado para entrenamiento de producción todavía es parcial y sujeto a barreras de confianza y gobernanza."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencias recientes y distintas (organismos internacionales, regulador nacional, informe de mercado de proveedor y literatura académica de 2025-2026) coinciden en adopción creciente, riesgos de re-identificación y trade-offs técnicos."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "Una encuesta de 2025 de Perforce encontró que una mayoría de organizaciones ya usan datos sintéticos, y que sus principales aplicaciones son analítica, pruebas e integración; el uso para entrenamiento de IA existe pero es menos dominante.",
+          "cifras": [
+            "63%",
+            "79%",
+            "49%",
+            "7%"
+          ],
+          "extracto": "63% of Organizations Are Using Synthetic Data",
+          "fuente": {
+            "titulo": "2025 State of Synthetic Data Report",
+            "organizacion": "Perforce Software, Inc.",
+            "autor": "Perforce Research / Delphix excerpt",
+            "fecha": "2025",
+            "url": "https://www.perforce.com/system/files/2025-10/report-pdx-2025-state-of-synthetic-data-report.pdf",
+            "tipo": "proveedor"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "El regulador de Singapur (PDPC) advierte que, aunque los datos sintéticos pueden no ser datos personales por sí mismos, no son inherentemente libres de riesgo y pueden presentar re-identificación; por eso propone prácticas para evaluar y mitigar riesgos.",
+          "cifras": [],
+          "extracto": "it is not inherently risk-free due to possible re-identification risks",
+          "fuente": {
+            "titulo": "Proposed Guide on Synthetic Data Generation",
+            "organizacion": "Personal Data Protection Commission (PDPC), Singapore",
+            "autor": "PDPC",
+            "fecha": "2024-07-15",
+            "url": "https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/other-guides/proposed-guide-on-synthetic-data-generation.pdf",
+            "tipo": "organismo"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "Investigación académica reciente muestra que los mecanismos de privacidad (p. ej. differential privacy) imponen trade-offs fundamentales entre protección y fidelidad estadística en la generación de datos sintéticos, y explora mecanismos conscientes del dominio para mejorar esos trade-offs.",
+          "cifras": [
+            "ε∈{1.0,2.0,4.0}"
+          ],
+          "extracto": "Differential privacy (DP) imposes fundamental trade-offs between privacy and statistical fidelity in synthetic data generation.",
+          "fuente": {
+            "titulo": "Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation",
+            "organizacion": "Proceedings of Machine Learning Research (ICML 2026)",
+            "autor": "Sajani Vithana et al.",
+            "fecha": "2026-07",
+            "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/vithana26a/vithana26a.pdf",
+            "tipo": "academica"
+          }
+        },
+        {
+          "id": "E4",
+          "afirmacion": "El World Economic Forum describe los datos sintéticos como datos artificiales que pueden rellenar vacíos de datos y proteger la privacidad, y discute la necesidad de gobernanza y etiquetado claro.",
+          "cifras": [],
+          "extracto": "Synthetic data is data artificially generated to mimic real-world data. It can fill data gaps, protect privacy",
+          "fuente": {
+            "titulo": "Synthetic Data: The New Data Frontier",
+            "organizacion": "World Economic Forum",
+            "autor": "Global Future Council on Data Frontiers / World Economic Forum",
+            "fecha": "2025-09",
+            "url": "https://reports.weforum.org/docs/WEF_Synthetic_Data_2025.pdf",
+            "tipo": "organismo"
+          }
+        }
+      ],
+      "id_candidata": "T5"
+    },
+    {
+      "id": "T6",
+      "nombre": "IA para productividad de desarrolladores y automatización del ciclo de vida del software",
+      "descripcion": "Herramientas de generación de código, revisión automática y bots de soporte (agentes) están siendo integradas en IDEs, pipelines y plataformas de entrega, alterando tareas de implementación, revisión y mantenimiento. La adopción es amplia y rápida en 2025–2026, y los estudios muestran tanto ganancia de productividad como efectos mixtos en estabilidad y coordinación.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "Evidencias muestran adopción masiva y mejoras de productividad cuantificadas (por ejemplo, reducciones de tiempo de tarea y estimaciones macroeconómicas), y estudios a gran escala indican adopción de agentes que afectan artefactos de entrega, lo que sugiere impacto en procesos centrales de ingeniería y entrega."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Las herramientas tradicionales de autocompletado y asistentes están ampliamente usadas en producción mientras que los agentes más autónomos (generación completa de PRs, modo agentic) se han difundido rápidamente desde 2025 pero siguen evolucionando en modos, integración y gobernanza."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Cuatro fuentes independientes y recientes (proveedor, trabajo académico, investigación de industria y reporte sectorial) ofrecen cifras y hallazgos consistentes sobre adopción y efectos, permitiendo una evaluación confiable."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "Estudio/analítica de GitHub reporta que usuarios de Copilot completaron tareas significativamente más rápido y proyecta un gran impacto económico potencial a 2030.",
+          "cifras": [
+            "55%",
+            "over $1.5 trillion",
+            "30%"
+          ],
+          "extracto": "developers completed tasks 55% faster with GitHub Copilot",
+          "fuente": {
+            "titulo": "The economic impact of the AI-powered developer lifecycle and lessons from GitHub Copilot - The GitHub Blog",
+            "organizacion": "GitHub",
+            "autor": "Thomas Dohmke",
+            "fecha": "2024-05-14",
+            "url": "https://github.blog/news-insights/research/the-economic-impact-of-the-ai-powered-developer-lifecycle-and-lessons-from-github-copilot/",
+            "tipo": "proveedor"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "Análisis académico a gran escala sobre repositorios en GitHub estima que la adopción de coding agents en proyectos públicos fue alta (dos dígitos) a principios de 2025.",
+          "cifras": [
+            "22.20%--28.66%",
+            "128,018 projects"
+          ],
+          "extracto": "finding an estimated adoption rate of 22.20%--28.66%, which is very high",
+          "fuente": {
+            "titulo": "Agentic Much? Adoption of Coding Agents on GitHub",
+            "organizacion": "arXiv / autores académicos",
+            "autor": "Romain Robbes, Théo Matricon, Thomas Degueule, Andre Hora, Stefano Zacchiroli",
+            "fecha": "2026-04-08",
+            "url": "https://arxiv.org/abs/2601.18341",
+            "tipo": "academica"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "Encuesta Developer Ecosystem 2026 de JetBrains muestra uso masivo de agentes de codificación: 90% de desarrolladores usan agentes semanalmente y hay desplazamientos rápidos entre herramientas (Claude Code creciendo, Copilot disminuyendo).",
+          "cifras": [
+            "90%",
+            "39%",
+            "21%",
+            "29%",
+            "47%"
+          ],
+          "extracto": "90% of professional developers were using AI coding agents at work at least weekly",
+          "fuente": {
+            "titulo": "AI Coding Agents: Adoption Trends - The JetBrains Blog",
+            "organizacion": "JetBrains Research",
+            "autor": "Mikhail Bogdanov",
+            "fecha": "2026-08",
+            "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+            "tipo": "medio"
+          }
+        },
+        {
+          "id": "E4",
+          "afirmacion": "El informe DORA (State of AI-assisted Software Development 2025) encuentra que la adopción de AI está asociada con aumentos de throughput y con ganancias de productividad medibles en rangos porcentuales, pero también con riesgos de inestabilidad en la entrega si no se adaptan sistemas y prácticas.",
+          "cifras": [
+            "productivity gains of 20% to 30%",
+            "86%"
+          ],
+          "extracto": "productivity gains of 20% to 30%",
+          "fuente": {
+            "titulo": "State of AI-assisted Software Development 2025",
+            "organizacion": "DORA (Google Cloud) / ThoughtWorks (reporte conjunto)",
+            "autor": "DORA research team / ThoughtWorks (report partners)",
+            "fecha": "2025-07",
+            "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_report_state_of_ai_assisted_software_development_2025.pdf",
+            "tipo": "consultora"
+          }
+        }
+      ],
+      "id_candidata": "T6"
+    },
+    {
+      "id": "T7",
+      "nombre": "IA en el borde y modelos cuantizados para privacidad, latencia y costes reducidos",
+      "descripcion": "Despliegue de modelos comprimidos y cuantizados en dispositivos edge y endpoints (teléfonos, IoT, hubs locales) para satisfacer requisitos estrictos de latencia, privacidad y reducción de coste de inferencia. Investigación y proveedores muestran técnicas (quantization-aware training, INT4/2-bit, pruning) que permiten ejecutar modelos multimodales y LLMs reducidos on-device; reguladores y estudios de adopción indican crecimiento de nodos edge y presión regulatoria hacia el procesamiento local de datos.",
+      "impacto": {
+        "nivel": "alto",
+        "justificacion": "La tendencia afecta procesos centrales (respuesta en tiempo real, cumplimiento de privacidad, y estructura de costes de inferencia), y está vinculada a despliegues de infraestructura edge y a cambios en la arquitectura cloud/edge de empresas."
+      },
+      "madurez": {
+        "nivel": "en_adopcion",
+        "justificacion": "Existen productos y demostraciones (herramientas de optimización, modelos on-device, y pruebas en hardware comercial) y despliegues iniciales a escala, aunque los enfoques varían por caso de uso y hardware."
+      },
+      "confianza": {
+        "nivel": "alta",
+        "justificacion": "Evidencia reciente y convergente de fuentes regulatorias, académicas y de la industria publicadas en los últimos 24 meses documentan tanto la técnica (cuantización y QAT) como despliegues y crecimiento de nodos edge."
+      },
+      "evidencias": [
+        {
+          "id": "E1",
+          "afirmacion": "Apple declara que ha optimizado un modelo de lenguaje de ~3B parámetros para ejecución on-device usando cuantización de bajo bit (quantization-aware training).",
+          "cifras": [
+            "3B-parameter",
+            "2-bit"
+          ],
+          "extracto": "a 3B-parameter on-device model optimized for Apple silicon through architectural innovations such as KV-cache sharing and 2-bit quantization-aware training;",
+          "fuente": {
+            "titulo": "Apple Intelligence Foundation Language Models: Tech Report 2025",
+            "organizacion": "Apple Machine Learning Research / arXiv",
+            "autor": "Ethan Li et al.",
+            "fecha": "2025-07-17",
+            "url": "https://arxiv.org/abs/2507.13575",
+            "tipo": "academica"
+          }
+        },
+        {
+          "id": "E2",
+          "afirmacion": "Un survey académico define y documenta que los modelos on-device priorizan el procesamiento local por latencia, restricciones de recursos y privacidad, y enumera compresión y cuantización como técnicas centrales.",
+          "cifras": [],
+          "extracto": "emphasizing their characteristics such as real-time performance, resource constraints, and enhanced data privacy.",
+          "fuente": {
+            "titulo": "Empowering Edge Intelligence: A Comprehensive Survey on On-Device AI Models",
+            "organizacion": "arXiv / Xubin Wang et al.",
+            "autor": "Xubin Wang et al.",
+            "fecha": "2025-03-08",
+            "url": "https://arxiv.org/abs/2503.06027",
+            "tipo": "academica"
+          }
+        },
+        {
+          "id": "E3",
+          "afirmacion": "La Comisión Europea reporta despliegue y crecimiento de nodos edge en la UE, vinculando edge computing con latencia, privacidad y reducción de costes de transmisión de datos.",
+          "cifras": [
+            "2 257 edge nodes",
+            "1 072 new nodes",
+            "1 455 new nodes"
+          ],
+          "extracto": "a total of 2 257 edge nodes were deployed across the EU",
+          "fuente": {
+            "titulo": "State of the Digital Decade 2025: Keep building the EU's sovereignty and digital future (COM(2025)290 final)",
+            "organizacion": "European Commission, Directorate-General for Communications Networks, Content and Technology (CNECT)",
+            "autor": "European Commission / CNECT",
+            "fecha": "2025-06-16",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=COM:2025:290:FIN",
+            "tipo": "organismo"
+          }
+        }
+      ],
+      "id_candidata": "T7"
+    }
+  ]
+}

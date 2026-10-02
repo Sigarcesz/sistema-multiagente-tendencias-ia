@@ -38,7 +38,7 @@ Con Claude Code, el equivalente es `claude --agent orquestador "<solicitud o mod
 | Campo | Contenido |
 |---|---|
 | Entrada | `01_hallazgos_scout.json` real + una evidencia con fuente inventada (dominio inexistente) |
-| Componente evaluado | Auditor (modo verificación de evidencia) + `aplicar_verificacion.py` |
+| Componente evaluado | Auditor (modo verificación de evidencia) + `preparar_verificacion.py` y `unir_verificacion.py` |
 | Resultado esperado | La evidencia se rechaza antes de llegar al escritor |
 | Criterio de aprobación | La evidencia inyectada (`prueba.json → evidencia_inyectada`) aparece en `03_filtrado.json → evidencias_rechazadas`, NO aparece en `03_hallazgos_validados.json` ni en ningún `informe_v*.md`; el log tiene un evento `evidencia_rechazada` |
 | Evidencia observada | |

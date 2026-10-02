@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+~$*.docx
+.claude/settings.local.json
+.env
+
+# Caché de páginas descargadas: texto de terceros, se regenera en cada run
+runs/*/fuentes_cache/

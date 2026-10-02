@@ -175,20 +175,25 @@ async def delegar(nombre: str, mensaje: str) -> str:
     async with LIMITE:
         print(f"  → {etiq} ({MODELOS[nombre]})…", flush=True)
         t0, ts0 = time.time(), datetime.now().isoformat(timespec="seconds")
+        id_del = f"{etiq}@{ts0}@{id(mensaje)}"
+        herramientas._registrar("en_curso.jsonl", {"id": id_del, "ts_inicio": ts0, "etiqueta": etiq, "agente": nombre})
         try:
             r = await Runner.run(ESPECIALISTAS[nombre], mensaje, max_turns=MAX_TURNOS[nombre], hooks=Cronometro(etiq))
             salida = str(r.final_output)
             registrar(nombre, mensaje, salida, r.context_wrapper.usage, time.time() - t0, ts_inicio=ts0, etiq=etiq)
+            herramientas._registrar("en_curso.jsonl", {"id": id_del, "fin": True})
             print(f"  ← {etiq} terminó en {time.time() - t0:.0f}s", flush=True)
             return salida
         except MaxTurnsExceeded:
             msg = f"ERROR: {nombre} superó el límite de {MAX_TURNOS[nombre]} turnos sin terminar."
             registrar(nombre, mensaje, msg, None, time.time() - t0, error="max_turns", ts_inicio=ts0, etiq=etiq)
+            herramientas._registrar("en_curso.jsonl", {"id": id_del, "fin": True})
             print(f"  ✗ {msg}", flush=True)
             return msg
         except Exception as ex:
             msg = f"ERROR: {nombre} falló: {type(ex).__name__}: {str(ex)[:500]}"
             registrar(nombre, mensaje, msg, None, time.time() - t0, error=type(ex).__name__, ts_inicio=ts0, etiq=etiq)
+            herramientas._registrar("en_curso.jsonl", {"id": id_del, "fin": True})
             print(f"  ✗ {msg}", flush=True)
             return msg
 
@@ -222,6 +227,26 @@ ORQUESTADOR = Agent(
 )
 
 
+def generar_reporte(run: str, abrir: bool = False):
+    for script in ("scripts/reconstruir_log.py", "scripts/reporte_run.py"):
+        subprocess.run([sys.executable, str(RAIZ / script), "--run", run], cwd=RAIZ,
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if abrir:
+        import webbrowser
+        webbrowser.open((RAIZ / run / "reporte_run.html").resolve().as_uri())
+
+
+async def refrescar_reporte(run: str):
+    """Regenera el reporte cada pocos segundos mientras el run está en curso."""
+    primera = True
+    while True:
+        await asyncio.to_thread(generar_reporte, run, primera and os.getenv("ABRIR_REPORTE", "1") == "1")
+        if primera:
+            print(f"  Reporte en vivo: {run}/reporte_run.html (se actualiza solo)", flush=True)
+        primera = False
+        await asyncio.sleep(int(os.getenv("REFRESCO_REPORTE", "10")))
+
+
 def postproceso(run: str):
     """Registro reconstruido y reporte HTML, generados por código al final de cada run."""
     for script in ("scripts/reconstruir_log.py", "scripts/reporte_run.py"):
@@ -240,12 +265,18 @@ async def main_async(run: str, prueba: bool):
         entrada = f"{SOLICITUD}\n\nModo: real. Carpeta del run: {run}"
     print(f"Run: {run}\nModelos: {MODELOS}\nEsfuerzo: {ESFUERZO}\n")
     t0, ts0 = time.time(), datetime.now().isoformat(timespec="seconds")
+    herramientas._registrar("en_curso.jsonl", {"id": "orquestador", "ts_inicio": ts0, "etiqueta": "orquestador",
+                                               "agente": "orquestador"})
+    refresco = asyncio.create_task(refrescar_reporte(run))
     try:
         r = await Runner.run(ORQUESTADOR, entrada, max_turns=MAX_TURNOS["orquestador"], hooks=Cronometro("orquestador"))
         salida, uso, error = str(r.final_output), r.context_wrapper.usage, None
     except MaxTurnsExceeded:
         salida, uso, error = "ERROR: el orquestador superó el límite de turnos.", None, "max_turns"
+    finally:
+        refresco.cancel()
     duracion = time.time() - t0
+    herramientas._registrar("en_curso.jsonl", {"id": "orquestador", "fin": True})
     registrar("orquestador", entrada, salida, uso, duracion, error, ts_inicio=ts0)
 
     total = {k: sum(v[k] for v in ESTADO["uso"].values()) for k in ("requests", "input_tokens", "output_tokens")}

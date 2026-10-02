@@ -1,0 +1,62 @@
+{
+  "id": "T1",
+  "nombre": "Agentes autónomos (agentic AI) en operaciones empresariales",
+  "descripcion": "Sistemas de IA que ejecutan flujos de trabajo multi-paso y toman decisiones semi‑autónomas para tareas operativas y de soporte. En 2026 múltiples encuestas y análisis muestran que las organizaciones han pasado de pilotos a despliegues en producción en áreas como atención al cliente, procesamiento de documentos y operaciones internas. Al mismo tiempo, los líderes reportan lagunas en gobernanza, infraestructura de datos y controles de seguridad.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "Fuentes de 2026 indican despliegues en producción a escala (por ejemplo, Contentstack: 58% con programas en producción; IDC y CIO documentan adopción amplia y casos que automatizan tareas críticas), lo que sugiere potencial para cambiar procesos centrales y costos operativos."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Las evidencias muestran que muchas organizaciones han movido agentes de pilotos a producción (varias fuentes 2026 reportan despliegues en producción), pero persisten desafíos de gobernanza y fiabilidad que impiden una estandarización completa."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Tres fuentes independientes y recientes (analista, proveedor y medio técnico, todas 2026) reportan hallazgos consistentes sobre despliegues en producción y problemas de gobernanza."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "El analista IDC afirma que la mitad de las organizaciones ya despliegan agentes de IA en producción en múltiples áreas de negocio.",
+      "cifras": ["Fifty percent of organizations are already deploying AI agents in production across multiple business areas."],
+      "extracto": "Fifty percent of organizations are already deploying AI agents in production across multiple business areas.",
+      "fuente": {
+        "titulo": "IDC - Agentic AI Ecosystem: Market Landscape & Layers | IDC",
+        "organizacion": "IDC",
+        "autor": "IDC",
+        "fecha": "2026-06-01",
+        "url": "https://www.idc.com/resource-center/blog/agentic-ai-ecosystems-navigating-the-megatrend-thats-reshaping-enterprise-technology-markets/",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "El reporte de Contentstack presenta resultados de una encuesta (n=621) y muestra que el 58% de los encuestados tiene programas agentic en producción.",
+      "cifras": ["621 enterprise digital leaders", "58%"],
+      "extracto": "asked 621 enterprise digital leaders who are directly involved in AI strategy or implementation at their organizations",
+      "fuente": {
+        "titulo": "The 2026 Agentic Enterprise Report | Contentstack Research",
+        "organizacion": "Contentstack",
+        "autor": "Contentstack Research",
+        "fecha": "2026-05",
+        "url": "https://www.contentstack.com/resources/report/agentic-enterprise-report-2026",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "El artículo de CIO documenta casos de uso en producción, por ejemplo empresas que automatizan la mayor parte de llamadas entrantes (un caso reporta 93% de automatización).",
+      "cifras": ["93%"],
+      "extracto": "automate 93% of inbound calls",
+      "fuente": {
+        "titulo": "Agentic AI: 11 promising use cases for business",
+        "organizacion": "CIO",
+        "autor": "Grant Gross and Maria Korolov",
+        "fecha": "2026-06-23",
+        "url": "https://www.cio.com/article/3603856",
+        "tipo": "medio"
+      }
+    }
+  ],
+  "fecha_investigacion": "2026-10-01"
+}

@@ -32,6 +32,7 @@ Problemas de control observados:
 | L4 | **Menos texto por lectura.** `web_fetch` devuelve el inicio de la página y las líneas con cifras o con las palabras buscadas (~5.000 caracteres), no la página entera. | `texto_fuentes.extracto_relevante` |
 | L5 | **Esfuerzo de razonamiento por rol.** El orquestador corre con esfuerzo `low`; los especialistas con el del modelo. Configurable en `.env`. | `runner/main.py` |
 | L6 | **Concurrencia con límite.** Como máximo 4 especialistas a la vez (`MAX_PARALELO`), para no cambiar latencia por errores de límite de tasa. | `runner/main.py` |
+| L8 | **Reporte en vivo.** Al iniciar se abre `reporte_run.html` en el navegador y se regenera cada 10 s: qué agentes están trabajando, actividad reciente y línea de tiempo con las barras en curso. | `runner/main.py`, `reporte_run.py` |
 | L7 | **Progreso visible y medición por paso.** La terminal muestra cada herramienta en uso; quedan registradas duraciones de delegaciones, scripts, herramientas y descargas. | `runner/main.py`, `runner/herramientas.py` |
 
 Lo que no aplicó del análisis de latencia: no había esperas fijas ni reintentos con espera

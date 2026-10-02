@@ -12,6 +12,7 @@ Uso:
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 
 
@@ -106,6 +107,11 @@ def main():
     p.add_argument("--salida")
     a = p.parse_args()
     runs = [Path(r) for r in a.runs]
+    # Una ruta mal escrita producía una tabla de ceros con exit 0, indistinguible de un run vacío.
+    invalidos = [str(r) for r in runs if not r.is_dir()]
+    if invalidos:
+        sys.exit(f"ERROR: no existe la carpeta de run: {', '.join(invalidos)}\n"
+                 f"Directorio actual: {Path.cwd()}")
     ms = [metricas(r) for r in runs]
     claves = list(dict.fromkeys(k for m in ms for k in m))
     lineas = ["| Métrica | " + " | ".join(r.name for r in runs) + " |", "|---|" + "---|" * len(runs)]

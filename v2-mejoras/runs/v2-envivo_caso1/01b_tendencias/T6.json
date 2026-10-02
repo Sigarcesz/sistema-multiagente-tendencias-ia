@@ -1,0 +1,75 @@
+{
+  "id": "T6",
+  "nombre": "IA para productividad de desarrolladores y automatización del ciclo de vida del software",
+  "descripcion": "Herramientas de generación de código, revisión automática y bots de soporte (agentes) están siendo integradas en IDEs, pipelines y plataformas de entrega, alterando tareas de implementación, revisión y mantenimiento. La adopción es amplia y rápida en 2025–2026, y los estudios muestran tanto ganancia de productividad como efectos mixtos en estabilidad y coordinación.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "Evidencias muestran adopción masiva y mejoras de productividad cuantificadas (por ejemplo, reducciones de tiempo de tarea y estimaciones macroeconómicas), y estudios a gran escala indican adopción de agentes que afectan artefactos de entrega, lo que sugiere impacto en procesos centrales de ingeniería y entrega."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Las herramientas tradicionales de autocompletado y asistentes están ampliamente usadas en producción mientras que los agentes más autónomos (generación completa de PRs, modo agentic) se han difundido rápidamente desde 2025 pero siguen evolucionando en modos, integración y gobernanza."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Cuatro fuentes independientes y recientes (proveedor, trabajo académico, investigación de industria y reporte sectorial) ofrecen cifras y hallazgos consistentes sobre adopción y efectos, permitiendo una evaluación confiable."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Estudio/analítica de GitHub reporta que usuarios de Copilot completaron tareas significativamente más rápido y proyecta un gran impacto económico potencial a 2030.",
+      "cifras": ["55%","over $1.5 trillion","30%"],
+      "extracto": "developers completed tasks 55% faster with GitHub Copilot",
+      "fuente": {
+        "titulo": "The economic impact of the AI-powered developer lifecycle and lessons from GitHub Copilot - The GitHub Blog",
+        "organizacion": "GitHub",
+        "autor": "Thomas Dohmke",
+        "fecha": "2024-05-14",
+        "url": "https://github.blog/news-insights/research/the-economic-impact-of-the-ai-powered-developer-lifecycle-and-lessons-from-github-copilot/",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Análisis académico a gran escala sobre repositorios en GitHub estima que la adopción de coding agents en proyectos públicos fue alta (dos dígitos) a principios de 2025.",
+      "cifras": ["22.20%--28.66%","128,018 projects"],
+      "extracto": "finding an estimated adoption rate of 22.20%--28.66%, which is very high",
+      "fuente": {
+        "titulo": "Agentic Much? Adoption of Coding Agents on GitHub",
+        "organizacion": "arXiv / autores académicos",
+        "autor": "Romain Robbes, Théo Matricon, Thomas Degueule, Andre Hora, Stefano Zacchiroli",
+        "fecha": "2026-04-08",
+        "url": "https://arxiv.org/abs/2601.18341",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Encuesta Developer Ecosystem 2026 de JetBrains muestra uso masivo de agentes de codificación: 90% de desarrolladores usan agentes semanalmente y hay desplazamientos rápidos entre herramientas (Claude Code creciendo, Copilot disminuyendo).",
+      "cifras": ["90%","39%","21%","29%","47%"],
+      "extracto": "90% of professional developers were using AI coding agents at work at least weekly",
+      "fuente": {
+        "titulo": "AI Coding Agents: Adoption Trends - The JetBrains Blog",
+        "organizacion": "JetBrains Research",
+        "autor": "Mikhail Bogdanov",
+        "fecha": "2026-08",
+        "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+        "tipo": "medio"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "El informe DORA (State of AI-assisted Software Development 2025) encuentra que la adopción de AI está asociada con aumentos de throughput y con ganancias de productividad medibles en rangos porcentuales, pero también con riesgos de inestabilidad en la entrega si no se adaptan sistemas y prácticas.",
+      "cifras": ["productivity gains of 20% to 30%","86%"],
+      "extracto": "productivity gains of 20% to 30%",
+      "fuente": {
+        "titulo": "State of AI-assisted Software Development 2025",
+        "organizacion": "DORA (Google Cloud) / ThoughtWorks (reporte conjunto)",
+        "autor": "DORA research team / ThoughtWorks (report partners)",
+        "fecha": "2025-07",
+        "url": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/report/tw_report_state_of_ai_assisted_software_development_2025.pdf",
+        "tipo": "consultora"
+      }
+    }
+  ]
+}

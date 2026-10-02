@@ -1,0 +1,55 @@
+{
+  "estado": "ERROR_ESTRUCTURA",
+  "errores": [
+    "T2.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T2.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T2.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)",
+    "T3.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T3.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T3.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)",
+    "T3.evidencias[3]: id de evidencia duplicado E4 (deben ser únicos en todo el documento)",
+    "T4.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T4.evidencias[0] (E1): 'fuente.fecha' debe ser AAAA, AAAA-MM o AAAA-MM-DD",
+    "T4.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T4.evidencias[1] (E2): 'fuente.fecha' debe ser AAAA, AAAA-MM o AAAA-MM-DD",
+    "T4.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)",
+    "T4.evidencias[2] (E3): 'fuente.fecha' debe ser AAAA, AAAA-MM o AAAA-MM-DD",
+    "T5.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T5.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T5.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)",
+    "T5.evidencias[3]: id de evidencia duplicado E4 (deben ser únicos en todo el documento)",
+    "T6.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T6.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T6.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)",
+    "T6.evidencias[3]: id de evidencia duplicado E4 (deben ser únicos en todo el documento)",
+    "T7.evidencias[0]: id de evidencia duplicado E1 (deben ser únicos en todo el documento)",
+    "T7.evidencias[1]: id de evidencia duplicado E2 (deben ser únicos en todo el documento)",
+    "T7.evidencias[2]: id de evidencia duplicado E3 (deben ser únicos en todo el documento)"
+  ],
+  "violaciones": [],
+  "advertencias": [
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E1",
+      "tendencia": "T3",
+      "fecha": "2024-07-25",
+      "meses": 27
+    },
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E2",
+      "tendencia": "T5",
+      "fecha": "2024-07-15",
+      "meses": 27
+    },
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E1",
+      "tendencia": "T6",
+      "fecha": "2024-05-14",
+      "meses": 29
+    }
+  ],
+  "tendencias": 7,
+  "evidencias": 25
+}

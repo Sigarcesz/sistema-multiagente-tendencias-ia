@@ -86,8 +86,21 @@ def md_a_html(md: str) -> str:
     return "\n".join(out)
 
 
+def en_curso(run: Path) -> dict:
+    """Delegaciones que empezaron y aún no terminan (id -> registro de inicio)."""
+    activos = {}
+    for r in jsonl(run / "en_curso.jsonl"):
+        if r.get("fin"):
+            activos.pop(r["id"], None)
+        else:
+            activos[r["id"]] = r
+    return activos
+
+
 def linea_tiempo(run: Path) -> str:
-    filas = []
+    ahora = datetime.now()
+    filas = [(ts(r["ts_inicio"]), ahora, r["etiqueta"] + " (en curso)", r["agente"] + "_activo")
+             for k, r in en_curso(run).items() if r["agente"] != "orquestador"]
     for d in jsonl(run / "delegaciones.jsonl"):
         if d["agente"] == "orquestador":
             continue
@@ -106,7 +119,8 @@ def linea_tiempo(run: Path) -> str:
     t0 = min(f[0] for f in filas)
     t1 = max(f[1] for f in filas)
     total = max((t1 - t0).total_seconds(), 1)
-    colores = {"trend-scout": "#3b82f6", "quality-auditor": "#ef4444", "report-writer": "#22c55e", "script": "#a3a3a3"}
+    colores = {"trend-scout": "#3b82f6", "quality-auditor": "#ef4444", "report-writer": "#22c55e", "script": "#a3a3a3",
+               "trend-scout_activo": "#93c5fd", "quality-auditor_activo": "#fca5a5", "report-writer_activo": "#86efac"}
     alto, ancho, izq = 22, 900, 230
     svg = [f"<svg viewBox='0 0 {izq + ancho + 60} {len(filas) * alto + 30}' class='gantt'>"]
     for i, (a, b, et, ag) in enumerate(sorted(filas, key=lambda f: f[0])):
@@ -142,9 +156,14 @@ def main():
     ver = {v["id"]: v for v in (cargar(run / "03_verificacion_evidencia.json") or {}).get("evidencias", [])}
     conf_final = {t["id"]: t["confianza"]["nivel"] for t in validados["tendencias"]}
 
-    estado = fin[-1]["estado"] if fin else (ult["estado"] if ult else "—")
+    activos = en_curso(run)
+    vivo = "orquestador" in activos
+    estado = fin[-1]["estado"] if fin else ("EN CURSO" if vivo else (ult["estado"] if ult else "—"))
+    if vivo:
+        inicio = ts(activos["orquestador"]["ts_inicio"])
+        uso = dict(uso, duracion_segundos=(datetime.now() - inicio).total_seconds() if inicio else 0)
     tot = uso.get("total", {})
-    tarjetas = [("Estado final", estado), ("Score", ult["score_global"] if ult else "—"),
+    tarjetas = [("Estado", estado), ("Score", ult["score_global"] if ult else "—"),
                 ("Auditorías", len(auds)), ("Duración", f"{uso.get('duracion_segundos', 0) / 60:.1f} min"),
                 ("Tokens entrada", f"{tot.get('input_tokens', 0):,}"), ("Peticiones", tot.get("requests", "—")),
                 ("Evidencias válidas", f"{filtrado.get('evidencias_validas', '—')}/{filtrado.get('evidencias_entrada', '—')}"),
@@ -178,7 +197,20 @@ def main():
                       f"<td>{v.get('input_tokens', 0):,}</td><td>{v.get('output_tokens', 0):,}</td><td>{v.get('segundos')}</td></tr>"
                       for k, v in uso.get("por_agente", {}).items())
 
-    doc = f"""<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+    actividad = ""
+    if vivo:
+        ult_h = jsonl(run / "herramientas.jsonl")[-15:]
+        trabajando = "".join(f"<li><b>{esc(r['etiqueta'])}</b> desde {esc(r['ts_inicio'][11:19])}</li>"
+                             for r in activos.values() if r["agente"] != "orquestador") or "<li>Orquestador decidiendo el siguiente paso</li>"
+        recientes = "".join(f"<tr><td>{esc(h['ts'][11:19])}</td><td>{esc(h['agente'])}</td><td>{esc(h['herramienta'])}</td>"
+                            f"<td>{h['segundos']}</td></tr>" for h in reversed(ult_h))
+        actividad = (f"<div class='vivo'>En curso · se actualiza cada 10 s · {datetime.now():%H:%M:%S}</div>"
+                     f"<h2>Trabajando ahora</h2><ul>{trabajando}</ul>"
+                     f"<h2>Actividad reciente</h2><div class='wrap'><table><tr><th>Hora</th><th>Agente</th><th>Herramienta</th>"
+                     f"<th>Segundos</th></tr>{recientes}</table></div>")
+    refresco = '<meta http-equiv="refresh" content="10">' if vivo else ""
+
+    doc = f"""<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">{refresco}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Run {esc(run.name)}</title>
 <style>
@@ -193,10 +225,12 @@ th{{background:var(--acc);color:#fff}} tr.rech{{background:var(--bad)}} tr.ok td
 .ext{{color:var(--mut);font-style:italic;margin-top:4px}} .nota{{color:var(--mut)}} a.cita{{text-decoration:none;font-weight:600}}
 :target{{outline:3px solid #f59e0b}} .gantt{{width:100%;height:auto;font-size:11px}} .gantt text{{fill:var(--fg)}} .seg{{fill:var(--mut)!important}}
 .informe{{background:var(--card);border-radius:10px;padding:8px 20px}} table.md td{{background:var(--bg)}}
+.vivo{{background:#f59e0b;color:#111;padding:8px 12px;border-radius:8px;font-weight:600;margin:12px 0}}
 </style></head><body>
 <h1>Run {esc(run.name)}</h1><p class="nota">Modelos: {esc(uso.get('modelos', '—'))} · versión {esc(uso.get('version', 'v1'))}</p>
 <div class="cards">{''.join(f"<div class='card'><span>{esc(k)}</span><b>{esc(v)}</b></div>" for k, v in tarjetas)}</div>
-<h2>Línea de tiempo</h2><p class="nota">Azul: Scout · rojo: auditor · verde: escritor · gris: scripts. Las barras superpuestas corrieron en paralelo.</p>
+{actividad}
+<h2>Línea de tiempo</h2><p class="nota">Azul: Scout · rojo: auditor · verde: escritor · gris: scripts. Las barras superpuestas corrieron en paralelo; las claras siguen en curso.</p>
 <div class="wrap">{linea_tiempo(run)}</div>
 <h2>Consumo por agente</h2><div class="wrap"><table><tr><th>Agente</th><th>Modelo</th><th>Llamadas</th><th>Peticiones</th><th>Tokens entrada</th><th>Tokens salida</th><th>Segundos</th></tr>{agentes}</table></div>
 <h2>Tendencias y confianza</h2><div class="wrap"><table><tr><th>ID</th><th>Tendencia</th><th>Madurez</th><th>Impacto</th><th>Confianza (Scout → final)</th></tr>{filas_t}</table></div>

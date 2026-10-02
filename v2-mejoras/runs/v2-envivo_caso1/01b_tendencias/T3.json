@@ -1,0 +1,75 @@
+{
+  "id": "T3",
+  "nombre": "Modelos empresariales propietarios y MLOps para governanza de modelos multimodales",
+  "descripcion": "Organizaciones están construyendo, afinando y/o desplegando modelos privados o fine-tuned sobre modelos base (incluyendo multimodales) y estableciendo prácticas de MLOps/ModelOps y gobernanza para control, privacidad y cumplimiento. La tendencia combina despliegues in-house o self-hosted de modelos especializados con políticas y procesos para inventario, monitoreo, actualización y gestión de riesgos de modelos. Se observa actividad tanto en adopción comercial (productos y casos de uso) como en marcos regulatorios y de estándares que exigen inventarios y controles sobre modelos y sus versiones.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "Afecta procesos centrales (desarrollo, operaciones, cumplimiento), exige cambios en costes e infraestructura y refuerza controles legales y de privacidad, tal como documentan NIST y Deloitte (E1, E2)."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Hay productos comerciales y adopción creciente (OpenAI muestra fuertes desplegables y uso empresarial, E3) y publicaciones de consultoras y sector público que describen prácticas y actividades de fine-tuning y MLOps (E2, E4)."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Evidencia reciente y consistente de fuentes regulatorias (NIST), consultoras (Deloitte, Forrester) y proveedores (OpenAI) que documentan tanto la adopción de modelos privados/fine-tuning como la necesidad de gobernanza (E1–E4)."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "NIST recomienda inventariar GAI/ foundation models y registrar la versión del modelo y modos de acceso como parte de la gobernanza organizacional.",
+      "cifras": [],
+      "extracto": "underlying foundation models, versions of underlying models, and access modes.",
+      "fuente": {
+        "titulo": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+        "organizacion": "National Institute of Standards and Technology (NIST)",
+        "autor": "NIST",
+        "fecha": "2024-07-25",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+        "tipo": "organismo"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Deloitte reporta que las empresas están incorporando privacidad, soberanía y seguridad-by-design en plataformas modulares y que dos tercios de las organizaciones reportan ganancias en productividad por AI.",
+      "cifras": ["66%"],
+      "extracto": "two-thirds (66%) of organizations reporting gains.",
+      "fuente": {
+        "titulo": "The State of AI in the Enterprise - 2026 AI report",
+        "organizacion": "Deloitte US",
+        "autor": "Deloitte",
+        "fecha": "2026",
+        "url": "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html?trk=article-ssr-frontend-pulse_publishing-image-block",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "OpenAI reporta un fuerte crecimiento del uso empresarial, indicando más de 7 millones de ChatGPT workplace seats y un crecimiento aproximado de 9x en ChatGPT Enterprise seats, evidenciando despliegue y personalización a escala empresarial.",
+      "cifras": ["more than 7 million", "9x"],
+      "extracto": "ChatGPT Enterprise seats have increased approximately 9x year-over-year.",
+      "fuente": {
+        "titulo": "The state of enterprise AI",
+        "organizacion": "OpenAI",
+        "autor": "OpenAI",
+        "fecha": "2025-12-17",
+        "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "Forrester documenta que la mejora en modelos fine-tuned y herramientas de post-training está haciendo práctico que las empresas adapten modelos open-weight con sus propios datos para tareas empresariales específicas.",
+      "cifras": [],
+      "extracto": "fine-tuned models (mostly composed of post-trained open-weight models) are smaller, more efficient to run",
+      "fuente": {
+        "titulo": "The Market Is Finally Making Fine-Tuned Models Happen",
+        "organizacion": "Forrester",
+        "autor": "Forrester",
+        "fecha": "2026-09-08",
+        "url": "https://www.forrester.com/blogs/the-market-is-finally-making-fine-tuned-models-happen/",
+        "tipo": "consultora"
+      }
+    }
+  ]
+}

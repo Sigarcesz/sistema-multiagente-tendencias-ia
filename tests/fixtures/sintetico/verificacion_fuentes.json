@@ -1,5 +1,0 @@
-{"_nota": "DATOS FICTICIOS para smoke_test.py", "evidencias": [
- {"id": "E1", "url": "https://example.org/a", "estado": "accesible", "http": 200},
- {"id": "E2", "url": "https://example.org/b", "estado": "accesible", "http": 200},
- {"id": "E3", "url": "https://example.org/c", "estado": "accesible", "http": 200},
- {"id": "E4", "url": "https://example.org/d", "estado": "accesible", "http": 200}]}
