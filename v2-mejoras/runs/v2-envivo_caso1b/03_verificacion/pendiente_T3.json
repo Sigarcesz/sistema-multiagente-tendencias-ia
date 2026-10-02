@@ -1,0 +1,175 @@
+{
+  "tendencia": {
+    "id": "T3",
+    "nombre": "IA generativa aplicada al desarrollo de software (code assistants)",
+    "descripcion": "Herramientas generativas y agentes que asisten en la escritura, prueba y revisión de código están siendo desplegadas en entornos empresariales, acelerando entregas y reconfigurando flujos de trabajo de revisión. Al mismo tiempo, estudios y benchmarks muestran ganancias de productividad contextuales pero también riesgos mayores de seguridad y deuda técnica.",
+    "impacto": {
+      "nivel": "alto",
+      "justificacion": "Evidencias muestran aumentos sustantivos en capacidad de entrega (p. ej. 2.09x throughput en una empresa) y encuestas reportan que 73% de ingenieros perciben entregas más rápidas; simultáneamente emergen riesgos de seguridad y deuda amplificados por código generado por IA (SIG)."
+    },
+    "madurez": {
+      "nivel": "en_adopcion",
+      "justificacion": "Existen productos comerciales y despliegues a escala en empresas (mandatos internos, creciente uso reportado por proveedores), pero la evidencia muestra heterogeneidad en efectos y prácticas de gobernanza todavía en desarrollo."
+    },
+    "confianza": {
+      "nivel": "alta",
+      "justificacion": "Cuatro fuentes independientes y recientes (OpenAI, SIG, un meta-análisis de Stanford y un estudio longitudinal arXiv) reportan patrones consistentes sobre ganancias de productividad y simultáneos riesgos operativos."
+    },
+    "id_candidata": "T3"
+  },
+  "evidencias": [
+    {
+      "evidencia": {
+        "id": "E7",
+        "afirmacion": "Encuestas y datos de uso de OpenAI indican que la mayoría de los ingenieros reportan entregas de código más rápidas tras adoptar herramientas de IA en entornos empresariales.",
+        "cifras": [
+          "73%"
+        ],
+        "extracto": "73% of engineers report faster code delivery.",
+        "fuente": {
+          "titulo": "The state of enterprise AI",
+          "organizacion": "OpenAI",
+          "autor": "OpenAI",
+          "fecha": "2025-12-08",
+          "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+          "tipo": "proveedor"
+        },
+        "id_local": "E1"
+      },
+      "chequeo_mecanico": {
+        "id": "E7",
+        "tendencia": "T3",
+        "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/8b0e4ec9e5a3912a.txt",
+        "cifras": [
+          {
+            "cifra": "73%",
+            "encontrada": true
+          }
+        ],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    },
+    {
+      "evidencia": {
+        "id": "E8",
+        "afirmacion": "Un meta-análisis académico encuentra un efecto positivo moderado de los asistentes generativos en la productividad de programación, aunque con heterogeneidad entre contextos.",
+        "cifras": [
+          "g = 0.33",
+          "95% CI: [0.09, 0.58]"
+        ],
+        "extracto": "We find a statistically significant, but moderate positive effect of GenAI assistance on developer productivity (g = 0.33, 95% CI: [0.09, 0.58]),",
+        "fuente": {
+          "titulo": "A Meta-Analysis Of The Effect Of Generative AI On Productivity And Learning In Programming",
+          "organizacion": "SCALE (Stanford)",
+          "autor": "Sebastian Maier, Moritz Gunzenhauser, Jonas Schweisthal, et al.",
+          "fecha": "2026-05",
+          "url": "https://scale.stanford.edu/ai/repository/meta-analysis-effect-generative-ai-productivity-and-learning-programming",
+          "tipo": "academica"
+        },
+        "id_local": "E2"
+      },
+      "chequeo_mecanico": {
+        "id": "E8",
+        "tendencia": "T3",
+        "url": "https://scale.stanford.edu/ai/repository/meta-analysis-effect-generative-ai-productivity-and-learning-programming",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/3e77b6dc0e60f90e.txt",
+        "cifras": [
+          {
+            "cifra": "g = 0.33",
+            "encontrada": true
+          },
+          {
+            "cifra": "95% CI: [0.09, 0.58]",
+            "encontrada": true
+          }
+        ],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    },
+    {
+      "evidencia": {
+        "id": "E9",
+        "afirmacion": "Un informe de benchmarking de SIG muestra que parte del código en producción ya es generado por IA y que ese código presenta mayores violaciones de seguridad en sus pruebas.",
+        "cifras": [
+          "1.9%"
+        ],
+        "extracto": "AI-generated code now accounts for 1.9% of enterprise production code.",
+        "fuente": {
+          "titulo": "Software Improvement Group publishes State of Software 2026 - SIG",
+          "organizacion": "Software Improvement Group",
+          "autor": "Software Improvement Group",
+          "fecha": "2026-06-11",
+          "url": "https://www.softwareimprovementgroup.com/press-center/sig-news-state-of-software-2026-report/",
+          "tipo": "consultora"
+        },
+        "id_local": "E3"
+      },
+      "chequeo_mecanico": {
+        "id": "E9",
+        "tendencia": "T3",
+        "url": "https://www.softwareimprovementgroup.com/press-center/sig-news-state-of-software-2026-report/",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/73f1cfaa14f9480e.txt",
+        "cifras": [
+          {
+            "cifra": "1.9%",
+            "encontrada": true
+          }
+        ],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    },
+    {
+      "evidencia": {
+        "id": "E10",
+        "afirmacion": "Un estudio longitudinal de campo de una empresa que impuso un mandato de IA documenta que el rendimiento por desarrollador llegó a duplicarse, alcanzando 2.09x respecto a la línea base previa.",
+        "cifras": [
+          "2.09x"
+        ],
+        "extracto": "per-capita throughput eventually doubled, reaching 2.09x the pre-mandate baseline in April 2026,",
+        "fuente": {
+          "titulo": "AI Writes Faster Than Humans Can Review: A Longitudinal Study of an Enterprise 2x Mandate",
+          "organizacion": "arXiv",
+          "autor": "Hao He et al.",
+          "fecha": "2026-07-02",
+          "url": "https://arxiv.org/abs/2607.01904",
+          "tipo": "academica"
+        },
+        "id_local": "E4"
+      },
+      "chequeo_mecanico": {
+        "id": "E10",
+        "tendencia": "T3",
+        "url": "https://arxiv.org/abs/2607.01904",
+        "estado_fuente": "legible",
+        "http": 200,
+        "desde_cache": true,
+        "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/81ea61cdc211ab25.txt",
+        "cifras": [
+          {
+            "cifra": "2.09x",
+            "encontrada": true
+          }
+        ],
+        "cifras_no_encontradas": [],
+        "extracto_encontrado": true,
+        "error": null
+      }
+    }
+  ]
+}

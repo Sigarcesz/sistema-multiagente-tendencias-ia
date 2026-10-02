@@ -84,8 +84,13 @@ python3 scripts/validar_contrato.py --entrada RUN/01_hallazgos_scout.json \
   con el archivo saneado.
 - Registra un evento `advertencia` por cada entrada de `advertencias` (p. ej. fuentes con más
   de 24 meses). No bloquean el flujo: la verificación las usa para ajustar la confianza.
-- Código 2 (`ERROR_ESTRUCTURA`): devuelve los errores al Scout una vez para que corrija el
-  JSON. Si vuelve a fallar, termina con estado `FALLIDO`.
+- Código 2 (`ERROR_ESTRUCTURA`): devuelve los errores al Scout una vez, en **modo
+  corrección**: entrada `RUN/01_hallazgos_scout.json`, reporte `RUN/02_contrato.json`,
+  salida `RUN/01_hallazgos_scout_corregido.json`. Después **renormaliza** (el Scout puede
+  deshacer la numeración global de E#; las fechas reconocibles se pasan a AAAA-MM-DD):
+  `python3 scripts/unir_hallazgos.py --desde RUN/01_hallazgos_scout_corregido.json --salida RUN/01_hallazgos_scout_v2.json`
+  y vuelve a validar con `--entrada RUN/01_hallazgos_scout_v2.json` (mismas `--salida` y
+  `--reporte`). Si vuelve a fallar, termina con estado `FALLIDO`.
 
 ## Paso 3 — Verificación de evidencia (auditor por tendencia, en paralelo)
 

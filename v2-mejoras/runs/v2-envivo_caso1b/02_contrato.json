@@ -1,0 +1,30 @@
+{
+  "estado": "OK",
+  "errores": [],
+  "violaciones": [],
+  "advertencias": [
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E1",
+      "tendencia": "T1",
+      "fecha": "2023-12-21",
+      "meses": 34
+    },
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E19",
+      "tendencia": "T6",
+      "fecha": "2023-01",
+      "meses": 45
+    },
+    {
+      "tipo": "fuente_antigua",
+      "evidencia": "E21",
+      "tendencia": "T6",
+      "fecha": "2024-05-01",
+      "meses": 29
+    }
+  ],
+  "tendencias": 6,
+  "evidencias": 21
+}

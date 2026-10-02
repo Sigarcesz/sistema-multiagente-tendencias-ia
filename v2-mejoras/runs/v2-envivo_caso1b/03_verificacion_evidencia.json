@@ -1,0 +1,109 @@
+{
+  "evidencias": [
+    {
+      "id": "E1",
+      "veredicto": "VERIFICADA",
+      "motivo": "El artículo de arXiv titulado 'BloombergGPT: A Large Language Model for Finance' (Bloomberg) incluye en el resumen la frase 'we present BloombergGPT, a 50 billion parameter language model...' y detalla el corpus de 363 billion tokens y 345 billion tokens; título y organización coinciden con la fuente citada."
+    },
+    {
+      "id": "E2",
+      "veredicto": "VERIFICADA",
+      "motivo": "El artículo de PLOS Digital Health 'Development and evaluation of a lightweight large language model chatbot for medication enquiry' contiene el extracto citado ('...achieving 71.9% high-quality responses') y describe modelos de 7 billion or less; título, revista y fecha concuerdan con la evidencia."
+    },
+    {
+      "id": "E3",
+      "veredicto": "VERIFICADA",
+      "motivo": "El informe 'The State of AI 2025' (Bessemer) publicado el 13 Aug 2025 incluye la sección sobre 'Vertical AI' y el extracto citado ('Adoption continues to accelerate, particularly for vertical workflows...'); título, organización y fecha coinciden con la fuente."
+    },
+    {
+      "id": "E4",
+      "veredicto": "VERIFICADA",
+      "motivo": "La encuesta ‘State of Agent Engineering’ (LangChain, 12 Jun 2026) incluye las cifras citadas (1,300+ profesionales; 57.3% en producción; 30.4% en desarrollo) y describe uso en atención al cliente y automatización interna."
+    },
+    {
+      "id": "E5",
+      "veredicto": "VERIFICADA",
+      "motivo": "El artículo arXiv (Chatterji et al., 12 Aug 2026) contiene el extracto y las cifras mencionadas (‘over 1,500 organizations’ y ‘over 17 million messages’) y documenta uso difundido en múltiples tareas y funciones."
+    },
+    {
+      "id": "E6",
+      "veredicto": "VERIFICADA",
+      "motivo": "El informe de KPMG (Transforming the Enterprise 2026) muestra que el despliegue es más alto en Technology/IT (59%) y reporta adopción por funciones y desigualdad en el progreso, coincidiendo con la afirmación."
+    },
+    {
+      "id": "E7",
+      "veredicto": "VERIFICADA",
+      "motivo": "La página 'The state of enterprise AI' (OpenAI, 2025-12-08) contiene la afirmación y la cifra exacta '73% of engineers report faster code delivery' en el contexto de una encuesta a empleados de empresas."
+    },
+    {
+      "id": "E8",
+      "veredicto": "VERIFICADA",
+      "motivo": "El repositorio SCALE (Stanford) publica el meta-análisis con el extracto 'g = 0.33, 95% CI: [0.09, 0.58]' y discute heterogeneidad entre contextos."
+    },
+    {
+      "id": "E9",
+      "veredicto": "VERIFICADA",
+      "motivo": "El comunicado de SIG ('State of Software 2026') incluye 'AI-generated code now accounts for 1.9% of enterprise production code' y reporta que el código generado por IA presenta aproximadamente el doble de violaciones de seguridad en sus pruebas."
+    },
+    {
+      "id": "E10",
+      "veredicto": "VERIFICADA",
+      "motivo": "El paper en arXiv (AI Writes Faster Than Humans Can Review, 2026) documenta que el throughput per cápita llegó a 2.09x la línea base pre-mandato en abril de 2026."
+    },
+    {
+      "id": "E11",
+      "veredicto": "VERIFICADA",
+      "motivo": "El informe de Deloitte (2026 Retail Industry Global Outlook) incluye la encuesta a 330 ejecutivos y en la sección ‘Marketing and customer experience’ indica que 67% de los ejecutivos esperan tener capacidades de personalización impulsadas por IA dentro del próximo año; título y organización coinciden."
+    },
+    {
+      "id": "E12",
+      "veredicto": "VERIFICADA",
+      "motivo": "El reporte 'The state of enterprise AI' de OpenAI (17 Dec 2025) contiene la frase 'customer service and content generation now represent approximately 20% of API activity' y el título/organización coinciden con la fuente citada."
+    },
+    {
+      "id": "E13",
+      "veredicto": "VERIFICADA",
+      "motivo": "El preprint arXiv 'CustomerSim' contiene el extracto 'UserGRPO raises the decision alignment... from 0.417 to 0.652, a gain of 23.5 points' y las cifras 0.417/0.652/23.5 aparecen en el texto; título y autoría coinciden."
+    },
+    {
+      "id": "E14",
+      "veredicto": "VERIFICADA",
+      "motivo": "El Stanford Emerging Technology Review (SETR 2026) describe la arquitectura multimodal (cita a Emu: genera imagen y luego video) y documenta las cifras de inversión ($244.22 billion in 2025; $33.94 billion in 2024); título y organización coinciden."
+    },
+    {
+      "id": "E15",
+      "veredicto": "VERIFICADA",
+      "motivo": "El texto local del informe IDC (Edge AI in 1H26) contiene la frase indicada: ‘Physical AI, memory cost pressures, and mature on-device silicon pushed edge deployments from pilots to production’, y el título y la organización coinciden con la fuente citada."
+    },
+    {
+      "id": "E16",
+      "veredicto": "VERIFICADA",
+      "motivo": "El PDF/abstract de arXiv (NPU Hardware Evaluation v1.0) incluye las cifras y la afirmación sobre crecimiento del mercado ($87B en 2024 a $349B en 2032, 18.9% CAGR) y la comparación de eficiencia energética (35–70% lower power consumption), respaldando la afirmación sobre NPUs como alternativa viable."
+    },
+    {
+      "id": "E17",
+      "veredicto": "VERIFICADA",
+      "motivo": "La página de Deloitte contiene la afirmación esperada: ‘we expect NPUs to become standard in new enterprise fleets, accelerating on-device intelligence’, y el título/organización concuerdan con la cita."
+    },
+    {
+      "id": "E18",
+      "veredicto": "VERIFICADA",
+      "motivo": "El artículo del blog de Roboflow describe explícitamente un camino local de visión a resultado sub-100 ms y explica por qué las decisiones de rechazo deben ejecutarse en el borde, apoyando la afirmación sobre latencia y operación sin WAN."
+    },
+    {
+      "id": "E19",
+      "veredicto": "VERIFICADA",
+      "motivo": "El NIST AI RMF 1.0 (enero 2023) declara explícitamente que la gobernanza es un requisito continuo e intrínseco para la gestión del riesgo de IA y dedica secciones a la gestión de riesgos relacionados con terceros (p. ej. ‘Governance is a continual and intrinsic requirement...’ y apartados sobre riesgos relacionados con terceros). Título y organización (National Institute of Standards and Technology) coinciden con la fuente."
+    },
+    {
+      "id": "E20",
+      "veredicto": "VERIFICADA",
+      "motivo": "La página de la Comisión Europea sobre el AI Act describe un enfoque basado en riesgo para desarrolladores y desplegadores, enumera obligaciones (documentación, transparencia, evaluación de riesgos, medidas de supervisión humana) y muestra las fechas de entrada en vigor y aplicación (p. ej. entrada en vigor 1 August 2024; aplicación 2 August 2026), coherente con la afirmación."
+    },
+    {
+      "id": "E21",
+      "veredicto": "VERIFICADA",
+      "motivo": "El artículo 'A Watermark for Large Language Models' (arXiv, autores Kirchenbauer et al.) afirma en el resumen que 'Potential harms of large language models can be mitigated by watermarking model output', apoyando la afirmación sobre watermarking como técnica para mitigar daños y facilitar detección/atribución. Título y fuente (arXiv / ICML) coinciden."
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "evidencias": [
+    {
+      "id": "E1",
+      "tendencia": "T1",
+      "url": "https://arxiv.org/abs/2303.17564",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/9f50070952123cc9.txt",
+      "cifras": [
+        {
+          "cifra": "50 billion parameter",
+          "encontrada": true
+        },
+        {
+          "cifra": "363 billion token dataset",
+          "encontrada": true
+        },
+        {
+          "cifra": "345 billion tokens",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E2",
+      "tendencia": "T1",
+      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000961",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/46faf25ba1b4aad6.txt",
+      "cifras": [
+        {
+          "cifra": "71.9% high-quality responses",
+          "encontrada": true
+        },
+        {
+          "cifra": "7 billion or less",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E3",
+      "tendencia": "T1",
+      "url": "https://www.bvp.com/atlas/the-state-of-ai-2025",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/9862ffdef50e8d0a.txt",
+      "cifras": [
+        {
+          "cifra": "10x",
+          "encontrada": true
+        },
+        {
+          "cifra": "Published on Aug 13, 2025",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E4",
+      "tendencia": "T2",
+      "url": "https://www.langchain.com/state-of-agent-engineering",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/6fc65b5b2934776f.txt",
+      "cifras": [
+        {
+          "cifra": "over 1,300 professionals",
+          "encontrada": true
+        },
+        {
+          "cifra": "57.3%",
+          "encontrada": true
+        },
+        {
+          "cifra": "30.4%",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E5",
+      "tendencia": "T2",
+      "url": "https://arxiv.org/abs/2608.12236",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/122f1d6f42382853.txt",
+      "cifras": [
+        {
+          "cifra": "over 1,500 organizations",
+          "encontrada": true
+        },
+        {
+          "cifra": "over 17 million messages",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E6",
+      "tendencia": "T2",
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/06/transforming-the-enterprise-2026.pdf.coredownload.inline.pdf",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/87dc6f20e42f3eb1.txt",
+      "cifras": [
+        {
+          "cifra": "59%",
+          "encontrada": true
+        },
+        {
+          "cifra": "43%",
+          "encontrada": true
+        },
+        {
+          "cifra": "42%",
+          "encontrada": true
+        },
+        {
+          "cifra": "37%",
+          "encontrada": true
+        },
+        {
+          "cifra": "June-2026",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E7",
+      "tendencia": "T3",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/8b0e4ec9e5a3912a.txt",
+      "cifras": [
+        {
+          "cifra": "73%",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E8",
+      "tendencia": "T3",
+      "url": "https://scale.stanford.edu/ai/repository/meta-analysis-effect-generative-ai-productivity-and-learning-programming",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/3e77b6dc0e60f90e.txt",
+      "cifras": [
+        {
+          "cifra": "g = 0.33",
+          "encontrada": true
+        },
+        {
+          "cifra": "95% CI: [0.09, 0.58]",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E9",
+      "tendencia": "T3",
+      "url": "https://www.softwareimprovementgroup.com/press-center/sig-news-state-of-software-2026-report/",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/73f1cfaa14f9480e.txt",
+      "cifras": [
+        {
+          "cifra": "1.9%",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E10",
+      "tendencia": "T3",
+      "url": "https://arxiv.org/abs/2607.01904",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/81ea61cdc211ab25.txt",
+      "cifras": [
+        {
+          "cifra": "2.09x",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E11",
+      "tendencia": "T4",
+      "url": "https://www.deloitte.com/global/en/insights/industry/retail-distribution/retail-distribution-industry-outlook.html",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/2739a24739ac4bbc.txt",
+      "cifras": [
+        {
+          "cifra": "67%",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E12",
+      "tendencia": "T4",
+      "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/1e8024186f0f23b8.txt",
+      "cifras": [
+        {
+          "cifra": "approximately 20%",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E13",
+      "tendencia": "T4",
+      "url": "https://arxiv.org/abs/2605.08334",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/9906f4c37fed576b.txt",
+      "cifras": [
+        {
+          "cifra": "0.417",
+          "encontrada": true
+        },
+        {
+          "cifra": "0.652",
+          "encontrada": true
+        },
+        {
+          "cifra": "23.5 points",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E14",
+      "tendencia": "T4",
+      "url": "https://setr.stanford.edu/sites/default/files/2026-01/SETR2026_01-AI_web-260109.pdf",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/3a4b73c9e3efd051.txt",
+      "cifras": [
+        {
+          "cifra": "$244.22 billion in 2025",
+          "encontrada": true
+        },
+        {
+          "cifra": "$33.94 billion in 2024",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E15",
+      "tendencia": "T5",
+      "url": "https://www.marketresearch.com/IDC-v2477/Edge-AI-1H26-Pilot-Production-46125840/",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/e617cdcd577da861.txt",
+      "cifras": [],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E16",
+      "tendencia": "T5",
+      "url": "https://arxiv.org/abs/2609.13166",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/fbe9b55b70d15fea.txt",
+      "cifras": [
+        {
+          "cifra": "$87B in 2024",
+          "encontrada": true
+        },
+        {
+          "cifra": "$349B by 2032",
+          "encontrada": true
+        },
+        {
+          "cifra": "18.9% CAGR",
+          "encontrada": true
+        },
+        {
+          "cifra": "35-70% lower power consumption",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E17",
+      "tendencia": "T5",
+      "url": "https://www.deloitte.com/us/en/alliances/articles/intel-enterprise-ai-pc-strategy-shift-to-edge-ai.html",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/ebdea8465c7fb6ca.txt",
+      "cifras": [],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E18",
+      "tendencia": "T5",
+      "url": "https://blog.roboflow.com/edge-ai-inference-for-manufacturing/",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/3a8fd3c59a8be3ed.txt",
+      "cifras": [
+        {
+          "cifra": "sub-100 ms",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E19",
+      "tendencia": "T6",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/88fe07c03eb03177.txt",
+      "cifras": [],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E20",
+      "tendencia": "T6",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/40bdc44a193108b6.txt",
+      "cifras": [
+        {
+          "cifra": "1 August 2024",
+          "encontrada": true
+        },
+        {
+          "cifra": "2 August 2026",
+          "encontrada": true
+        }
+      ],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    },
+    {
+      "id": "E21",
+      "tendencia": "T6",
+      "url": "https://arxiv.org/abs/2301.10226",
+      "estado_fuente": "legible",
+      "http": 200,
+      "desde_cache": true,
+      "texto_local": "runs/v2-envivo_caso1b/fuentes_cache/9e76b24336d001e7.txt",
+      "cifras": [],
+      "cifras_no_encontradas": [],
+      "extracto_encontrado": true,
+      "error": null
+    }
+  ],
+  "resumen": {
+    "fuentes": 21,
+    "descargadas_ahora": 0,
+    "reutilizadas_de_cache": 21,
+    "legibles": 21,
+    "inaccesibles": 0,
+    "ilegibles_o_bloqueadas": 0,
+    "evidencias_con_cifras_no_encontradas": [],
+    "evidencias_con_extracto_no_encontrado": [],
+    "tendencias": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6"
+    ]
+  }
+}

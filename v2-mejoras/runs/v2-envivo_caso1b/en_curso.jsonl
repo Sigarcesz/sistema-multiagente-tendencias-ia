@@ -1,0 +1,38 @@
+{"id": "orquestador", "ts_inicio": "2026-10-01T22:59:47", "etiqueta": "orquestador", "agente": "orquestador"}
+{"id": "trend-scout:candidatas@2026-10-01T22:59:54@2228115588640", "ts_inicio": "2026-10-01T22:59:54", "etiqueta": "trend-scout:candidatas", "agente": "trend-scout"}
+{"id": "trend-scout:candidatas@2026-10-01T22:59:54@2228115588640", "fin": true}
+{"id": "trend-scout:tendencia:T1@2026-10-01T23:00:26@2228089841936", "ts_inicio": "2026-10-01T23:00:26", "etiqueta": "trend-scout:tendencia:T1", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T2@2026-10-01T23:00:26@2228093036080", "ts_inicio": "2026-10-01T23:00:26", "etiqueta": "trend-scout:tendencia:T2", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T3@2026-10-01T23:00:26@2228089837456", "ts_inicio": "2026-10-01T23:00:26", "etiqueta": "trend-scout:tendencia:T3", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T4@2026-10-01T23:00:26@2228089842576", "ts_inicio": "2026-10-01T23:00:26", "etiqueta": "trend-scout:tendencia:T4", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T3@2026-10-01T23:00:26@2228089837456", "fin": true}
+{"id": "trend-scout:tendencia:T5@2026-10-01T23:01:38@2228051169584", "ts_inicio": "2026-10-01T23:01:38", "etiqueta": "trend-scout:tendencia:T5", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T4@2026-10-01T23:00:26@2228089842576", "fin": true}
+{"id": "trend-scout:tendencia:T6@2026-10-01T23:01:54@2228089838096", "ts_inicio": "2026-10-01T23:01:54", "etiqueta": "trend-scout:tendencia:T6", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T1@2026-10-01T23:00:26@2228089841936", "fin": true}
+{"id": "trend-scout:tendencia:T5@2026-10-01T23:01:38@2228051169584", "fin": true}
+{"id": "trend-scout:tendencia:T6@2026-10-01T23:01:54@2228089838096", "fin": true}
+{"id": "trend-scout:tendencia:T2@2026-10-01T23:00:26@2228093036080", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T1@2026-10-01T23:03:40@2228118474544", "ts_inicio": "2026-10-01T23:03:40", "etiqueta": "quality-auditor:verificacion_evidencia:T1", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T1@2026-10-01T23:03:40@2228118474544", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T2@2026-10-01T23:04:00@2228106359504", "ts_inicio": "2026-10-01T23:04:00", "etiqueta": "quality-auditor:verificacion_evidencia:T2", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T2@2026-10-01T23:04:00@2228106359504", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T3@2026-10-01T23:04:19@2228118474784", "ts_inicio": "2026-10-01T23:04:19", "etiqueta": "quality-auditor:verificacion_evidencia:T3", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T3@2026-10-01T23:04:19@2228118474784", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T4@2026-10-01T23:04:39@2228087836944", "ts_inicio": "2026-10-01T23:04:39", "etiqueta": "quality-auditor:verificacion_evidencia:T4", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T4@2026-10-01T23:04:39@2228087836944", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T5@2026-10-01T23:05:01@2228106287728", "ts_inicio": "2026-10-01T23:05:01", "etiqueta": "quality-auditor:verificacion_evidencia:T5", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T5@2026-10-01T23:05:01@2228106287728", "fin": true}
+{"id": "quality-auditor:verificacion_evidencia:T6@2026-10-01T23:05:26@2228118471664", "ts_inicio": "2026-10-01T23:05:26", "etiqueta": "quality-auditor:verificacion_evidencia:T6", "agente": "quality-auditor"}
+{"id": "quality-auditor:verificacion_evidencia:T6@2026-10-01T23:05:26@2228118471664", "fin": true}
+{"id": "report-writer:redaccion@2026-10-01T23:05:50@2228104729008", "ts_inicio": "2026-10-01T23:05:50", "etiqueta": "report-writer:redaccion", "agente": "report-writer"}
+{"id": "report-writer:redaccion@2026-10-01T23:05:50@2228104729008", "fin": true}
+{"id": "quality-auditor:auditoria@2026-10-01T23:07:09@2228024418784", "ts_inicio": "2026-10-01T23:07:09", "etiqueta": "quality-auditor:auditoria", "agente": "quality-auditor"}
+{"id": "quality-auditor:auditoria@2026-10-01T23:07:09@2228024418784", "fin": true}
+{"id": "report-writer:correccion@2026-10-01T23:07:51@2228117270720", "ts_inicio": "2026-10-01T23:07:51", "etiqueta": "report-writer:correccion", "agente": "report-writer"}
+{"id": "report-writer:correccion@2026-10-01T23:07:51@2228117270720", "fin": true}
+{"id": "quality-auditor:auditoria@2026-10-01T23:08:51@2228087532416", "ts_inicio": "2026-10-01T23:08:51", "etiqueta": "quality-auditor:auditoria", "agente": "quality-auditor"}
+{"id": "quality-auditor:auditoria@2026-10-01T23:08:51@2228087532416", "fin": true}
+{"id": "quality-auditor:publicacion@2026-10-01T23:09:29@2228145692208", "ts_inicio": "2026-10-01T23:09:29", "etiqueta": "quality-auditor:publicacion", "agente": "quality-auditor"}
+{"id": "quality-auditor:publicacion@2026-10-01T23:09:29@2228145692208", "fin": true}
+{"id": "orquestador", "fin": true}

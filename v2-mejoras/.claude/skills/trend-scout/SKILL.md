@@ -62,6 +62,10 @@ Recibes una candidata. Investígala y entrega **una** tendencia con su evidencia
    - `extracto`: una frase **copiada textualmente** de la página (máximo 25 palabras) que
      contenga la cifra o la afirmación principal. Es lo que permite comprobarla.
    - `fuente.tipo`: `organismo` · `academica` · `consultora` · `proveedor` · `medio`.
+   - `fuente.fecha`: la de **publicación o última actualización** que muestra la página, en
+     `AAAA-MM-DD` o `AAAA-MM` (no el texto de la página: "Last update 31 July 2026" →
+     `2026-07-31`). Nunca la fecha de hoy ni la de consulta; si la página no muestra fecha,
+     busca otra fuente.
 4. Entre 2 y 4 evidencias, idealmente de organizaciones distintas.
 5. **Evalúa** madurez, impacto y confianza con las escalas de abajo.
 6. Si no encuentras evidencia verificable, entrega `{"descartada": true, "motivo": "…"}`.
@@ -94,6 +98,14 @@ Salida (`01b_tendencias/<T#>.json`), con IDs de evidencia locales E1, E2…:
   ]
 }
 ```
+
+### Modo `correccion` (errores de la compuerta de contrato)
+
+Recibes el archivo de hallazgos, el reporte `02_contrato.json` y una ruta de salida.
+Corrige **solo** los campos que el reporte señala; copia todo lo demás tal cual,
+**incluidos los IDs** (T#, E#). Si para corregir un campo necesitas un dato que no tienes
+(p. ej. una fecha que la página no muestra), vuelve a la fuente; no lo inventes. Escribe el
+archivo completo en la ruta de salida.
 
 ## Escalas
 

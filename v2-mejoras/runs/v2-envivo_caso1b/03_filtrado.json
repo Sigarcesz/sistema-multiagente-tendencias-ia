@@ -1,0 +1,16 @@
+{
+  "evidencias_entrada": 21,
+  "evidencias_validas": 21,
+  "evidencias_rechazadas": [],
+  "tendencias_entrada": 6,
+  "tendencias_validas": 6,
+  "tendencias_eliminadas": [],
+  "ajustes_confianza": [],
+  "veredictos_faltantes": [],
+  "tipos_fuente_validas": {
+    "proveedor": 5,
+    "academica": 8,
+    "consultora": 6,
+    "organismo": 2
+  }
+}

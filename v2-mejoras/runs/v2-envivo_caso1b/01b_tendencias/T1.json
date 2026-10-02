@@ -1,0 +1,61 @@
+{
+  "id": "T1",
+  "nombre": "Modelos de lenguaje especializados para empresas (LLMs verticales)",
+  "descripcion": "Desplazamiento hacia LLMs afinados o entrenados para dominios específicos (salud, finanzas, legal, seguros) que integran datos y vocabularios sectoriales para reducir alucinaciones y adaptar respuestas a requisitos regulatorios y operativos. Las empresas combinan fine-tuning, modelos ligeros y arquitecturas RAG para obtener mayor precisión, cumplimiento y valor en flujos críticos. La oferta incluye tanto modelos entrenados desde cero sobre datos propietarios como modelos base continuadamente preentrenados y afinados para casos de uso verticales.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "Los LLMs verticales afectan procesos centrales en sectores regulados (ej., decisiones clínicas, análisis financiero, revisión legal) y prometen mejoras significativas en precisión, cumplimiento y velocidad operativa según evidencia de adopción y casos de uso sectoriales."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Existen implementaciones y publicaciones técnicas (p. ej. BloombergGPT en finanzas) y estudios académicos y pilotos en salud; el ecosistema comercial y de startups verticales está creciendo rápidamente (informes y análisis 2024–2026)."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "La tendencia está respaldada por múltiples fuentes independientes y recientes: paper técnico de proveedor (Bloomberg), estudio académico revisado por pares (PLOS Digital Health, 2025) y análisis de mercado/sector (Bessemer, 2025)."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Bloomberg publicó un LLM orientado a finanzas (BloombergGPT) entrenado con un corpus financiero masivo y 50 mil millones de parámetros, mostrando rendimiento superior en tareas financieras.",
+      "cifras": ["50 billion parameter", "363 billion token dataset", "345 billion tokens"],
+      "extracto": "we present BloombergGPT, a 50 billion parameter language model that is trained on a wide range of financial data.",
+      "fuente": {
+        "titulo": "BloombergGPT: A Large Language Model for Finance",
+        "organizacion": "Bloomberg (paper en arXiv)",
+        "autor": "Shijie Wu et al.",
+        "fecha": "2023-12-21",
+        "url": "https://arxiv.org/abs/2303.17564",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Un estudio académico (PLOS Digital Health, 2025) demuestra que un LLM médico afinado y ligero (Med-Pal) puede alcanzar alta calidad de respuestas en tareas farmacológicas, respaldando la eficacia de modelos verticales finamente afinados.",
+      "cifras": ["71.9% high-quality responses", "7 billion or less"],
+      "extracto": "Med-Pal outperformed Biomistral and Meerkat, achieving 71.9% high-quality responses in a separate testing dataset.",
+      "fuente": {
+        "titulo": "Development and evaluation of a lightweight large language model chatbot for medication enquiry",
+        "organizacion": "PLOS Digital Health",
+        "autor": "Elangovan K et al.",
+        "fecha": "2025-09-04",
+        "url": "https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000961",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "El informe 'The State of AI 2025' documenta que la adopción se está acelerando especialmente en flujos verticales, y que Vertical AI está alcanzando tracción comercial en sectores con procesos manuales y regulados.",
+      "cifras": ["10x", "Published on Aug 13, 2025"],
+      "extracto": "Adoption continues to accelerate, particularly for vertical workflows that have long been manual, service-heavy, or seen as resistant to technology.",
+      "fuente": {
+        "titulo": "The State of AI 2025",
+        "organizacion": "Bessemer Venture Partners",
+        "autor": "Kent Bennett et al.",
+        "fecha": "2025-08-13",
+        "url": "https://www.bvp.com/atlas/the-state-of-ai-2025",
+        "tipo": "consultora"
+      }
+    }
+  ]
+}
