@@ -1,0 +1,61 @@
+{
+  "id": "T4",
+  "nombre": "Regulación, cumplimiento y auditoría de IA (impacto operativo y contractual)",
+  "descripcion": "Marco regulatorio (p. ej. AI Act, normativas locales) y requerimientos de auditoría/explicabilidad que obligan cambios en procesos, contratos y tecnología.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "La AI Act y sus directrices imponen obligaciones legales y de transparencia a proveedores y desplegadores, afectando procesos centrales, gestión de riesgos y relaciones contractuales."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "La legislación principal (AI Act) y guías de implementación han entrado en vigor o se han publicado en 2025-2026, y agentes regulatorios nacionales están comenzando la implementación."
+  },
+  "confianza": {
+    "nivel": "media",
+    "justificacion": "Evidencia reciente y autoritativa de la Comisión Europea disponible, pero en esta búsqueda no se localizaron (o no se pudieron abrir) fuentes independientes adicionales (p. ej. reguladores nacionales, consultoras) para corroborar adopción y efectos contractuales."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "La AI Act es el primer marco legal sobre IA en la UE y establece obligaciones para proveedores y desplegadores.",
+      "cifras": [],
+      "extracto": "The AI Act is the first-ever legal framework on AI.",
+      "fuente": {
+        "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+        "organizacion": "European Commission",
+        "autor": "European Commission",
+        "fecha": "Last update 31 July 2026",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+        "tipo": "organismo"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "El AI Omnibus fue adoptado y la Comisión indica fechas de entrada en vigor de enmiendas y de la AI Act (julio 2026); la aplicación y supervisión comienzan en agosto 2026.",
+      "cifras": ["entered into force in 27 July 2026", "From 2 August 2026"],
+      "extracto": "entered into force in 27 July 2026",
+      "fuente": {
+        "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+        "organizacion": "European Commission",
+        "autor": "European Commission",
+        "fecha": "Last update 31 July 2026",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+        "tipo": "organismo"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "La Comisión publicó directrices sobre obligaciones de transparencia para proveedores y desplegadores, que detallan requisitos de información y trazabilidad.",
+      "cifras": ["Publication of the guidelines on transparency obligations for providers and deployers of certain AI systems 20 July 2026"],
+      "extracto": "Publication of the guidelines on transparency obligations for providers and deployers of certain AI systems 20 July 2026",
+      "fuente": {
+        "titulo": "European approach to artificial intelligence | Shaping Europe’s digital future",
+        "organizacion": "European Commission",
+        "autor": "European Commission",
+        "fecha": "Last update 31 July 2026",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+        "tipo": "organismo"
+      }
+    }
+  ]
+}

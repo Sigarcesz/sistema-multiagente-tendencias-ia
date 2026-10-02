@@ -1,0 +1,61 @@
+{
+  "id": "T7",
+  "nombre": "IA en el borde y modelos cuantizados para privacidad, latencia y costes reducidos",
+  "descripcion": "Despliegue de modelos comprimidos y cuantizados en dispositivos edge y endpoints (teléfonos, IoT, hubs locales) para satisfacer requisitos estrictos de latencia, privacidad y reducción de coste de inferencia. Investigación y proveedores muestran técnicas (quantization-aware training, INT4/2-bit, pruning) que permiten ejecutar modelos multimodales y LLMs reducidos on-device; reguladores y estudios de adopción indican crecimiento de nodos edge y presión regulatoria hacia el procesamiento local de datos.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "La tendencia afecta procesos centrales (respuesta en tiempo real, cumplimiento de privacidad, y estructura de costes de inferencia), y está vinculada a despliegues de infraestructura edge y a cambios en la arquitectura cloud/edge de empresas." 
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Existen productos y demostraciones (herramientas de optimización, modelos on-device, y pruebas en hardware comercial) y despliegues iniciales a escala, aunque los enfoques varían por caso de uso y hardware." 
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Evidencia reciente y convergente de fuentes regulatorias, académicas y de la industria publicadas en los últimos 24 meses documentan tanto la técnica (cuantización y QAT) como despliegues y crecimiento de nodos edge." 
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Apple declara que ha optimizado un modelo de lenguaje de ~3B parámetros para ejecución on-device usando cuantización de bajo bit (quantization-aware training).",
+      "cifras": ["3B-parameter", "2-bit"],
+      "extracto": "a 3B-parameter on-device model optimized for Apple silicon through architectural innovations such as KV-cache sharing and 2-bit quantization-aware training;",
+      "fuente": {
+        "titulo": "Apple Intelligence Foundation Language Models: Tech Report 2025",
+        "organizacion": "Apple Machine Learning Research / arXiv",
+        "autor": "Ethan Li et al.",
+        "fecha": "2025-07-17",
+        "url": "https://arxiv.org/abs/2507.13575",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Un survey académico define y documenta que los modelos on-device priorizan el procesamiento local por latencia, restricciones de recursos y privacidad, y enumera compresión y cuantización como técnicas centrales.",
+      "cifras": [],
+      "extracto": "emphasizing their characteristics such as real-time performance, resource constraints, and enhanced data privacy.",
+      "fuente": {
+        "titulo": "Empowering Edge Intelligence: A Comprehensive Survey on On-Device AI Models",
+        "organizacion": "arXiv / Xubin Wang et al.",
+        "autor": "Xubin Wang et al.",
+        "fecha": "2025-03-08",
+        "url": "https://arxiv.org/abs/2503.06027",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "La Comisión Europea reporta despliegue y crecimiento de nodos edge en la UE, vinculando edge computing con latencia, privacidad y reducción de costes de transmisión de datos.",
+      "cifras": ["2 257 edge nodes", "1 072 new nodes", "1 455 new nodes"],
+      "extracto": "a total of 2 257 edge nodes were deployed across the EU",
+      "fuente": {
+        "titulo": "State of the Digital Decade 2025: Keep building the EU's sovereignty and digital future (COM(2025)290 final)",
+        "organizacion": "European Commission, Directorate-General for Communications Networks, Content and Technology (CNECT)",
+        "autor": "European Commission / CNECT",
+        "fecha": "2025-06-16",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=COM:2025:290:FIN",
+        "tipo": "organismo"
+      }
+    }
+  ]
+}

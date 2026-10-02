@@ -1,0 +1,76 @@
+{
+  "tema": "Tendencias emergentes de inteligencia artificial con potencial impacto empresarial durante los próximos tres años",
+  "fecha_investigacion": "2026-10-01",
+  "candidatas": [
+    {
+      "id": "T1",
+      "nombre": "Agentes autónomos (agentic AI) en operaciones empresariales",
+      "descripcion_breve": "Sistemas de IA capaces de ejecutar flujos de trabajo multi-paso y tomar decisiones semi-autónomas para tareas operativas y de soporte.",
+      "consultas_sugeridas": [
+        "adoption of autonomous agents enterprise 2026",
+        "agentic AI production deployment enterprise report 2026",
+        "autonomous agents business use cases 2026"
+      ]
+    },
+    {
+      "id": "T2",
+      "nombre": "Evolución del RAG hacia arquitecturas de recuperación híbrida y 'context compilers'",
+      "descripcion_breve": "Transición desde pipelines basados únicamente en vector DB a soluciones híbridas y capas de conocimiento compiladas para mejorar fiabilidad y trazabilidad.",
+      "consultas_sugeridas": [
+        "hybrid retrieval RAG enterprise 2026",
+        "context compiler agentic AI 'knowledge layer' 2026",
+        "hybrid vector + lexical search enterprise 2026"
+      ]
+    },
+    {
+      "id": "T3",
+      "nombre": "Modelos empresariales propietarios y MLOps para governanza de modelos multimodales",
+      "descripcion_breve": "Organizaciones construyen, fine-tunean o despliegan modelos privados y prácticas de MLOps/ModelOps para control, privacidad y cumplimiento.",
+      "consultas_sugeridas": [
+        "private LLM enterprise adoption 2026",
+        "MLOps governance multimodal models 2026",
+        "enterprise fine-tuning foundation models 2026"
+      ]
+    },
+    {
+      "id": "T4",
+      "nombre": "Regulación, cumplimiento y auditoría de IA (impacto operativo y contractual)",
+      "descripcion_breve": "Marco regulatorio (p. ej. AI Act, normativas locales) y requerimientos de auditoría/explicabilidad que obligan cambios en procesos, contratos y tecnología.",
+      "consultas_sugeridas": [
+        "AI regulation enterprise compliance 2026 AI Act impact",
+        "AI governance audit requirements 2026 enterprises",
+        "regulatory compliance generative AI 2026"
+      ]
+    },
+    {
+      "id": "T5",
+      "nombre": "Datos sintéticos y data-centric AI para preservar privacidad y ampliar datasets",
+      "descripcion_breve": "Generación y uso de datos sintéticos y técnicas de conservación de privacidad para etiquetado, pruebas y entrenamiento sin exponer datos sensibles.",
+      "consultas_sugeridas": [
+        "synthetic data enterprise adoption 2026",
+        "data-centric AI synthetic data privacy 2026",
+        "privacy-preserving synthetic datasets 2026"
+      ]
+    },
+    {
+      "id": "T6",
+      "nombre": "IA para productividad de desarrolladores y automatización del ciclo de vida del software",
+      "descripcion_breve": "Herramientas de generación de código, revisión automática y bots de soporte que reconfiguran equipos de ingeniería y procesos de entrega.",
+      "consultas_sugeridas": [
+        "AI developer productivity tools 2026 enterprise",
+        "code generation tools impact software engineering 2026",
+        "AI-assisted software delivery 2026"
+      ]
+    },
+    {
+      "id": "T7",
+      "nombre": "IA en el borde y modelos cuantizados para privacidad, latencia y costes reducidos",
+      "descripcion_breve": "Despliegue de modelos comprimidos y cuantizados en dispositivos edge para casos de uso con requisitos de latencia y privacidad estrictos.",
+      "consultas_sugeridas": [
+        "on-device AI model quantization enterprise 2026",
+        "edge AI deployment privacy latency 2026",
+        "tinyML model compression business use cases 2026"
+      ]
+    }
+  ]
+}

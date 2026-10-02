@@ -1,0 +1,75 @@
+{
+  "id": "T2",
+  "nombre": "Evolución del RAG hacia arquitecturas de recuperación híbrida y 'context compilers',",
+  "descripcion": "Transición desde pipelines basados únicamente en bases de vectores hacia arquitecturas híbridas (vectores + búsqueda léxica/filtrado/graph) y capas de conocimiento 'compiladas' o ‘context compilers’ que preparan, filtran y sintetizan contexto antes de la generación. En 2025-2026 se observa un movimiento conjunto: literatura académica y arXiv describen mejoras de calidad con enfoques agentic y híbridos; analistas de mercado y proveedores de bases de datos integran búsquedas híbridas y rerankers en productos comerciales.",
+  "impacto": {
+    "nivel": "alto",
+    "justificacion": "La tendencia afecta componentes centrales del stack RAG (recuperación, trazabilidad y gobernanza): proveedores integran hybrid search y reranking en bases de datos operativas, mientras que investigación y papers muestran mejoras sustanciales de factualidad y recall, lo que puede cambiar la arquitectura de despliegue y la confiabilidad de aplicaciones empresariales."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "En 2026 hay productos comerciales (hybrid search, native reranking) y despliegues pre-producción, papers recientes y marcos agentic que reportan mejoras; sin embargo no es todavía un estándar universalizado, y quedan retos de latencia, evaluación y gobernanza."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Evidencia reciente y consistente proviene de múltiples tipos de fuentes independientes: investigación académica/arXiv, informe de analistas (451 Research vía OpenSearch) y anuncios de proveedores comerciales (MongoDB, Google Research)."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Google Research presenta 'Agentic RAG' que integra planificación, enrutamiento y recuperación iterativa para mejorar la fiabilidad y el grounding en entornos multi-corpus y reporta mejoras de precisión en benchmarks y pruebas internas.",
+      "cifras": ["up to 34%", "90.1%"],
+      "extracto": "our framework increases accuracy on factuality datasets by up to 34%.",
+      "fuente": {
+        "titulo": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+        "organizacion": "Google Research (blog)",
+        "autor": "Cyrus Rashtchian; Da-Cheng Juan (Google Research)",
+        "fecha": "2026-06-05",
+        "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "Un informe especial de 451 Research (encargado por OpenSearch) sostiene que el enfoque híbrido (lexical + vector) es el que funciona para cargas de trabajo AI empresariales y registra resultados de encuesta de adopción entre empresas.",
+      "cifras": ["nearly 600 enterprise respondents"],
+      "extracto": "Survey data drawn from nearly 600 enterprise respondents.",
+      "fuente": {
+        "titulo": "451 Research Special Report on Vector Databases - OpenSearch",
+        "organizacion": "OpenSearch (republica informe de 451 Research)",
+        "autor": "James Curtis (451 Research)",
+        "fecha": "2026-03",
+        "url": "https://opensearch.org/451-research-vector-report-2026/",
+        "tipo": "consultora"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Un trabajo académico en arXiv ('AgenticRAG') muestra que un enfoque agentic de recuperación iterativa incrementa recall y correctness frente a baselines de embedding-only en benchmarks y entornos empresariales.",
+      "cifras": ["$49.6\\%$ recall@1", "92% answer correctness"],
+      "extracto": "$49.6\\%$ recall@1 on BRIGHT",
+      "fuente": {
+        "titulo": "AgenticRAG: Agentic Retrieval for Enterprise Knowledge Bases",
+        "organizacion": "arXiv / autores del paper",
+        "autor": "Susheel Suresh et al.",
+        "fecha": "2026-05-07",
+        "url": "https://arxiv.org/abs/2605.05538",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "MongoDB anuncia capacidades comerciales (Hybrid Search y Native Reranking) para ejecutar búsquedas híbridas y reranking nativo dentro de la base de datos, afirmando mejoras de calidad de recuperación.",
+      "cifras": ["up to 30%"],
+      "extracto": "Native Reranking alone improving retrieval quality by up to 30%*.",
+      "fuente": {
+        "titulo": "MongoDB Delivers Accurate AI Retrieval Wherever Enterprise Data Lives",
+        "organizacion": "MongoDB, Inc. (replicado en Nasdaq)",
+        "autor": "MongoDB, Inc. (press release)",
+        "fecha": "2026-06-30",
+        "url": "https://www.nasdaq.com/press-release/mongodb-delivers-accurate-ai-retrieval-wherever-enterprise-data-lives-2026-06-30",
+        "tipo": "proveedor"
+      }
+    }
+  ]
+}

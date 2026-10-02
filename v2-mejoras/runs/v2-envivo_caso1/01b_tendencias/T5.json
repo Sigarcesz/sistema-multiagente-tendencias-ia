@@ -1,0 +1,76 @@
+{
+  "id": "T5",
+  "nombre": "Datos sintéticos y data-centric AI para preservar privacidad y ampliar datasets",
+  "descripcion": "Generación y uso de datos sintéticos y técnicas de conservación de privacidad para etiquetado, pruebas y entrenamiento sin exponer datos sensibles.",
+  "fecha_investigacion": "2026-10-01",
+  "impacto": {
+    "nivel": "medio",
+    "justificacion": "La adopción comercial crece y puede cambiar procesos de datos sensibles, pero limitaciones de calidad, confianza y uso real en entrenamiento productivo mantienen el impacto por ahora en nivel medio."
+  },
+  "madurez": {
+    "nivel": "en_adopcion",
+    "justificacion": "Existen productos comerciales y encuestas muestran uso generalizado en pruebas y analítica, pero el uso consolidado para entrenamiento de producción todavía es parcial y sujeto a barreras de confianza y gobernanza."
+  },
+  "confianza": {
+    "nivel": "alta",
+    "justificacion": "Evidencias recientes y distintas (organismos internacionales, regulador nacional, informe de mercado de proveedor y literatura académica de 2025-2026) coinciden en adopción creciente, riesgos de re-identificación y trade-offs técnicos."
+  },
+  "evidencias": [
+    {
+      "id": "E1",
+      "afirmacion": "Una encuesta de 2025 de Perforce encontró que una mayoría de organizaciones ya usan datos sintéticos, y que sus principales aplicaciones son analítica, pruebas e integración; el uso para entrenamiento de IA existe pero es menos dominante.",
+      "cifras": ["63%", "79%", "49%", "7%"],
+      "extracto": "63% of Organizations Are Using Synthetic Data",
+      "fuente": {
+        "titulo": "2025 State of Synthetic Data Report",
+        "organizacion": "Perforce Software, Inc.",
+        "autor": "Perforce Research / Delphix excerpt",
+        "fecha": "2025",
+        "url": "https://www.perforce.com/system/files/2025-10/report-pdx-2025-state-of-synthetic-data-report.pdf",
+        "tipo": "proveedor"
+      }
+    },
+    {
+      "id": "E2",
+      "afirmacion": "El regulador de Singapur (PDPC) advierte que, aunque los datos sintéticos pueden no ser datos personales por sí mismos, no son inherentemente libres de riesgo y pueden presentar re-identificación; por eso propone prácticas para evaluar y mitigar riesgos.",
+      "cifras": [],
+      "extracto": "it is not inherently risk-free due to possible re-identification risks",
+      "fuente": {
+        "titulo": "Proposed Guide on Synthetic Data Generation",
+        "organizacion": "Personal Data Protection Commission (PDPC), Singapore",
+        "autor": "PDPC",
+        "fecha": "2024-07-15",
+        "url": "https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/other-guides/proposed-guide-on-synthetic-data-generation.pdf",
+        "tipo": "organismo"
+      }
+    },
+    {
+      "id": "E3",
+      "afirmacion": "Investigación académica reciente muestra que los mecanismos de privacidad (p. ej. differential privacy) imponen trade-offs fundamentales entre protección y fidelidad estadística en la generación de datos sintéticos, y explora mecanismos conscientes del dominio para mejorar esos trade-offs.",
+      "cifras": ["ε∈{1.0,2.0,4.0}"],
+      "extracto": "Differential privacy (DP) imposes fundamental trade-offs between privacy and statistical fidelity in synthetic data generation.",
+      "fuente": {
+        "titulo": "Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation",
+        "organizacion": "Proceedings of Machine Learning Research (ICML 2026)",
+        "autor": "Sajani Vithana et al.",
+        "fecha": "2026-07",
+        "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/vithana26a/vithana26a.pdf",
+        "tipo": "academica"
+      }
+    },
+    {
+      "id": "E4",
+      "afirmacion": "El World Economic Forum describe los datos sintéticos como datos artificiales que pueden rellenar vacíos de datos y proteger la privacidad, y discute la necesidad de gobernanza y etiquetado claro.",
+      "cifras": [],
+      "extracto": "Synthetic data is data artificially generated to mimic real-world data. It can fill data gaps, protect privacy",
+      "fuente": {
+        "titulo": "Synthetic Data: The New Data Frontier",
+        "organizacion": "World Economic Forum",
+        "autor": "Global Future Council on Data Frontiers / World Economic Forum",
+        "fecha": "2025-09",
+        "url": "https://reports.weforum.org/docs/WEF_Synthetic_Data_2025.pdf",
+        "tipo": "organismo"
+      }
+    }
+  ]
+}

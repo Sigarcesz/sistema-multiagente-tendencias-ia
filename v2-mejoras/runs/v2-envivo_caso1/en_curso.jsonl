@@ -1,0 +1,20 @@
+{"id": "orquestador", "ts_inicio": "2026-10-01T19:23:23", "etiqueta": "orquestador", "agente": "orquestador"}
+{"id": "trend-scout:candidatas@2026-10-01T19:23:31@1130975019632", "ts_inicio": "2026-10-01T19:23:31", "etiqueta": "trend-scout:candidatas", "agente": "trend-scout"}
+{"id": "trend-scout:candidatas@2026-10-01T19:23:31@1130975019632", "fin": true}
+{"id": "trend-scout:tendencia:T1@2026-10-01T19:24:10@1130879485936", "ts_inicio": "2026-10-01T19:24:10", "etiqueta": "trend-scout:tendencia:T1", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T2@2026-10-01T19:24:10@1130920892224", "ts_inicio": "2026-10-01T19:24:10", "etiqueta": "trend-scout:tendencia:T2", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T3@2026-10-01T19:24:10@1130919271392", "ts_inicio": "2026-10-01T19:24:10", "etiqueta": "trend-scout:tendencia:T3", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T4@2026-10-01T19:24:10@1130920886144", "ts_inicio": "2026-10-01T19:24:10", "etiqueta": "trend-scout:tendencia:T4", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T1@2026-10-01T19:24:10@1130879485936", "fin": true}
+{"id": "trend-scout:tendencia:T5@2026-10-01T19:25:00@1130919271968", "ts_inicio": "2026-10-01T19:25:00", "etiqueta": "trend-scout:tendencia:T5", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T3@2026-10-01T19:24:10@1130919271392", "fin": true}
+{"id": "trend-scout:tendencia:T6@2026-10-01T19:25:16@1130879939904", "ts_inicio": "2026-10-01T19:25:16", "etiqueta": "trend-scout:tendencia:T6", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T4@2026-10-01T19:24:10@1130920886144", "fin": true}
+{"id": "trend-scout:tendencia:T7@2026-10-01T19:25:58@1130919272544", "ts_inicio": "2026-10-01T19:25:58", "etiqueta": "trend-scout:tendencia:T7", "agente": "trend-scout"}
+{"id": "trend-scout:tendencia:T5@2026-10-01T19:25:00@1130919271968", "fin": true}
+{"id": "trend-scout:tendencia:T6@2026-10-01T19:25:16@1130879939904", "fin": true}
+{"id": "trend-scout:tendencia:T2@2026-10-01T19:24:10@1130920892224", "fin": true}
+{"id": "trend-scout:tendencia:T7@2026-10-01T19:25:58@1130919272544", "fin": true}
+{"id": "trend-scout:corregir_estructura@2026-10-01T19:29:30@1130985646128", "ts_inicio": "2026-10-01T19:29:30", "etiqueta": "trend-scout:corregir_estructura", "agente": "trend-scout"}
+{"id": "trend-scout:corregir_estructura@2026-10-01T19:29:30@1130985646128", "fin": true}
+{"id": "orquestador", "fin": true}
